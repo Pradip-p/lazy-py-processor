@@ -1,0 +1,15 @@
+Scrapy==2.5.1
+instaloader
+ipdb
+protobuf==3.8.0
+ruamel.yaml==0.15.80
+s3transfer==0.1.13
+pillow
+pyppeteer
+pandas
+xlrd
+googletrans
+pdfminer.six
+newspaper3k
+PyYAML==3.12
+scrapy_proxies
