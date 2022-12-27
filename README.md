@@ -7,7 +7,8 @@
 * Create a virtual env
 * Install it as you would install python package
 ```
-pip install git+ssh://github.com/Pradip-p/lazy-py-processor.git
+pip install git+https://github.com/Pradip-p/lazy-py-processor.git
+
 ```
 or
 ```pip install . ```
