@@ -71,9 +71,9 @@ async def main(url: str, headless: bool, proxy: str = None, cookies: List[dict] 
 
 
 def browse(url: str, headless: bool = True, proxy: str = None, cookies: list = None, useragent: str = None,
-           headers: dict = None, timeout: int = 0, close: bool = True):
-    data = asyncio.get_event_loop().run_until_complete(
-        main(url=url, headless=headless, proxy=proxy, cookies=cookies, useragent=useragent, headers=headers,
-             timeout=timeout, close=close))
-    return data
+           headers: dict = None, timeout: int = 0, close: bool = True): 
+
+            data = asyncio.get_event_loop().run_until_complete(main(url=url, headless=headless, proxy=proxy, cookies=cookies, useragent=useragent, headers=headers,
+            timeout=timeout, close=close))
+            return data
 

@@ -2,8 +2,16 @@ from scrapy import signals
 from scrapy.exporters import CsvItemExporter
 import json
 from itemadapter import ItemAdapter
+import openpyxl
+from openpyxl.utils import get_column_letter
+from scrapy.pipelines.images import ImagesPipeline
+from scrapy.exceptions import DropItem
+import datetime
 
 class CSVPipeline(object):
+    def __init__(self):
+        self.created_time = datetime.datetime.now()
+
     @classmethod
     def from_crawler(cls, crawler):
         pipeline = cls()
@@ -12,7 +20,7 @@ class CSVPipeline(object):
         return pipeline
 
     def spider_opened(self, spider):
-        self.file = open('output.csv', 'w+b')
+        self.file = open(f'scraped_data_{self.created_time}.csv', 'w+b')
         self.exporter = CsvItemExporter(self.file)
         self.exporter.start_exporting()
 
@@ -25,10 +33,12 @@ class CSVPipeline(object):
         return item
 
 
-class JsonWriterPipeline:
+class JsonWriterPipeline(object):
+    def __init__(self):
+        self.created_time = datetime.datetime.now()
 
     def open_spider(self, spider):
-        self.file = open('items.json', 'w', encoding='utf-8')
+        self.file = open(f'scraped_data_{self.created_time}.json', 'w', encoding='utf-8')
 
     def close_spider(self, spider):
         self.file.close()
@@ -39,5 +49,24 @@ class JsonWriterPipeline:
         return item
 
 
-class ExcelWriterPipeline:
-    pass
+class ExcelWriterPipeline(object):
+
+    def __init__(self):
+        self.created_time = datetime.datetime.now()
+        self.wb = openpyxl.Workbook()
+        self.ws = self.wb.active
+        self.ws.title = "Scraped Data"
+        self.row_num = 1  # counter for the current row in the sheet
+
+    def process_item(self, item, spider):
+        # Add headings to the sheet if it's the first item
+        if self.row_num == 1:
+            self.ws.append(list(item.keys())) # convert dict_keys to a list and use it as headings
+        # Add the item data to the sheet
+        self.ws.append(list(item.values()))
+        self.row_num += 1  # increment the row counter
+
+        return item
+
+    def close_spider(self, spider):
+        self.wb.save(f"scraped_data_{self.created_time}.xlsx")  # save the workbook

@@ -71,11 +71,9 @@ DEFAULT_REQUEST_HEADERS = {
 
 # Configure item pipelines
 # See https://doc.scrapy.org/en/latest/topics/item-pipeline.html
+
 ITEM_PIPELINES = {
-    # 'lazy_crawler.crawler.pipelines.JsonWriterPipeline': 300
-    'lazy_crawler.crawler.pipelines.CSVPipeline': 300
-    # "lazy_crawler.crawler.pipelines.MongoPipeline": 300,
-    # 'reddit.pipelines.MongoPipeline': 300,
+    'lazy_crawler.crawler.pipelines.ExcelWriterPipeline': 300
     }
 
 RETRY_TIMES = 3
@@ -88,7 +86,7 @@ RETRY_TIMES = 3
 # See http://scrapy.readthedocs.org/en/latest/topics/settings.html#download-delay
 # See also autothrottle settings and docs
 
-FEED = 'json'
+# FEED = 'json'
 
 FEED_EXPORT_ENCODING = 'utf-8'
 

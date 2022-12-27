@@ -13,3 +13,4 @@ pdfminer.six
 newspaper3k
 PyYAML==3.12
 scrapy_proxies
+openpyxl
