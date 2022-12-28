@@ -3,9 +3,9 @@ from scrapy.exporters import CsvItemExporter
 import json
 from itemadapter import ItemAdapter
 import openpyxl
-from openpyxl.utils import get_column_letter
-from scrapy.pipelines.images import ImagesPipeline
-from scrapy.exceptions import DropItem
+# from openpyxl.utils import get_column_letter
+# from scrapy.pipelines.images import ImagesPipeline
+# from scrapy.exceptions import DropItem
 import datetime
 
 class CSVPipeline(object):

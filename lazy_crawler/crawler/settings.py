@@ -119,12 +119,7 @@ RETRY_ENABLED = True
 # HTTPCACHE_IGNORE_HTTP_CODES = []
 # HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
 
-DOWNLOADER_MIDDLEWARES = {
-#     'scrapy.downloadermiddlewares.retry.RetryMiddleware': 140,
-    'lazy_crawler.crawler.middlewares.RandomUserAgentMiddleware': 400,
-#     'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware': 110,
-#     # 'grepsr_crawler.crawler.middlewares.PuppeteerMiddleware': 220,
-}
+
 ################################################################
 # PROXY SETTINGS
 ################################################################
@@ -141,6 +136,8 @@ USER_AGENT = get_user_agent()
 # CHANGE_PROXY_AFTER = 10
 
 DOWNLOADER_MIDDLEWARES = {
+    'lazy_crawler.crawler.middlewares.CrawlerSpiderMiddleware': 400,
+
     'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware': None,
     'scrapy.spidermiddlewares.referer.RefererMiddleware': 80,
     'scrapy.downloadermiddlewares.retry.RetryMiddleware': 90,
