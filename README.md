@@ -6,13 +6,13 @@ Customized Scrapy is a modified version of the popular open-source web scraping 
 ##### Note. This library was written for python3 and scrapy1.6.0. However higher version is supported.
 
 ### Installation Instruction
-* Create a virtual env
-* Install it as you would install python package
+    Create a virtual environment for your project. Install Customized Scrapy using `pip`:
 ```
 pip install git+https://github.com/Pradip-p/lazy-py-processor.git
 
 ```
 or
+Alternatively, you can install LazyPyProcessor Scrapy by cloning the repository and installing it locally:
 ```pip install . ```
 
 
@@ -51,11 +51,12 @@ In order to build the docker container.
 4. Also push to master branch
 ``` git push origin master```
 
-### Example for scraping data from a website
+### Usage
+### To use LazyPyProcessor 
 ##### make a python file for your project (example: `scrapy_example.py`)
 
-```
 
+```
 import os
 import scrapy
 from scrapy.crawler import CrawlerProcess
@@ -139,3 +140,13 @@ process = CrawlerProcess(get_project_settings())
 process.crawl(LazyCrawler)
 process.start() # the script will block here until the crawling is finished
 ```
+## Further resources
+
+For more information and examples of how to use Lazy Py Processor, see the project documentation.
+## Credits
+
+Lazy Py Processor was created by Pradip p.
+
+## License
+
+Lazy Py Processor is released under the MIT License.
