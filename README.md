@@ -7,15 +7,13 @@ Customized Scrapy is a modified version of the popular open-source web scraping 
 
 ### Installation Instruction
 
-    Create a virtual environment for your project. Install Customized Scrapy using pip:
+Create a virtual environment for your project. Install Customized Scrapy using pip 
     
 ```
 pip install git+https://github.com/Pradip-p/lazy-py-processor.git
 
 ```
-or
-
-Alternatively, you can install LazyPyProcessor Scrapy by cloning the repository and installing it locally:
+or Alternatively, you can install LazyPyProcessor Scrapy by cloning the repository and installing it locally:
 ```
 git clone https://github.com/Pradip-p/lazy-py-processor.git
 ```
