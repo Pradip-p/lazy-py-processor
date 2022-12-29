@@ -1,5 +1,7 @@
 
-# Customized scrapy for easy setup and predefined library
+# LazyPyProcessor
+
+Customized Scrapy is a modified version of the popular open-source web scraping framework, Scrapy, that is designed for easy of setup and use. It includes a predefined library of functions and utilities that make it easy to extract and process data from websites.
 
 ##### Note. This library was written for python3 and scrapy1.6.0. However higher version is supported.
 
