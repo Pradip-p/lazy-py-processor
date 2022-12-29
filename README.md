@@ -1,5 +1,5 @@
 
-# scrapy python library 
+# Customized scrapy for easy setup and predefined library
 
 ##### Note. This library was written for python3 and scrapy1.6.0. However higher version is supported.
 
