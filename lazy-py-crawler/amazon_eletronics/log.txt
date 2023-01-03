@@ -1,0 +1,1499 @@
+INFO: Scrapy 2.5.1 started (bot: lazy_py_crawler)
+INFO: Versions: lxml 4.8.0.0, libxml2 2.9.12, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 22.1.0, Python 3.8.10 (default, Nov 14 2022, 12:59:47) - [GCC 9.4.0], pyOpenSSL 22.0.0 (OpenSSL 1.1.1m  14 Dec 2021), cryptography 36.0.1, Platform Linux-5.15.0-56-generic-x86_64-with-glibc2.29
+DEBUG: Using reactor: twisted.internet.epollreactor.EPollReactor
+INFO: Overridden settings:
+{'AUTOTHROTTLE_DEBUG': True,
+ 'AUTOTHROTTLE_ENABLED': True,
+ 'AUTOTHROTTLE_MAX_DELAY': 0.25,
+ 'AUTOTHROTTLE_START_DELAY': 1,
+ 'AUTOTHROTTLE_TARGET_CONCURRENCY': 128,
+ 'BOT_NAME': 'lazy_py_crawler',
+ 'CONCURRENT_REQUESTS': 126,
+ 'CONCURRENT_REQUESTS_PER_DOMAIN': 2,
+ 'CONCURRENT_REQUESTS_PER_IP': 26,
+ 'DOWNLOAD_TIMEOUT': 500,
+ 'FEED_EXPORT_ENCODING': 'utf-8',
+ 'NEWSPIDER_MODULE': 'lazy_crawler.crawler.spiders',
+ 'REACTOR_THREADPOOL_MAXSIZE': 128,
+ 'RETRY_HTTP_CODES': [500,
+                      502,
+                      503,
+                      504,
+                      400,
+                      401,
+                      403,
+                      404,
+                      405,
+                      406,
+                      407,
+                      408,
+                      409,
+                      410,
+                      429],
+ 'SPIDER_MODULES': ['lazy_crawler.crawler.spiders'],
+ 'USER_AGENT': 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like '
+               'Gecko) Chrome/41.0.2228.0 Safari/537.36'}
+INFO: Telnet Password: 901e0fedce2bef56
+INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.spiderstate.SpiderState',
+ 'scrapy.extensions.throttle.AutoThrottle']
+INFO: Enabled downloader middlewares:
+['scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'lazy_crawler.crawler.middlewares.CrawlerSpiderMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware']
+INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+INFO: Enabled item pipelines:
+['lazy_crawler.crawler.pipelines.ExcelWriterPipeline']
+INFO: Spider opened
+INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+INFO: Spider opened: laptop
+INFO: Telnet console listening on 127.0.0.1:6024
+INFO: slot: www.amazon.com | conc: 1 | delay:  250 ms (-750) | latency:  407 ms | size:123644 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/s?k=Electronics> (referer: None)
+INFO: Closing spider (finished)
+INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 181,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/response_bytes': 125153,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'elapsed_time_seconds': 1.278299,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2022, 12, 27, 6, 40, 34, 196025),
+ 'httpcompression/response_bytes': 531870,
+ 'httpcompression/response_count': 1,
+ 'log_count/DEBUG': 1,
+ 'log_count/INFO': 12,
+ 'memusage/max': 77508608,
+ 'memusage/startup': 77508608,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/disk': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/disk': 1,
+ 'start_time': datetime.datetime(2022, 12, 27, 6, 40, 32, 917726)}
+INFO: Spider closed (finished)
+INFO: Scrapy 2.5.1 started (bot: lazy_py_crawler)
+INFO: Versions: lxml 4.8.0.0, libxml2 2.9.12, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 22.1.0, Python 3.8.10 (default, Nov 14 2022, 12:59:47) - [GCC 9.4.0], pyOpenSSL 22.0.0 (OpenSSL 1.1.1m  14 Dec 2021), cryptography 36.0.1, Platform Linux-5.15.0-56-generic-x86_64-with-glibc2.29
+DEBUG: Using reactor: twisted.internet.epollreactor.EPollReactor
+INFO: Overridden settings:
+{'AUTOTHROTTLE_DEBUG': True,
+ 'AUTOTHROTTLE_ENABLED': True,
+ 'AUTOTHROTTLE_MAX_DELAY': 0.25,
+ 'AUTOTHROTTLE_START_DELAY': 1,
+ 'AUTOTHROTTLE_TARGET_CONCURRENCY': 128,
+ 'BOT_NAME': 'lazy_py_crawler',
+ 'CONCURRENT_REQUESTS': 126,
+ 'CONCURRENT_REQUESTS_PER_DOMAIN': 2,
+ 'CONCURRENT_REQUESTS_PER_IP': 26,
+ 'DOWNLOAD_TIMEOUT': 500,
+ 'FEED_EXPORT_ENCODING': 'utf-8',
+ 'NEWSPIDER_MODULE': 'lazy_crawler.crawler.spiders',
+ 'REACTOR_THREADPOOL_MAXSIZE': 128,
+ 'RETRY_HTTP_CODES': [500,
+                      502,
+                      503,
+                      504,
+                      400,
+                      401,
+                      403,
+                      404,
+                      405,
+                      406,
+                      407,
+                      408,
+                      409,
+                      410,
+                      429],
+ 'SPIDER_MODULES': ['lazy_crawler.crawler.spiders'],
+ 'USER_AGENT': 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like '
+               'Gecko) Chrome/41.0.2228.0 Safari/537.36'}
+INFO: Telnet Password: 84ce8bd82ee5c0fb
+INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.spiderstate.SpiderState',
+ 'scrapy.extensions.throttle.AutoThrottle']
+INFO: Enabled downloader middlewares:
+['scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'lazy_crawler.crawler.middlewares.CrawlerSpiderMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware']
+INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+INFO: Enabled item pipelines:
+['lazy_crawler.crawler.pipelines.ExcelWriterPipeline']
+INFO: Spider opened
+INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+INFO: Spider opened: laptop
+INFO: Telnet console listening on 127.0.0.1:6024
+INFO: slot: www.amazon.com | conc: 1 | delay:  250 ms (-750) | latency:  412 ms | size:124571 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/s?k=Electronics> (referer: None)
+INFO: slot: 18.66.39.3 | conc: 2 | delay:  250 ms (-750) | latency:  398 ms | size:270859 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B08RRDFD8J/> (referer: https://www.amazon.com/s?k=Electronics)
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B08RRDFD8J/>
+{'Rating': '9 ratings'}
+INFO: slot: 18.66.39.3 | conc: 6 | delay:  126 ms (-123) | latency:  462 ms | size:309062 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B07Q45YQ4K/> (referer: https://www.amazon.com/s?k=Electronics)
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B07Q45YQ4K/>
+{'Rating': '4,199 ratings'}
+INFO: slot: 18.66.39.3 | conc:11 | delay:   64 ms (-62) | latency:  355 ms | size:322578 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B07Q57HWVB/> (referer: https://www.amazon.com/s?k=Electronics)
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B07Q57HWVB/>
+{'Rating': '296 ratings'}
+INFO: slot: 18.66.39.3 | conc:17 | delay:   34 ms (-30) | latency:  469 ms | size:431925 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B0748N1BZD/> (referer: https://www.amazon.com/s?k=Electronics)
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B0748N1BZD/>
+{'Rating': '36,600 ratings'}
+INFO: slot: 18.66.39.3 | conc:19 | delay:   18 ms (-15) | latency:  454 ms | size:307934 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/012821502X/> (referer: https://www.amazon.com/s?k=Electronics)
+DEBUG: Scraped from <200 https://www.amazon.com/dp/012821502X/>
+{'Rating': '15 ratings'}
+INFO: slot: 18.66.39.3 | conc:19 | delay:   11 ms (-7) | latency:  497 ms | size:328189 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B07P6YY1KK/> (referer: https://www.amazon.com/s?k=Electronics)
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B07P6YY1KK/>
+{'Rating': '3,309 ratings'}
+INFO: slot: 18.66.39.3 | conc:19 | delay:    6 ms (-4) | latency:  317 ms | size:125885 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/s?k=Electronics&page=3> (referer: https://www.amazon.com/dp/B07Q45YQ4K/)
+INFO: slot: 18.66.39.3 | conc:18 | delay:    4 ms (-1) | latency:  384 ms | size:306289 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B07P97VVG1/> (referer: https://www.amazon.com/s?k=Electronics)
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B07P97VVG1/>
+{'Rating': '5,076 ratings'}
+INFO: slot: 18.66.39.3 | conc:26 | delay:    4 ms (+0) | latency:  549 ms | size:326098 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B07QD365DH/> (referer: https://www.amazon.com/s?k=Electronics)
+INFO: slot: 18.66.39.3 | conc:26 | delay:    3 ms (+0) | latency:  363 ms | size:117566 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/s?k=Electronics&page=6> (referer: https://www.amazon.com/dp/012821502X/)
+INFO: slot: 18.66.39.3 | conc:26 | delay:    3 ms (+0) | latency:  358 ms | size:332963 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B00PHEP70W/> (referer: https://www.amazon.com/s?k=Electronics)
+INFO: slot: 18.66.39.3 | conc:26 | delay:    8 ms (+5) | latency: 1084 ms | size:397081 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B07DFFYR7Y/> (referer: https://www.amazon.com/s?k=Electronics)
+INFO: slot: 18.66.39.3 | conc:26 | delay:    6 ms (-1) | latency:  582 ms | size:121640 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/s?k=Electronics&page=4> (referer: https://www.amazon.com/dp/B07Q57HWVB/)
+INFO: slot: 18.66.39.3 | conc:25 | delay:    5 ms (+0) | latency:  638 ms | size:122061 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/s?k=Electronics&page=2> (referer: https://www.amazon.com/dp/B08RRDFD8J/)
+INFO: slot: 18.66.39.3 | conc:24 | delay:    5 ms (+0) | latency:  657 ms | size:419168 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B07QK2SPP7/> (referer: https://www.amazon.com/s?k=Electronics)
+INFO: slot: 18.66.39.3 | conc:23 | delay:    5 ms (+0) | latency:  598 ms | size:118313 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/s?k=Electronics&page=5> (referer: https://www.amazon.com/dp/B0748N1BZD/)
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B07QD365DH/>
+{'Rating': '2,061 ratings'}
+INFO: slot: 18.66.39.3 | conc:23 | delay:    4 ms (+0) | latency:  496 ms | size:336396 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B07P61QM5M/> (referer: https://www.amazon.com/s?k=Electronics)
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B00PHEP70W/>
+{'Rating': '1,523 ratings'}
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B07DFFYR7Y/>
+{'Rating': '13,917 ratings'}
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B07QK2SPP7/>
+{'Rating': '63,028 ratings'}
+INFO: slot: 18.66.39.3 | conc:24 | delay:    7 ms (+2) | latency:  952 ms | size:345619 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B07YNKKGRJ/> (referer: https://www.amazon.com/s?k=Electronics)
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B07P61QM5M/>
+{'Rating': '2,922 ratings'}
+INFO: slot: 18.66.39.3 | conc:24 | delay:    6 ms (+0) | latency:  701 ms | size:336123 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B07Q58CJX2/> (referer: https://www.amazon.com/s?k=Electronics)
+INFO: slot: 18.66.39.3 | conc:24 | delay:    5 ms (-1) | latency:  531 ms | size:347992 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B07Q474C34/> (referer: https://www.amazon.com/s?k=Electronics)
+INFO: slot: 18.66.39.3 | conc:23 | delay:    8 ms (+3) | latency: 1131 ms | size:316330 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B098RKWHHZ/> (referer: https://www.amazon.com/s?k=Electronics)
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B07YNKKGRJ/>
+{'Rating': '9,412 ratings'}
+INFO: slot: 18.66.39.3 | conc:23 | delay:    7 ms (-1) | latency:  814 ms | size:119333 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/s?k=Electronics&page=7> (referer: https://www.amazon.com/dp/B07P6YY1KK/)
+INFO: slot: 18.66.39.3 | conc:22 | delay:    6 ms (-1) | latency:  571 ms | size:409508 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B086CYQ22F/> (referer: https://www.amazon.com/s?k=Electronics)
+INFO: slot: 18.66.39.3 | conc:21 | delay:    5 ms (+0) | latency:  544 ms | size:284586 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/1530005140/> (referer: https://www.amazon.com/s?k=Electronics)
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B07Q58CJX2/>
+{'Rating': '4,521 ratings'}
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B07Q474C34/>
+{'Rating': '5,845 ratings'}
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B098RKWHHZ/>
+{'Rating': '24,283 ratings'}
+INFO: slot: 18.66.39.3 | conc:22 | delay:    4 ms (+0) | latency:  468 ms | size:313943 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B07VGRJDFY/> (referer: https://www.amazon.com/s?k=Electronics)
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B086CYQ22F/>
+{'Rating': '5,143 ratings'}
+INFO: slot: 18.66.39.3 | conc:21 | delay:    4 ms (+0) | latency:  538 ms | size:122604 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B08HGFKJT1/> (referer: https://www.amazon.com/s?k=Electronics&page=3)
+DEBUG: Scraped from <200 https://www.amazon.com/dp/1530005140/>
+{'Rating': '404 ratings'}
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B07VGRJDFY/>
+{'Rating': '75,313 ratings'}
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B08HGFKJT1/>
+{'Rating': None}
+INFO: slot: 18.66.39.3 | conc:26 | delay:    5 ms (+1) | latency:  747 ms | size:278804 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/1792824270/> (referer: https://www.amazon.com/s?k=Electronics&page=3)
+DEBUG: Scraped from <200 https://www.amazon.com/dp/1792824270/>
+{'Rating': '26 ratings'}
+INFO: slot: 18.66.39.3 | conc:26 | delay:    4 ms (+0) | latency:  527 ms | size:390648 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B095J62YQR/> (referer: https://www.amazon.com/s?k=Electronics&page=3)
+INFO: slot: 18.66.39.3 | conc:26 | delay:    5 ms (+0) | latency:  641 ms | size:252696 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/1260084795/> (referer: https://www.amazon.com/s?k=Electronics&page=3)
+INFO: slot: 18.66.39.3 | conc:26 | delay:    5 ms (+0) | latency:  724 ms | size:280557 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B06ZY6GMYD/> (referer: https://www.amazon.com/s?k=Electronics&page=3)
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B095J62YQR/>
+{'Rating': '9,065 ratings'}
+INFO: slot: 18.66.39.3 | conc:26 | delay:    5 ms (+0) | latency:  563 ms | size:381119 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B08XVQRHWR/> (referer: https://www.amazon.com/s?k=Electronics&page=3)
+INFO: slot: 18.66.39.3 | conc:26 | delay:    4 ms (+0) | latency:  509 ms | size:117285 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/s?k=Electronics&page=8> (referer: https://www.amazon.com/dp/B07P97VVG1/)
+DEBUG: Scraped from <200 https://www.amazon.com/dp/1260084795/>
+{'Rating': '10 ratings'}
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B06ZY6GMYD/>
+{'Rating': '7,957 ratings'}
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B08XVQRHWR/>
+{'Rating': '648 ratings'}
+INFO: slot: 18.66.39.3 | conc:26 | delay:    4 ms (+0) | latency:  537 ms | size:299615 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B07PBD3YWP/> (referer: https://www.amazon.com/s?k=Electronics&page=3)
+INFO: slot: 18.66.39.3 | conc:26 | delay:   11 ms (+7) | latency: 1481 ms | size:252011 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B07PXGQC1Q/> (referer: https://www.amazon.com/s?k=Electronics&page=3)
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B07PBD3YWP/>
+{'Rating': '3,222 ratings'}
+INFO: slot: 18.66.39.3 | conc:26 | delay:    8 ms (-3) | latency:  643 ms | size:353980 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B019O5F86W/> (referer: https://www.amazon.com/s?k=Electronics&page=3)
+INFO: slot: 18.66.39.3 | conc:26 | delay:   10 ms (+2) | latency: 1389 ms | size:350490 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B07Q46VN53/> (referer: https://www.amazon.com/s?k=Electronics&page=3)
+INFO: slot: 18.66.39.3 | conc:25 | delay:    7 ms (-3) | latency:  499 ms | size:371423 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B002SBB0SU/> (referer: https://www.amazon.com/s?k=Electronics&page=3)
+INFO: slot: 18.66.39.3 | conc:24 | delay:   10 ms (+3) | latency: 1395 ms | size:385004 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B00UG9HB1Q/> (referer: https://www.amazon.com/s?k=Electronics&page=3)
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B07PXGQC1Q/>
+{'Rating': '551,960 ratings'}
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B019O5F86W/>
+{'Rating': '190 ratings'}
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B07Q46VN53/>
+{'Rating': '10,538 ratings'}
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B002SBB0SU/>
+{'Rating': '11,752 ratings'}
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B00UG9HB1Q/>
+{'Rating': '62,002 ratings'}
+INFO: slot: 18.66.39.3 | conc:26 | delay:    7 ms (-3) | latency:  625 ms | size:371757 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B09BDBKXFQ/> (referer: https://www.amazon.com/s?k=Electronics&page=3)
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B09BDBKXFQ/>
+{'Rating': '2,197 ratings'}
+INFO: slot: 18.66.39.3 | conc:26 | delay:    9 ms (+1) | latency: 1165 ms | size:406299 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B01N7ENHO6/> (referer: https://www.amazon.com/s?k=Electronics&page=3)
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B01N7ENHO6/>
+{'Rating': '16,929 ratings'}
+INFO: slot: 18.66.39.3 | conc:26 | delay:   16 ms (+7) | latency: 2091 ms | size:277137 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/1790782139/> (referer: https://www.amazon.com/s?k=Electronics&page=3)
+DEBUG: Scraped from <200 https://www.amazon.com/dp/1790782139/>
+{'Rating': '230 ratings'}
+INFO: slot: 18.66.39.3 | conc:26 | delay:   15 ms (+0) | latency: 2000 ms | size:307914 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B00KU15LTO/> (referer: https://www.amazon.com/s?k=Electronics&page=3)
+INFO: slot: 18.66.39.3 | conc:26 | delay:   10 ms (-5) | latency:  752 ms | size:337552 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B07P97VVZV/> (referer: https://www.amazon.com/s?k=Electronics&page=7)
+INFO: slot: 18.66.39.3 | conc:26 | delay:    9 ms (-1) | latency: 1044 ms | size:325370 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B07YWWDR5H/> (referer: https://www.amazon.com/s?k=Electronics&page=7)
+INFO: slot: 18.66.39.3 | conc:26 | delay:    8 ms (-1) | latency:  840 ms | size:316963 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B07N7FC21S/> (referer: https://www.amazon.com/s?k=Electronics&page=7)
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B00KU15LTO/>
+{'Rating': '56 ratings'}
+INFO: slot: 18.66.39.3 | conc:26 | delay:   10 ms (+2) | latency: 1400 ms | size:259021 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B096SRYXMP/> (referer: https://www.amazon.com/s?k=Electronics&page=3)
+INFO: slot: 18.66.39.3 | conc:25 | delay:    8 ms (-2) | latency:  841 ms | size:304363 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B07P61QJWP/> (referer: https://www.amazon.com/s?k=Electronics&page=7)
+INFO: slot: 18.66.39.3 | conc:25 | delay:    7 ms (-1) | latency:  761 ms | size:296916 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B08F7ZR5MX/> (referer: https://www.amazon.com/s?k=Electronics&page=7)
+INFO: slot: 18.66.39.3 | conc:24 | delay:    5 ms (-2) | latency:  357 ms | size:118544 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/s?k=Electronics&page=16> (referer: https://www.amazon.com/dp/B07Q474C34/)
+INFO: slot: 18.66.39.3 | conc:23 | delay:    4 ms (+0) | latency:  566 ms | size:317268 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B07PBD7GTR/> (referer: https://www.amazon.com/s?k=Electronics&page=3)
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B07P97VVZV/>
+{'Rating': '8,501 ratings'}
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B07YWWDR5H/>
+{'Rating': '685 ratings'}
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B07N7FC21S/>
+{'Rating': '53,190 ratings'}
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B096SRYXMP/>
+{'Rating': '50,494 ratings'}
+INFO: slot: 18.66.39.3 | conc:23 | delay:   16 ms (+11) | latency: 2137 ms | size:122331 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B004AGWFWQ/> (referer: https://www.amazon.com/s?k=Electronics&page=7)
+INFO: slot: 18.66.39.3 | conc:22 | delay:   10 ms (-5) | latency:  661 ms | size:362761 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B08JMHSWQL/> (referer: https://www.amazon.com/s?k=Electronics&page=7)
+INFO: slot: 18.66.39.3 | conc:21 | delay:   17 ms (+6) | latency: 2202 ms | size:340735 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B07PBYLYDK/> (referer: https://www.amazon.com/s?k=Electronics&page=7)
+INFO: slot: 18.66.39.3 | conc:20 | delay:   15 ms (-1) | latency: 1817 ms | size:118619 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/s?k=Electronics&page=17> (referer: https://www.amazon.com/dp/B098RKWHHZ/)
+INFO: slot: 18.66.39.3 | conc:19 | delay:   11 ms (-4) | latency:  961 ms | size:118437 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/s?k=Electronics&page=14> (referer: https://www.amazon.com/dp/B07YNKKGRJ/)
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B07P61QJWP/>
+{'Rating': '2,551 ratings'}
+INFO: slot: 18.66.39.3 | conc:19 | delay:    8 ms (-2) | latency:  763 ms | size:307788 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B07Q4767F2/> (referer: https://www.amazon.com/s?k=Electronics&page=7)
+INFO: slot: 18.66.39.3 | conc:18 | delay:    8 ms (+0) | latency: 1146 ms | size:122193 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/s?k=Electronics&page=15> (referer: https://www.amazon.com/dp/B07Q58CJX2/)
+INFO: slot: 18.66.39.3 | conc:17 | delay:   11 ms (+2) | latency: 1409 ms | size:306149 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/1686711174/> (referer: https://www.amazon.com/s?k=Electronics&page=3)
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B08F7ZR5MX/>
+{'Rating': '144 ratings'}
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B07PBD7GTR/>
+{'Rating': '668 ratings'}
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B004AGWFWQ/>
+{'Rating': None}
+INFO: slot: 18.66.39.3 | conc:17 | delay:   10 ms (-1) | latency: 1153 ms | size:331934 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B00008BFZH/> (referer: https://www.amazon.com/s?k=Electronics&page=7)
+INFO: slot: 18.66.39.3 | conc:16 | delay:    6 ms (-3) | latency:  431 ms | size:332635 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B01G7PYQTM/> (referer: https://www.amazon.com/s?k=Electronics&page=7)
+INFO: slot: 18.66.39.3 | conc:15 | delay:    7 ms (+0) | latency:  970 ms | size:304523 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/1703934202/> (referer: https://www.amazon.com/s?k=Electronics&page=3)
+INFO: slot: 18.66.39.3 | conc:14 | delay:   10 ms (+2) | latency: 1304 ms | size:120812 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/s?k=Electronics&page=19> (referer: https://www.amazon.com/dp/1530005140/)
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B08JMHSWQL/>
+{'Rating': '4,753 ratings'}
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B07PBYLYDK/>
+{'Rating': '2,825 ratings'}
+INFO: slot: 18.66.39.3 | conc:14 | delay:    7 ms (-2) | latency:  722 ms | size:398270 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B07W5QM4DP/> (referer: https://www.amazon.com/s?k=Electronics&page=7)
+INFO: slot: 18.66.39.3 | conc:13 | delay:   27 ms (+19) | latency: 3528 ms | size:360825 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B07TB5M2SF/> (referer: https://www.amazon.com/s?k=Electronics&page=7)
+INFO: slot: 18.66.39.3 | conc:12 | delay:   18 ms (-8) | latency: 1299 ms | size:118943 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/s?k=Electronics&page=18> (referer: https://www.amazon.com/dp/B086CYQ22F/)
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B07Q4767F2/>
+{'Rating': '13,355 ratings'}
+DEBUG: Scraped from <200 https://www.amazon.com/dp/1686711174/>
+{'Rating': '67 ratings'}
+INFO: slot: 18.66.39.3 | conc:12 | delay:   14 ms (-4) | latency: 1347 ms | size:401565 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B088NGD49M/> (referer: https://www.amazon.com/s?k=Electronics&page=7)
+INFO: slot: 18.66.39.3 | conc:11 | delay:   11 ms (-3) | latency:  958 ms | size:244541 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B07RCHWLKR/> (referer: https://www.amazon.com/s?k=Electronics&page=5)
+INFO: slot: 18.66.39.3 | conc:10 | delay:    8 ms (-2) | latency:  659 ms | size:119159 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/s?k=Electronics&page=13> (referer: https://www.amazon.com/dp/B07P61QM5M/)
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B00008BFZH/>
+{'Rating': '15,091 ratings'}
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B01G7PYQTM/>
+{'Rating': '32,907 ratings'}
+DEBUG: Scraped from <200 https://www.amazon.com/dp/1703934202/>
+{'Rating': '143 ratings'}
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B07W5QM4DP/>
+{'Rating': '43,778 ratings'}
+INFO: slot: 18.66.39.3 | conc:10 | delay:   16 ms (+8) | latency: 2162 ms | size:362712 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B079D7XHSY/> (referer: https://www.amazon.com/s?k=Electronics&page=7)
+INFO: slot: 18.66.39.3 | conc: 9 | delay:   11 ms (-4) | latency:  889 ms | size:398286 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B08H6YZY3Y/> (referer: https://www.amazon.com/s?k=Electronics&page=5)
+INFO: slot: 18.66.39.3 | conc: 8 | delay:    9 ms (-1) | latency: 1028 ms | size:370545 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B07Q46M952/> (referer: https://www.amazon.com/s?k=Electronics&page=5)
+INFO: slot: 18.66.39.3 | conc: 7 | delay:   10 ms (+0) | latency: 1280 ms | size:316360 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B07PBD5P78/> (referer: https://www.amazon.com/s?k=Electronics&page=7)
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B07TB5M2SF/>
+{'Rating': '2,791 ratings'}
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B088NGD49M/>
+{'Rating': '29,150 ratings'}
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B07RCHWLKR/>
+{'Rating': '7 ratings'}
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B079D7XHSY/>
+{'Rating': '7,790 ratings'}
+INFO: slot: 18.66.39.3 | conc: 8 | delay:    7 ms (-2) | latency:  743 ms | size:322210 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B099VMT8VZ/> (referer: https://www.amazon.com/s?k=Electronics&page=2)
+INFO: slot: 18.66.39.3 | conc: 7 | delay:   16 ms (+8) | latency: 2094 ms | size:250310 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B07YVYZ8T5/> (referer: https://www.amazon.com/s?k=Electronics&page=2)
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B08H6YZY3Y/>
+{'Rating': '2,859 ratings'}
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B07Q46M952/>
+{'Rating': '243 ratings'}
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B07PBD5P78/>
+{'Rating': '689 ratings'}
+INFO: slot: 18.66.39.3 | conc: 7 | delay:   15 ms (-1) | latency: 1783 ms | size:301872 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B07Q38SCGL/> (referer: https://www.amazon.com/s?k=Electronics&page=4)
+INFO: slot: 18.66.39.3 | conc: 6 | delay:   18 ms (+3) | latency: 2416 ms | size:231901 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B0B5QKJTR6/> (referer: https://www.amazon.com/s?k=Electronics&page=2)
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B099VMT8VZ/>
+{'Rating': '75,431 ratings'}
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B07YVYZ8T5/>
+{'Rating': '57,170 ratings'}
+INFO: slot: 18.66.39.3 | conc: 6 | delay:   16 ms (-2) | latency: 1865 ms | size:335060 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B07PBD69GJ/> (referer: https://www.amazon.com/s?k=Electronics&page=4)
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B07Q38SCGL/>
+{'Rating': '39,964 ratings'}
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B0B5QKJTR6/>
+{'Rating': None}
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B07PBD69GJ/>
+{'Rating': '6,563 ratings'}
+INFO: slot: 18.66.39.3 | conc:26 | delay:    9 ms (-6) | latency:  409 ms | size:120197 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/s?k=Electronics&page=12> (referer: https://www.amazon.com/dp/B07QK2SPP7/)
+INFO: slot: 18.66.39.3 | conc:26 | delay:   20 ms (+10) | latency: 2619 ms | size:163020 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B07RTN4C77/> (referer: https://www.amazon.com/s?k=Electronics&page=4)
+INFO: slot: 18.66.39.3 | conc:26 | delay:   11 ms (-8) | latency:  363 ms | size:302628 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B082TR27NZ/> (referer: https://www.amazon.com/s?k=Electronics&page=5)
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B07RTN4C77/>
+{'Rating': None}
+INFO: slot: 18.66.39.3 | conc:26 | delay:    7 ms (-4) | latency:  357 ms | size:308218 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B07P97W45L/> (referer: https://www.amazon.com/s?k=Electronics&page=5)
+INFO: slot: 18.66.39.3 | conc:26 | delay:    5 ms (-1) | latency:  538 ms | size:345229 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B07Q58KSRR/> (referer: https://www.amazon.com/s?k=Electronics&page=5)
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B082TR27NZ/>
+{'Rating': '55,175 ratings'}
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B07P97W45L/>
+{'Rating': '91 ratings'}
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B07Q58KSRR/>
+{'Rating': '1,322 ratings'}
+INFO: slot: 18.66.39.3 | conc:26 | delay:    5 ms (+0) | latency:  559 ms | size:274231 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/1872005497/> (referer: https://www.amazon.com/s?k=Electronics&page=4)
+DEBUG: Scraped from <200 https://www.amazon.com/dp/1872005497/>
+{'Rating': '41 ratings'}
+INFO: slot: 18.66.39.3 | conc:26 | delay:    3 ms (-1) | latency:  356 ms | size:333153 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B08JMG11PT/> (referer: https://www.amazon.com/s?k=Electronics&page=5)
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B08JMG11PT/>
+{'Rating': '7,941 ratings'}
+INFO: slot: 18.66.39.3 | conc:26 | delay:    3 ms (+0) | latency:  488 ms | size:306756 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B07P6YXMK4/> (referer: https://www.amazon.com/s?k=Electronics&page=5)
+INFO: slot: 18.66.39.3 | conc:26 | delay:    3 ms (+0) | latency:  497 ms | size:335392 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B07NTRR9JB/> (referer: https://www.amazon.com/s?k=Electronics&page=5)
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B07P6YXMK4/>
+{'Rating': '1,671 ratings'}
+INFO: slot: 18.66.39.3 | conc:26 | delay:    7 ms (+3) | latency:  997 ms | size:303270 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B07P83ZFZT/> (referer: https://www.amazon.com/s?k=Electronics&page=5)
+INFO: slot: 18.66.39.3 | conc:26 | delay:    5 ms (-2) | latency:  474 ms | size:367473 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B000EEJ91I/> (referer: https://www.amazon.com/s?k=Electronics&page=5)
+INFO: slot: 18.66.39.3 | conc:26 | delay:    4 ms (+0) | latency:  497 ms | size:313312 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B07P61R6F9/> (referer: https://www.amazon.com/s?k=Electronics&page=5)
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B07NTRR9JB/>
+{'Rating': '12,132 ratings'}
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B07P83ZFZT/>
+{'Rating': '9,757 ratings'}
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B000EEJ91I/>
+{'Rating': '36,092 ratings'}
+INFO: slot: 18.66.39.3 | conc:26 | delay:    4 ms (+0) | latency:  508 ms | size:324975 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B09B1FV29L/> (referer: https://www.amazon.com/s?k=Electronics&page=5)
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B07P61R6F9/>
+{'Rating': '158 ratings'}
+INFO: slot: 18.66.39.3 | conc:26 | delay:    4 ms (+0) | latency:  466 ms | size:357760 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B084879KZ3/> (referer: https://www.amazon.com/s?k=Electronics&page=6)
+INFO: slot: 18.66.39.3 | conc:26 | delay:    4 ms (+0) | latency:  526 ms | size:338703 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B07NTRRD3K/> (referer: https://www.amazon.com/s?k=Electronics&page=5)
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B09B1FV29L/>
+{'Rating': '13 ratings'}
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B084879KZ3/>
+{'Rating': '1,105 ratings'}
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B07NTRRD3K/>
+{'Rating': '36,092 ratings'}
+INFO: slot: 18.66.39.3 | conc:26 | delay:   13 ms (+9) | latency: 1780 ms | size:168557 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B07ZDX292M/> (referer: https://www.amazon.com/s?k=Electronics&page=2)
+INFO: slot: 18.66.39.3 | conc:26 | delay:    9 ms (-4) | latency:  533 ms | size:317612 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B07PBZWHLS/> (referer: https://www.amazon.com/s?k=Electronics&page=6)
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B07ZDX292M/>
+{'Rating': None}
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B07PBZWHLS/>
+{'Rating': '169 ratings'}
+INFO: slot: 18.66.39.3 | conc:26 | delay:    6 ms (-2) | latency:  560 ms | size:300277 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B097Z9RWQP/> (referer: https://www.amazon.com/s?k=Electronics&page=2)
+INFO: slot: 18.66.39.3 | conc:26 | delay:    5 ms (-1) | latency:  525 ms | size:379836 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B0887P21Z2/> (referer: https://www.amazon.com/s?k=Electronics&page=2)
+INFO: slot: 18.66.39.3 | conc:26 | delay:    6 ms (+1) | latency:  843 ms | size:382536 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B07P6YX8SQ/> (referer: https://www.amazon.com/s?k=Electronics&page=2)
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B097Z9RWQP/>
+{'Rating': '29 ratings'}
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B0887P21Z2/>
+{'Rating': '48,258 ratings'}
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B07P6YX8SQ/>
+{'Rating': '834 ratings'}
+INFO: slot: 18.66.39.3 | conc:26 | delay:    7 ms (+1) | latency: 1019 ms | size:286192 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B07FZ8S74R/> (referer: https://www.amazon.com/s?k=Electronics&page=2)
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B07FZ8S74R/>
+{'Rating': '987,429 ratings'}
+INFO: slot: 18.66.39.3 | conc:26 | delay:    6 ms (+0) | latency:  763 ms | size:278706 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B07RZ3LSHM/> (referer: https://www.amazon.com/s?k=Electronics&page=4)
+INFO: slot: 18.66.39.3 | conc:26 | delay:    7 ms (+0) | latency:  904 ms | size:283902 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B09M4YJR5C/> (referer: https://www.amazon.com/s?k=Electronics&page=2)
+INFO: slot: 18.66.39.3 | conc:26 | delay:    6 ms (+0) | latency:  790 ms | size:351070 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B07PBZXH66/> (referer: https://www.amazon.com/s?k=Electronics&page=2)
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B07RZ3LSHM/>
+{'Rating': '140 ratings'}
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B09M4YJR5C/>
+{'Rating': '27 ratings'}
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B07PBZXH66/>
+{'Rating': '1,327 ratings'}
+INFO: slot: 18.66.39.3 | conc:26 | delay:    6 ms (+0) | latency:  755 ms | size:330787 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B07Q59HXNP/> (referer: https://www.amazon.com/s?k=Electronics&page=4)
+INFO: slot: 18.66.39.3 | conc:26 | delay:   10 ms (+4) | latency: 1354 ms | size:305003 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B07P97SHQP/> (referer: https://www.amazon.com/s?k=Electronics&page=2)
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B07Q59HXNP/>
+{'Rating': '6,399 ratings'}
+INFO: slot: 18.66.39.3 | conc:26 | delay:   11 ms (+0) | latency: 1408 ms | size:316886 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/1503753042/> (referer: https://www.amazon.com/s?k=Electronics&page=2)
+INFO: slot: 18.66.39.3 | conc:26 | delay:    9 ms (-1) | latency: 1046 ms | size:380286 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B07P61QG1C/> (referer: https://www.amazon.com/s?k=Electronics&page=2)
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B07P97SHQP/>
+{'Rating': '1,767 ratings'}
+DEBUG: Scraped from <200 https://www.amazon.com/dp/1503753042/>
+{'Rating': '20 ratings'}
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B07P61QG1C/>
+{'Rating': '549 ratings'}
+INFO: slot: 18.66.39.3 | conc:26 | delay:    7 ms (-2) | latency:  685 ms | size:120548 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/s?k=Electronics&page=11> (referer: https://www.amazon.com/dp/B07DFFYR7Y/)
+INFO: slot: 18.66.39.3 | conc:26 | delay:    6 ms (+0) | latency:  783 ms | size:315291 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B07P97W3LC/> (referer: https://www.amazon.com/s?k=Electronics&page=2)
+INFO: slot: 18.66.39.3 | conc:26 | delay:    8 ms (+1) | latency: 1035 ms | size:321101 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B000HQQWFE/> (referer: https://www.amazon.com/s?k=Electronics&page=4)
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B07P97W3LC/>
+{'Rating': '1,282 ratings'}
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B000HQQWFE/>
+{'Rating': '458 ratings'}
+INFO: slot: 18.66.39.3 | conc:26 | delay:   13 ms (+5) | latency: 1722 ms | size:157967 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B00MV9FCFQ/> (referer: https://www.amazon.com/s?k=Electronics&page=4)
+INFO: slot: 18.66.39.3 | conc:26 | delay:   11 ms (-1) | latency: 1243 ms | size:297363 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B07NTRRB7N/> (referer: https://www.amazon.com/s?k=Electronics&page=4)
+INFO: slot: 18.66.39.3 | conc:26 | delay:    9 ms (-2) | latency:  962 ms | size:301010 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B07PBD3VLH/> (referer: https://www.amazon.com/s?k=Electronics&page=6)
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B00MV9FCFQ/>
+{'Rating': None}
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B07NTRRB7N/>
+{'Rating': '1,660 ratings'}
+INFO: slot: 18.66.39.3 | conc:26 | delay:   11 ms (+1) | latency: 1415 ms | size:344417 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B07Q57XB39/> (referer: https://www.amazon.com/s?k=Electronics&page=2)
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B07PBD3VLH/>
+{'Rating': '451 ratings'}
+INFO: slot: 18.66.39.3 | conc:26 | delay:    8 ms (-2) | latency:  766 ms | size:365373 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B07P97W7GJ/> (referer: https://www.amazon.com/s?k=Electronics&page=2)
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B07Q57XB39/>
+{'Rating': '8,056 ratings'}
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B07P97W7GJ/>
+{'Rating': '5,174 ratings'}
+INFO: slot: 18.66.39.3 | conc:26 | delay:    7 ms (-1) | latency:  732 ms | size:313226 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B07P84142Q/> (referer: https://www.amazon.com/s?k=Electronics&page=4)
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B07P84142Q/>
+{'Rating': '198 ratings'}
+INFO: slot: 18.66.39.3 | conc:26 | delay:   12 ms (+5) | latency: 1637 ms | size:250099 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B08L6ZYW21/> (referer: https://www.amazon.com/s?k=Electronics&page=4)
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B08L6ZYW21/>
+{'Rating': '45,054 ratings'}
+INFO: slot: 18.66.39.3 | conc:26 | delay:    9 ms (-3) | latency:  775 ms | size:247376 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B0BLG2PZ67/> (referer: https://www.amazon.com/s?k=Electronics&page=4)
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B0BLG2PZ67/>
+{'Rating': None}
+INFO: slot: 18.66.39.3 | conc:26 | delay:    7 ms (-1) | latency:  743 ms | size:355986 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B07QNZC9V5/> (referer: https://www.amazon.com/s?k=Electronics&page=4)
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B07QNZC9V5/>
+{'Rating': '48,940 ratings'}
+INFO: slot: 18.66.39.3 | conc:26 | delay:    7 ms (+0) | latency:  999 ms | size:304138 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B082TMF6RS/> (referer: https://www.amazon.com/s?k=Electronics&page=6)
+INFO: slot: 18.66.39.3 | conc:26 | delay:   24 ms (+16) | latency: 3102 ms | size:305971 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B07Q4783K9/> (referer: https://www.amazon.com/s?k=Electronics&page=6)
+INFO: slot: 18.66.39.3 | conc:26 | delay:   13 ms (-10) | latency:  350 ms | size:119659 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/s?k=Electronics&page=9> (referer: https://www.amazon.com/dp/B07QD365DH/)
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B082TMF6RS/>
+{'Rating': '21,612 ratings'}
+INFO: slot: 18.66.39.3 | conc:26 | delay:   10 ms (-2) | latency: 1024 ms | size:319163 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B01EZV35QU/> (referer: https://www.amazon.com/s?k=Electronics&page=6)
+INFO: slot: 18.66.39.3 | conc:26 | delay:   10 ms (+0) | latency: 1352 ms | size:331305 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B00ABA0ZNQ/> (referer: https://www.amazon.com/s?k=Electronics&page=4)
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B07Q4783K9/>
+{'Rating': '12,816 ratings'}
+INFO: slot: 18.66.39.3 | conc:26 | delay:    6 ms (-3) | latency:  419 ms | size:301290 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B07P83YH2K/> (referer: https://www.amazon.com/s?k=Electronics&page=6)
+INFO: slot: 18.66.39.3 | conc:25 | delay:    5 ms (-1) | latency:  404 ms | size:305519 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B07P61KZYL/> (referer: https://www.amazon.com/s?k=Electronics&page=6)
+INFO: slot: 18.66.39.3 | conc:25 | delay:    4 ms (-1) | latency:  385 ms | size:104354 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/s?k=Electronics&page=20> (referer: https://www.amazon.com/dp/B07VGRJDFY/)
+INFO: slot: 18.66.39.3 | conc:24 | delay:   19 ms (+15) | latency: 2471 ms | size:309367 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B07P97QNKM/> (referer: https://www.amazon.com/s?k=Electronics&page=6)
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B01EZV35QU/>
+{'Rating': '34,011 ratings'}
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B00ABA0ZNQ/>
+{'Rating': '6,060 ratings'}
+INFO: slot: 18.66.39.3 | conc:24 | delay:   25 ms (+6) | latency: 3275 ms | size:303702 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B07QG7CXSL/> (referer: https://www.amazon.com/s?k=Electronics&page=6)
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B07P83YH2K/>
+{'Rating': '367 ratings'}
+INFO: slot: 18.66.39.3 | conc:24 | delay:   23 ms (-1) | latency: 2770 ms | size:321334 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B09B8DQ26F/> (referer: https://www.amazon.com/s?k=Electronics&page=6)
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B07P61KZYL/>
+{'Rating': '3,114 ratings'}
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B07P97QNKM/>
+{'Rating': '85 ratings'}
+INFO: slot: 18.66.39.3 | conc:24 | delay:   13 ms (-10) | latency:  374 ms | size:308381 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B07NTRKQ7S/> (referer: https://www.amazon.com/s?k=Electronics&page=6)
+INFO: slot: 18.66.39.3 | conc:23 | delay:    8 ms (-5) | latency:  384 ms | size:108913 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/s?k=Electronics&page=21> (referer: https://www.amazon.com/dp/B08HGFKJT1/)
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B07QG7CXSL/>
+{'Rating': '527 ratings'}
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B09B8DQ26F/>
+{'Rating': '75,431 ratings'}
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B07NTRKQ7S/>
+{'Rating': '1,218 ratings'}
+INFO: slot: 18.66.39.3 | conc:26 | delay:    7 ms (+0) | latency:  812 ms | size:119689 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/s?k=Electronics&page=10> (referer: https://www.amazon.com/dp/B00PHEP70W/)
+INFO: slot: 18.66.39.3 | conc:26 | delay:   25 ms (+18) | latency: 3324 ms | size:318703 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B00CPGZ9E4/> (referer: https://www.amazon.com/s?k=Electronics&page=6)
+INFO: slot: 18.66.39.3 | conc:26 | delay:   14 ms (-11) | latency:  467 ms | size:302989 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B07P7WZF11/> (referer: https://www.amazon.com/s?k=Electronics&page=6)
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B00CPGZ9E4/>
+{'Rating': '7,313 ratings'}
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B07P7WZF11/>
+{'Rating': '3,737 ratings'}
+INFO: slot: 18.66.39.3 | conc:26 | delay:    9 ms (-5) | latency:  416 ms | size:248740 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B0BNGRYWGB/> (referer: https://www.amazon.com/s?k=Electronics&page=4)
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B0BNGRYWGB/>
+{'Rating': None}
+INFO: slot: 18.66.39.3 | conc:26 | delay:   27 ms (+18) | latency: 3564 ms | size:156505 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B07ZDWLGQH/> (referer: https://www.amazon.com/s?k=Electronics&page=8)
+INFO: slot: 18.66.39.3 | conc:26 | delay:   16 ms (-11) | latency:  562 ms | size:308617 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B07PC66X77/> (referer: https://www.amazon.com/s?k=Electronics&page=8)
+INFO: slot: 18.66.39.3 | conc:26 | delay:    9 ms (-6) | latency:  477 ms | size:306995 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B07PC3VJK2/> (referer: https://www.amazon.com/s?k=Electronics&page=8)
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B07ZDWLGQH/>
+{'Rating': None}
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B07PC66X77/>
+{'Rating': '10,208 ratings'}
+INFO: slot: 18.66.39.3 | conc:26 | delay:    7 ms (-2) | latency:  740 ms | size:308175 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B07Q87XV2Y/> (referer: https://www.amazon.com/s?k=Electronics&page=4)
+INFO: slot: 18.66.39.3 | conc:26 | delay:   10 ms (+2) | latency: 1346 ms | size:352176 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B07NTRWJRL/> (referer: https://www.amazon.com/s?k=Electronics&page=2)
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B07PC3VJK2/>
+{'Rating': '1,954 ratings'}
+INFO: slot: 18.66.39.3 | conc:26 | delay:    6 ms (-3) | latency:  389 ms | size:270825 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B09WWCK25W/> (referer: https://www.amazon.com/s?k=Electronics&page=2)
+INFO: slot: 18.66.39.3 | conc:26 | delay:    6 ms (+0) | latency:  888 ms | size:297647 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B08F7YHLC2/> (referer: https://www.amazon.com/s?k=Electronics&page=8)
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B07Q87XV2Y/>
+{'Rating': '3,612 ratings'}
+INFO: slot: 18.66.39.3 | conc:26 | delay:   22 ms (+15) | latency: 2906 ms | size:320432 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B06WP7F8YC/> (referer: https://www.amazon.com/s?k=Electronics&page=8)
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B07NTRWJRL/>
+{'Rating': '2,600 ratings'}
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B09WWCK25W/>
+{'Rating': '2 ratings'}
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B08F7YHLC2/>
+{'Rating': '9 ratings'}
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B06WP7F8YC/>
+{'Rating': '31,801 ratings'}
+INFO: slot: 18.66.39.3 | conc:26 | delay:   21 ms (-1) | latency: 2597 ms | size:311580 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B07P61QWDT/> (referer: https://www.amazon.com/s?k=Electronics&page=6)
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B07P61QWDT/>
+{'Rating': '73 ratings'}
+INFO: slot: 18.66.39.3 | conc:26 | delay:   27 ms (+5) | latency: 3463 ms | size:308161 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B07P61QZQ5/> (referer: https://www.amazon.com/s?k=Electronics&page=8)
+INFO: slot: 18.66.39.3 | conc:26 | delay:   15 ms (-11) | latency:  602 ms | size:297847 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B07P6YXLTT/> (referer: https://www.amazon.com/s?k=Electronics&page=13)
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B07P61QZQ5/>
+{'Rating': '586 ratings'}
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B07P6YXLTT/>
+{'Rating': '1,044 ratings'}
+INFO: slot: 18.66.39.3 | conc:26 | delay:   26 ms (+10) | latency: 3383 ms | size:231922 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B004LLIKVU/> (referer: https://www.amazon.com/s?k=Electronics&page=8)
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B004LLIKVU/>
+{'Rating': None}
+INFO: slot: 18.66.39.3 | conc:26 | delay:   31 ms (+5) | latency: 4049 ms | size:315784 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B07P83ZFZR/> (referer: https://www.amazon.com/s?k=Electronics&page=6)
+INFO: slot: 18.66.39.3 | conc:26 | delay:   18 ms (-13) | latency:  643 ms | size:319101 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B09FTJ8R9T/> (referer: https://www.amazon.com/s?k=Electronics&page=13)
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B07P83ZFZR/>
+{'Rating': '1,581 ratings'}
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B09FTJ8R9T/>
+{'Rating': '35 ratings'}
+INFO: slot: 18.66.39.3 | conc:26 | delay:   12 ms (-5) | latency:  927 ms | size:295665 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B000HJVAGW/> (referer: https://www.amazon.com/s?k=Electronics&page=13)
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B000HJVAGW/>
+{'Rating': '1,412 ratings'}
+INFO: slot: 18.66.39.3 | conc:26 | delay:    9 ms (-3) | latency:  845 ms | size:300719 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B07P97W6WS/> (referer: https://www.amazon.com/s?k=Electronics&page=8)
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B07P97W6WS/>
+{'Rating': '5,729 ratings'}
+INFO: slot: 18.66.39.3 | conc:26 | delay:   18 ms (+8) | latency: 2317 ms | size:296470 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B07P83ZKHQ/> (referer: https://www.amazon.com/s?k=Electronics&page=13)
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B07P83ZKHQ/>
+{'Rating': '663 ratings'}
+INFO: slot: 18.66.39.3 | conc:26 | delay:   37 ms (+19) | latency: 4832 ms | size:297994 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B07Q57QPBQ/> (referer: https://www.amazon.com/s?k=Electronics&page=13)
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B07Q57QPBQ/>
+{'Rating': '13,366 ratings'}
+INFO: slot: 18.66.39.3 | conc:26 | delay:   32 ms (-5) | latency: 3400 ms | size:312431 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B06W576CHT/> (referer: https://www.amazon.com/s?k=Electronics&page=18)
+INFO: slot: 18.66.39.3 | conc:26 | delay:   30 ms (-1) | latency: 3742 ms | size:333308 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B07V4GCFP9/> (referer: https://www.amazon.com/s?k=Electronics&page=18)
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B06W576CHT/>
+{'Rating': '3,000 ratings'}
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B07V4GCFP9/>
+{'Rating': '84,324 ratings'}
+INFO: slot: 18.66.39.3 | conc:26 | delay:   20 ms (-10) | latency: 1341 ms | size:333459 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B00AZUAORE/> (referer: https://www.amazon.com/s?k=Electronics&page=13)
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B00AZUAORE/>
+{'Rating': '2,475 ratings'}
+INFO: slot: 18.66.39.3 | conc:26 | delay:   20 ms (+0) | latency: 2601 ms | size:289413 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B0741GDSF3/> (referer: https://www.amazon.com/s?k=Electronics&page=13)
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B0741GDSF3/>
+{'Rating': '28 ratings'}
+INFO: slot: 18.66.39.3 | conc:26 | delay:   31 ms (+10) | latency: 3971 ms | size:304604 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B08L3Y4D5L/> (referer: https://www.amazon.com/s?k=Electronics&page=8)
+INFO: slot: 18.66.39.3 | conc:26 | delay:   19 ms (-11) | latency:  999 ms | size:311096 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B000GPU2I4/> (referer: https://www.amazon.com/s?k=Electronics&page=18)
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B08L3Y4D5L/>
+{'Rating': '8,392 ratings'}
+INFO: slot: 18.66.39.3 | conc:26 | delay:   40 ms (+20) | latency: 5142 ms | size:312249 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B07PC488ZN/> (referer: https://www.amazon.com/s?k=Electronics&page=8)
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B000GPU2I4/>
+{'Rating': '894 ratings'}
+INFO: slot: 18.66.39.3 | conc:26 | delay:   33 ms (-6) | latency: 3548 ms | size:309812 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B07P97VVKY/> (referer: https://www.amazon.com/s?k=Electronics&page=8)
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B07PC488ZN/>
+{'Rating': '5,494 ratings'}
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B07P97VVKY/>
+{'Rating': '6,248 ratings'}
+INFO: slot: 18.66.39.3 | conc:26 | delay:   41 ms (+7) | latency: 5280 ms | size:324929 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B00BQO5G4O/> (referer: https://www.amazon.com/s?k=Electronics&page=13)
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B00BQO5G4O/>
+{'Rating': '1,518 ratings'}
+INFO: slot: 18.66.39.3 | conc:26 | delay:   40 ms (+0) | latency: 5152 ms | size:311352 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B07Q5B4M5G/> (referer: https://www.amazon.com/s?k=Electronics&page=8)
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B07Q5B4M5G/>
+{'Rating': '2,004 ratings'}
+INFO: slot: 18.66.39.3 | conc:26 | delay:   21 ms (-18) | latency:  383 ms | size:328138 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B00JJY0S4G/> (referer: https://www.amazon.com/s?k=Electronics&page=18)
+INFO: slot: 18.66.39.3 | conc:26 | delay:   20 ms (-1) | latency: 2398 ms | size:287399 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B01048IJQY/> (referer: https://www.amazon.com/s?k=Electronics&page=13)
+INFO: slot: 18.66.39.3 | conc:26 | delay:   23 ms (+3) | latency: 2994 ms | size:306541 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B07Q46QWKG/> (referer: https://www.amazon.com/s?k=Electronics&page=8)
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B00JJY0S4G/>
+{'Rating': '1,470 ratings'}
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B01048IJQY/>
+{'Rating': '1,724 ratings'}
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B07Q46QWKG/>
+{'Rating': '16,071 ratings'}
+INFO: slot: 18.66.39.3 | conc:26 | delay:   13 ms (-9) | latency:  447 ms | size:230785 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/1797617494/> (referer: https://www.amazon.com/s?k=Electronics&page=18)
+DEBUG: Scraped from <200 https://www.amazon.com/dp/1797617494/>
+{'Rating': None}
+INFO: slot: 18.66.39.3 | conc:26 | delay:    9 ms (-4) | latency:  604 ms | size:320558 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B09H247GG4/> (referer: https://www.amazon.com/s?k=Electronics&page=18)
+INFO: slot: 18.66.39.3 | conc:26 | delay:    7 ms (-1) | latency:  749 ms | size:314949 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B000K4YOCG/> (referer: https://www.amazon.com/s?k=Electronics&page=13)
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B09H247GG4/>
+{'Rating': '55 ratings'}
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B000K4YOCG/>
+{'Rating': '20,401 ratings'}
+INFO: slot: 18.66.39.3 | conc:26 | delay:   34 ms (+27) | latency: 4421 ms | size:333854 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B07ZWW3BW5/> (referer: https://www.amazon.com/s?k=Electronics&page=13)
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B07ZWW3BW5/>
+{'Rating': '11,253 ratings'}
+INFO: slot: 18.66.39.3 | conc:26 | delay:   19 ms (-14) | latency:  648 ms | size:305359 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B07PC1TGQJ/> (referer: https://www.amazon.com/s?k=Electronics&page=8)
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B07PC1TGQJ/>
+{'Rating': '5,121 ratings'}
+INFO: slot: 18.66.39.3 | conc:26 | delay:   12 ms (-7) | latency:  695 ms | size:311966 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B016YIFQ7I/> (referer: https://www.amazon.com/s?k=Electronics&page=18)
+INFO: slot: 18.66.39.3 | conc:26 | delay:    9 ms (-3) | latency:  771 ms | size:294876 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B08F7ZT576/> (referer: https://www.amazon.com/s?k=Electronics&page=13)
+INFO: slot: 18.66.39.3 | conc:26 | delay:    8 ms (-1) | latency:  916 ms | size:325793 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B072JXVTKT/> (referer: https://www.amazon.com/s?k=Electronics&page=18)
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B016YIFQ7I/>
+{'Rating': '482 ratings'}
+INFO: slot: 18.66.39.3 | conc:26 | delay:    6 ms (-1) | latency:  663 ms | size:311574 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B07QF683JB/> (referer: https://www.amazon.com/s?k=Electronics&page=18)
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B08F7ZT576/>
+{'Rating': '110 ratings'}
+INFO: slot: 18.66.39.3 | conc:26 | delay:    5 ms (-1) | latency:  537 ms | size:307394 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B003D1QPHK/> (referer: https://www.amazon.com/s?k=Electronics&page=18)
+INFO: slot: 18.66.39.3 | conc:26 | delay:   13 ms (+7) | latency: 1719 ms | size:325245 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B004GCUJWM/> (referer: https://www.amazon.com/s?k=Electronics&page=13)
+INFO: slot: 18.66.39.3 | conc:25 | delay:    9 ms (-3) | latency:  740 ms | size:299725 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B07P6YXM6X/> (referer: https://www.amazon.com/s?k=Electronics&page=13)
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B072JXVTKT/>
+{'Rating': '33,041 ratings'}
+INFO: slot: 18.66.39.3 | conc:25 | delay:    8 ms (-1) | latency:  899 ms | size:320007 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B0007DHT8Q/> (referer: https://www.amazon.com/s?k=Electronics&page=18)
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B07QF683JB/>
+{'Rating': '3,546 ratings'}
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B003D1QPHK/>
+{'Rating': '3,806 ratings'}
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B004GCUJWM/>
+{'Rating': '6,752 ratings'}
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B07P6YXM6X/>
+{'Rating': '1,174 ratings'}
+INFO: slot: 18.66.39.3 | conc:26 | delay:    6 ms (-1) | latency:  659 ms | size:318395 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B07GC6PFYD/> (referer: https://www.amazon.com/s?k=Electronics&page=19)
+INFO: slot: 18.66.39.3 | conc:26 | delay:    8 ms (+1) | latency: 1025 ms | size:334142 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B07PQT8DMB/> (referer: https://www.amazon.com/s?k=Electronics&page=8)
+INFO: slot: 18.66.39.3 | conc:25 | delay:    7 ms (+0) | latency:  943 ms | size:341144 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B08V4DXFRK/> (referer: https://www.amazon.com/s?k=Electronics&page=18)
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B0007DHT8Q/>
+{'Rating': '7,905 ratings'}
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B07GC6PFYD/>
+{'Rating': '404 ratings'}
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B07PQT8DMB/>
+{'Rating': '7,035 ratings'}
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B08V4DXFRK/>
+{'Rating': '1,388 ratings'}
+INFO: slot: 18.66.39.3 | conc:26 | delay:    6 ms (+0) | latency:  785 ms | size:302090 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B07P97VH1R/> (referer: https://www.amazon.com/s?k=Electronics&page=19)
+INFO: slot: 18.66.39.3 | conc:26 | delay:    6 ms (+0) | latency:  756 ms | size:345954 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B00NT1OX5K/> (referer: https://www.amazon.com/s?k=Electronics&page=18)
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B07P97VH1R/>
+{'Rating': '1,231 ratings'}
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B00NT1OX5K/>
+{'Rating': '5,948 ratings'}
+INFO: slot: 18.66.39.3 | conc:26 | delay:   17 ms (+10) | latency: 2181 ms | size:287920 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B08XJXYNMV/> (referer: https://www.amazon.com/s?k=Electronics&page=13)
+INFO: slot: 18.66.39.3 | conc:26 | delay:   12 ms (-4) | latency:  934 ms | size:230525 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B0BLYKPQXV/> (referer: https://www.amazon.com/s?k=Electronics&page=19)
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B08XJXYNMV/>
+{'Rating': '210 ratings'}
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B0BLYKPQXV/>
+{'Rating': None}
+INFO: slot: 18.66.39.3 | conc:26 | delay:    9 ms (-2) | latency:  948 ms | size:262737 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/1292114061/> (referer: https://www.amazon.com/s?k=Electronics&page=13)
+INFO: slot: 18.66.39.3 | conc:26 | delay:    6 ms (-2) | latency:  519 ms | size:311899 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B000NX0IQK/> (referer: https://www.amazon.com/s?k=Electronics&page=19)
+INFO: slot: 18.66.39.3 | conc:26 | delay:    5 ms (-1) | latency:  556 ms | size:344567 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B08V3XGHNY/> (referer: https://www.amazon.com/s?k=Electronics&page=19)
+INFO: slot: 18.66.39.3 | conc:26 | delay:    6 ms (+1) | latency:  888 ms | size:341005 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B00MRJ8GXK/> (referer: https://www.amazon.com/s?k=Electronics&page=19)
+DEBUG: Scraped from <200 https://www.amazon.com/dp/1292114061/>
+{'Rating': '31 ratings'}
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B000NX0IQK/>
+{'Rating': '8,216 ratings'}
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B08V3XGHNY/>
+{'Rating': '895 ratings'}
+INFO: slot: 18.66.39.3 | conc:26 | delay:    7 ms (+0) | latency:  906 ms | size:320803 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B07Q4786ZX/> (referer: https://www.amazon.com/s?k=Electronics&page=8)
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B00MRJ8GXK/>
+{'Rating': '3,434 ratings'}
+INFO: slot: 18.66.39.3 | conc:26 | delay:    7 ms (+0) | latency:  940 ms | size:305423 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B08L3XJXF6/> (referer: https://www.amazon.com/s?k=Electronics&page=19)
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B07Q4786ZX/>
+{'Rating': '2,160 ratings'}
+INFO: slot: 18.66.39.3 | conc:26 | delay:    6 ms (+0) | latency:  726 ms | size:332953 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B00KY4Q7AY/> (referer: https://www.amazon.com/s?k=Electronics&page=19)
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B08L3XJXF6/>
+{'Rating': '25,788 ratings'}
+INFO: slot: 18.66.39.3 | conc:26 | delay:    5 ms (+0) | latency:  627 ms | size:336887 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B074XXNC9G/> (referer: https://www.amazon.com/s?k=Electronics&page=19)
+INFO: slot: 18.66.39.3 | conc:26 | delay:    6 ms (+0) | latency:  842 ms | size:291595 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B005FUKSWA/> (referer: https://www.amazon.com/s?k=Electronics&page=19)
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B00KY4Q7AY/>
+{'Rating': '1,584 ratings'}
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B074XXNC9G/>
+{'Rating': '4,278 ratings'}
+INFO: slot: 18.66.39.3 | conc:26 | delay:    5 ms (+0) | latency:  652 ms | size:297336 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B07P6YX3N4/> (referer: https://www.amazon.com/s?k=Electronics&page=19)
+INFO: slot: 18.66.39.3 | conc:26 | delay:    6 ms (+0) | latency:  861 ms | size:315553 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B00DF1372Y/> (referer: https://www.amazon.com/s?k=Electronics&page=18)
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B005FUKSWA/>
+{'Rating': '530 ratings'}
+INFO: slot: 18.66.39.3 | conc:26 | delay:    6 ms (+0) | latency:  772 ms | size:334075 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B088NDGYPX/> (referer: https://www.amazon.com/s?k=Electronics&page=5)
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B07P6YX3N4/>
+{'Rating': '781 ratings'}
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B00DF1372Y/>
+{'Rating': '4,029 ratings'}
+INFO: slot: 18.66.39.3 | conc:26 | delay:    6 ms (+0) | latency:  852 ms | size:303427 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B07P6YXKVM/> (referer: https://www.amazon.com/s?k=Electronics&page=19)
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B088NDGYPX/>
+{'Rating': '19,854 ratings'}
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B07P6YXKVM/>
+{'Rating': '7,929 ratings'}
+INFO: slot: 18.66.39.3 | conc:26 | delay:    6 ms (+0) | latency:  864 ms | size:312876 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B09ZY3315F/> (referer: https://www.amazon.com/s?k=Electronics&page=19)
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B09ZY3315F/>
+{'Rating': '4 ratings'}
+INFO: slot: 18.66.39.3 | conc:26 | delay:    6 ms (+0) | latency:  796 ms | size:301493 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B07PBD2FRS/> (referer: https://www.amazon.com/s?k=Electronics&page=12)
+INFO: slot: 18.66.39.3 | conc:26 | delay:   10 ms (+4) | latency: 1371 ms | size:165033 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B08F3C99KN/> (referer: https://www.amazon.com/s?k=Electronics&page=12)
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B07PBD2FRS/>
+{'Rating': '186 ratings'}
+INFO: slot: 18.66.39.3 | conc:26 | delay:    7 ms (-3) | latency:  564 ms | size:299904 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B07P97VCPB/> (referer: https://www.amazon.com/s?k=Electronics&page=19)
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B08F3C99KN/>
+{'Rating': None}
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B07P97VCPB/>
+{'Rating': '1,333 ratings'}
+INFO: slot: 18.66.39.3 | conc:26 | delay:    6 ms (-1) | latency:  645 ms | size:299398 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B09H1L1DXH/> (referer: https://www.amazon.com/s?k=Electronics&page=12)
+INFO: slot: 18.66.39.3 | conc:26 | delay:    5 ms (-1) | latency:  485 ms | size:301632 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B07PCGNM9B/> (referer: https://www.amazon.com/s?k=Electronics&page=19)
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B09H1L1DXH/>
+{'Rating': '20 ratings'}
+INFO: slot: 18.66.39.3 | conc:26 | delay:    4 ms (+0) | latency:  575 ms | size:320307 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B0002E1O3G/> (referer: https://www.amazon.com/s?k=Electronics&page=12)
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B07PCGNM9B/>
+{'Rating': '7,343 ratings'}
+INFO: slot: 18.66.39.3 | conc:26 | delay:    7 ms (+2) | latency:  899 ms | size:315331 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B06XGZ5Y5P/> (referer: https://www.amazon.com/s?k=Electronics&page=18)
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B0002E1O3G/>
+{'Rating': '10,756 ratings'}
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B06XGZ5Y5P/>
+{'Rating': '1,165 ratings'}
+INFO: slot: 18.66.39.3 | conc:26 | delay:    5 ms (-1) | latency:  556 ms | size:339953 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B078J6TWZR/> (referer: https://www.amazon.com/s?k=Electronics&page=12)
+INFO: slot: 18.66.39.3 | conc:26 | delay:    5 ms (+0) | latency:  656 ms | size:313823 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B087CBFB7Y/> (referer: https://www.amazon.com/s?k=Electronics&page=12)
+INFO: slot: 18.66.39.3 | conc:26 | delay:    4 ms (+0) | latency:  564 ms | size:354350 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B08MFQKTB8/> (referer: https://www.amazon.com/s?k=Electronics&page=12)
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B078J6TWZR/>
+{'Rating': '8,204 ratings'}
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B087CBFB7Y/>
+{'Rating': '165 ratings'}
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B08MFQKTB8/>
+{'Rating': '4,533 ratings'}
+INFO: slot: 18.66.39.3 | conc:26 | delay:    4 ms (+0) | latency:  599 ms | size:336738 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B07ML3VFYP/> (referer: https://www.amazon.com/s?k=Electronics&page=12)
+INFO: slot: 18.66.39.3 | conc:26 | delay:    5 ms (+0) | latency:  686 ms | size:319267 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B09QXR198P/> (referer: https://www.amazon.com/s?k=Electronics&page=12)
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B07ML3VFYP/>
+{'Rating': '5,273 ratings'}
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B09QXR198P/>
+{'Rating': '34 ratings'}
+INFO: slot: 18.66.39.3 | conc:26 | delay:    4 ms (+0) | latency:  524 ms | size:318581 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B0007WTF34/> (referer: https://www.amazon.com/s?k=Electronics&page=12)
+INFO: slot: 18.66.39.3 | conc:26 | delay:    4 ms (+0) | latency:  538 ms | size:338311 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B0006UHE8U/> (referer: https://www.amazon.com/s?k=Electronics&page=12)
+INFO: slot: 18.66.39.3 | conc:26 | delay:    4 ms (+0) | latency:  580 ms | size:298021 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B07Q38RQG7/> (referer: https://www.amazon.com/s?k=Electronics&page=15)
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B0007WTF34/>
+{'Rating': '4,609 ratings'}
+INFO: slot: 18.66.39.3 | conc:26 | delay:    4 ms (+0) | latency:  595 ms | size:345561 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B0000683A4/> (referer: https://www.amazon.com/s?k=Electronics&page=12)
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B0006UHE8U/>
+{'Rating': '1,696 ratings'}
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B07Q38RQG7/>
+{'Rating': '35,314 ratings'}
+INFO: slot: 18.66.39.3 | conc:26 | delay:    5 ms (+0) | latency:  697 ms | size:295313 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B07P83YH2G/> (referer: https://www.amazon.com/s?k=Electronics&page=14)
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B0000683A4/>
+{'Rating': '9,877 ratings'}
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B07P83YH2G/>
+{'Rating': '269 ratings'}
+INFO: slot: 18.66.39.3 | conc:26 | delay:    7 ms (+2) | latency:  965 ms | size:321383 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B07Q46D2YN/> (referer: https://www.amazon.com/s?k=Electronics&page=4)
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B07Q46D2YN/>
+{'Rating': '1,566 ratings'}
+INFO: slot: 18.66.39.3 | conc:26 | delay:    9 ms (+1) | latency: 1184 ms | size:336604 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B00JJY1QG0/> (referer: https://www.amazon.com/s?k=Electronics&page=12)
+INFO: slot: 18.66.39.3 | conc:26 | delay:    7 ms (-1) | latency:  703 ms | size:304838 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B00EAQSGH4/> (referer: https://www.amazon.com/s?k=Electronics&page=12)
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B00JJY1QG0/>
+{'Rating': '1,394 ratings'}
+INFO: slot: 18.66.39.3 | conc:26 | delay:    6 ms (-1) | latency:  670 ms | size:321945 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B01EOY7LTA/> (referer: https://www.amazon.com/s?k=Electronics&page=14)
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B00EAQSGH4/>
+{'Rating': '1,400 ratings'}
+INFO: slot: 18.66.39.3 | conc:26 | delay:    7 ms (+1) | latency:  972 ms | size:350086 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B007FQNKX6/> (referer: https://www.amazon.com/s?k=Electronics&page=18)
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B01EOY7LTA/>
+{'Rating': '16,452 ratings'}
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B007FQNKX6/>
+{'Rating': '3,248 ratings'}
+INFO: slot: 18.66.39.3 | conc:26 | delay:    6 ms (-1) | latency:  576 ms | size:309883 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B01MTO65I9/> (referer: https://www.amazon.com/s?k=Electronics&page=14)
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B01MTO65I9/>
+{'Rating': '6 ratings'}
+INFO: slot: 18.66.39.3 | conc:26 | delay:    5 ms (+0) | latency:  582 ms | size:297105 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B07QC4XL1V/> (referer: https://www.amazon.com/s?k=Electronics&page=14)
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B07QC4XL1V/>
+{'Rating': '3,261 ratings'}
+INFO: slot: 18.66.39.3 | conc:26 | delay:    4 ms (+0) | latency:  576 ms | size:339374 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B008PEKYA4/> (referer: https://www.amazon.com/s?k=Electronics&page=12)
+INFO: slot: 18.66.39.3 | conc:26 | delay:    4 ms (+0) | latency:  582 ms | size:301201 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B09Z7J83VV/> (referer: https://www.amazon.com/s?k=Electronics&page=17)
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B008PEKYA4/>
+{'Rating': '6,292 ratings'}
+INFO: slot: 18.66.39.3 | conc:26 | delay:    4 ms (+0) | latency:  466 ms | size:335611 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B07ML3VFYP/> (referer: https://www.amazon.com/s?k=Electronics&page=11)
+INFO: slot: 18.66.39.3 | conc:26 | delay:    5 ms (+1) | latency:  664 ms | size:304071 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B00EAQSGH4/> (referer: https://www.amazon.com/s?k=Electronics&page=11)
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B09Z7J83VV/>
+{'Rating': '457 ratings'}
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B07ML3VFYP/>
+{'Rating': '5,273 ratings'}
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B00EAQSGH4/>
+{'Rating': '1,400 ratings'}
+INFO: slot: 18.66.39.3 | conc:26 | delay:    5 ms (+0) | latency:  760 ms | size:315460 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B005UMF4AE/> (referer: https://www.amazon.com/s?k=Electronics&page=14)
+INFO: slot: 18.66.39.3 | conc:26 | delay:    5 ms (+0) | latency:  730 ms | size:334784 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B0006UHE8U/> (referer: https://www.amazon.com/s?k=Electronics&page=11)
+INFO: slot: 18.66.39.3 | conc:26 | delay:    5 ms (+0) | latency:  577 ms | size:295053 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B07Q466SX2/> (referer: https://www.amazon.com/s?k=Electronics&page=11)
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B005UMF4AE/>
+{'Rating': '230 ratings'}
+INFO: slot: 18.66.39.3 | conc:26 | delay:    8 ms (+2) | latency: 1045 ms | size:345036 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B0000683A4/> (referer: https://www.amazon.com/s?k=Electronics&page=11)
+INFO: slot: 18.66.39.3 | conc:26 | delay:    6 ms (-2) | latency:  506 ms | size:288368 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B089MCQKD5/> (referer: https://www.amazon.com/s?k=Electronics&page=11)
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B0006UHE8U/>
+{'Rating': '1,696 ratings'}
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B07Q466SX2/>
+{'Rating': '10,751 ratings'}
+INFO: slot: 18.66.39.3 | conc:26 | delay:    5 ms (+0) | latency:  609 ms | size:336272 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B00N4ONUCE/> (referer: https://www.amazon.com/s?k=Electronics&page=11)
+INFO: slot: 18.66.39.3 | conc:26 | delay:    4 ms (+0) | latency:  492 ms | size:305622 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B072B91QTN/> (referer: https://www.amazon.com/s?k=Electronics&page=11)
+INFO: slot: 18.66.39.3 | conc:25 | delay:    4 ms (+0) | latency:  512 ms | size:301821 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B07Q37N4TD/> (referer: https://www.amazon.com/s?k=Electronics&page=17)
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B0000683A4/>
+{'Rating': '9,877 ratings'}
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B089MCQKD5/>
+{'Rating': '369 ratings'}
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B00N4ONUCE/>
+{'Rating': '7,097 ratings'}
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B072B91QTN/>
+{'Rating': '6,056 ratings'}
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B07Q37N4TD/>
+{'Rating': '10,056 ratings'}
+INFO: slot: 18.66.39.3 | conc:26 | delay:    4 ms (+0) | latency:  635 ms | size:340467 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B00081NX5U/> (referer: https://www.amazon.com/s?k=Electronics&page=15)
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B00081NX5U/>
+{'Rating': '9,065 ratings'}
+INFO: slot: 18.66.39.3 | conc:26 | delay:    5 ms (+0) | latency:  752 ms | size:334901 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B08QSMNC6F/> (referer: https://www.amazon.com/s?k=Electronics&page=11)
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B08QSMNC6F/>
+{'Rating': '2,063 ratings'}
+INFO: slot: 18.66.39.3 | conc:26 | delay:    4 ms (+0) | latency:  518 ms | size:339977 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B074Y2PW1X/> (referer: https://www.amazon.com/s?k=Electronics&page=11)
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B074Y2PW1X/>
+{'Rating': '14,742 ratings'}
+INFO: slot: 18.66.39.3 | conc:26 | delay:    5 ms (+0) | latency:  655 ms | size:324227 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B09W2Q2H5T/> (referer: https://www.amazon.com/s?k=Electronics&page=12)
+INFO: slot: 18.66.39.3 | conc:26 | delay:    7 ms (+2) | latency:  997 ms | size:288716 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B077PBKL22/> (referer: https://www.amazon.com/s?k=Electronics&page=20)
+INFO: slot: 18.66.39.3 | conc:26 | delay:    8 ms (+0) | latency: 1096 ms | size:339300 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B0BFJWCYTL/> (referer: https://www.amazon.com/s?k=Electronics&page=11)
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B09W2Q2H5T/>
+{'Rating': '1,377 ratings'}
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B077PBKL22/>
+{'Rating': '642 ratings'}
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B0BFJWCYTL/>
+{'Rating': '48,248 ratings'}
+INFO: Crawled 242 pages (at 242 pages/min), scraped 221 items (at 221 items/min)
+INFO: slot: 18.66.39.3 | conc:26 | delay:    6 ms (-1) | latency:  661 ms | size:278987 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B077P3PVPV/> (referer: https://www.amazon.com/s?k=Electronics&page=11)
+INFO: slot: 18.66.39.3 | conc:26 | delay:    8 ms (+1) | latency: 1115 ms | size:312989 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B00000IRMM/> (referer: https://www.amazon.com/s?k=Electronics&page=9)
+INFO: slot: 18.66.39.3 | conc:26 | delay:    6 ms (-2) | latency:  560 ms | size:320200 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B00CMTADSG/> (referer: https://www.amazon.com/s?k=Electronics&page=10)
+INFO: slot: 18.66.39.3 | conc:26 | delay:    7 ms (+0) | latency:  955 ms | size:371244 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B098FH5P3C/> (referer: https://www.amazon.com/s?k=Electronics&page=9)
+INFO: slot: 18.66.39.3 | conc:25 | delay:    6 ms (-1) | latency:  604 ms | size:346317 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B00390KG98/> (referer: https://www.amazon.com/s?k=Electronics&page=19)
+INFO: slot: 18.66.39.3 | conc:24 | delay:    5 ms (+0) | latency:  596 ms | size:286249 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B00009EPCY/> (referer: https://www.amazon.com/s?k=Electronics&page=9)
+INFO: slot: 18.66.39.3 | conc:23 | delay:    5 ms (+0) | latency:  721 ms | size:317192 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B000GARJRQ/> (referer: https://www.amazon.com/s?k=Electronics&page=20)
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B077P3PVPV/>
+{'Rating': '180 ratings'}
+INFO: slot: 18.66.39.3 | conc:23 | delay:    6 ms (+1) | latency:  854 ms | size:301561 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B00AQBOXPQ/> (referer: https://www.amazon.com/s?k=Electronics&page=10)
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B00000IRMM/>
+{'Rating': '1,768 ratings'}
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B00CMTADSG/>
+{'Rating': '2,563 ratings'}
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B098FH5P3C/>
+{'Rating': '10,108 ratings'}
+INFO: slot: 18.66.39.3 | conc:23 | delay:    6 ms (+0) | latency:  705 ms | size:307832 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B08753D3J4/> (referer: https://www.amazon.com/s?k=Electronics&page=9)
+INFO: slot: 18.66.39.3 | conc:22 | delay:    8 ms (+2) | latency: 1116 ms | size:311040 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B07P97THKJ/> (referer: https://www.amazon.com/s?k=Electronics&page=9)
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B00390KG98/>
+{'Rating': '1,577 ratings'}
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B00009EPCY/>
+{'Rating': '1,382 ratings'}
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B000GARJRQ/>
+{'Rating': '818 ratings'}
+INFO: slot: 18.66.39.3 | conc:22 | delay:    7 ms (-1) | latency:  733 ms | size:323546 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B00BB2MMNE/> (referer: https://www.amazon.com/s?k=Electronics&page=9)
+INFO: slot: 18.66.39.3 | conc:21 | delay:    6 ms (+0) | latency:  686 ms | size:302948 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B08Q4FGPB8/> (referer: https://www.amazon.com/s?k=Electronics&page=9)
+INFO: slot: 18.66.39.3 | conc:20 | delay:   16 ms (+10) | latency: 2125 ms | size:303038 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B07Q38RTL4/> (referer: https://www.amazon.com/s?k=Electronics&page=9)
+INFO: slot: 18.66.39.3 | conc:19 | delay:   10 ms (-5) | latency:  669 ms | size:348287 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B07V9J9S76/> (referer: https://www.amazon.com/s?k=Electronics&page=9)
+INFO: slot: 18.66.39.3 | conc:18 | delay:    7 ms (-3) | latency:  474 ms | size:300824 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B07Q58BK7L/> (referer: https://www.amazon.com/s?k=Electronics&page=10)
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B00AQBOXPQ/>
+{'Rating': '504 ratings'}
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B08753D3J4/>
+{'Rating': '662 ratings'}
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B07P97THKJ/>
+{'Rating': '24 ratings'}
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B00BB2MMNE/>
+{'Rating': '6,150 ratings'}
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B08Q4FGPB8/>
+{'Rating': '354 ratings'}
+INFO: slot: 18.66.39.3 | conc:19 | delay:    5 ms (-1) | latency:  496 ms | size:327927 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B08TMSGMYW/> (referer: https://www.amazon.com/s?k=Electronics&page=10)
+INFO: slot: 18.66.39.3 | conc:18 | delay:    4 ms (-1) | latency:  449 ms | size:307725 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B00844Q3XC/> (referer: https://www.amazon.com/s?k=Electronics&page=10)
+INFO: slot: 18.66.39.3 | conc:17 | delay:    6 ms (+1) | latency:  814 ms | size:317277 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B09YFQGW58/> (referer: https://www.amazon.com/s?k=Electronics&page=11)
+INFO: slot: 18.66.39.3 | conc:16 | delay:    5 ms (+0) | latency:  601 ms | size:304247 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B07PBZ1P2N/> (referer: https://www.amazon.com/s?k=Electronics&page=9)
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B07Q38RTL4/>
+{'Rating': '7,428 ratings'}
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B07V9J9S76/>
+{'Rating': '11,757 ratings'}
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B07Q58BK7L/>
+{'Rating': '9,241 ratings'}
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B08TMSGMYW/>
+{'Rating': '1,381 ratings'}
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B00844Q3XC/>
+{'Rating': '3,234 ratings'}
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B09YFQGW58/>
+{'Rating': None}
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B07PBZ1P2N/>
+{'Rating': '14,578 ratings'}
+INFO: slot: 18.66.39.3 | conc:17 | delay:    4 ms (-1) | latency:  434 ms | size:322769 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B01ALHAMTK/> (referer: https://www.amazon.com/s?k=Electronics&page=10)
+INFO: slot: 18.66.39.3 | conc:16 | delay:    5 ms (+0) | latency:  676 ms | size:279486 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B087547M9F/> (referer: https://www.amazon.com/s?k=Electronics&page=10)
+INFO: slot: 18.66.39.3 | conc:20 | delay:    4 ms (+0) | latency:  440 ms | size:284575 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/0136919820/> (referer: https://www.amazon.com/s?k=Electronics&page=10)
+INFO: slot: 18.66.39.3 | conc:22 | delay:    7 ms (+3) | latency:  951 ms | size:330992 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B08R59YH7W/> (referer: https://www.amazon.com/s?k=Electronics&page=10)
+INFO: slot: 18.66.39.3 | conc:21 | delay:    6 ms (-1) | latency:  642 ms | size:315560 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B07P6YPNNM/> (referer: https://www.amazon.com/s?k=Electronics&page=10)
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B01ALHAMTK/>
+{'Rating': '11,391 ratings'}
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B087547M9F/>
+{'Rating': '4 ratings'}
+INFO: slot: 18.66.39.3 | conc:22 | delay:    5 ms (+0) | latency:  561 ms | size:237875 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B018BDVSRG/> (referer: https://www.amazon.com/s?k=Electronics&page=11)
+DEBUG: Scraped from <200 https://www.amazon.com/dp/0136919820/>
+{'Rating': '21 ratings'}
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B08R59YH7W/>
+{'Rating': '70,285 ratings'}
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B07P6YPNNM/>
+{'Rating': '43 ratings'}
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B018BDVSRG/>
+{'Rating': '4 ratings'}
+INFO: slot: 18.66.39.3 | conc:26 | delay:    6 ms (+1) | latency:  869 ms | size:306474 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B07Q585X37/> (referer: https://www.amazon.com/s?k=Electronics&page=10)
+INFO: slot: 18.66.39.3 | conc:26 | delay:    5 ms (-1) | latency:  611 ms | size:309151 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B0002OP7VQ/> (referer: https://www.amazon.com/s?k=Electronics&page=10)
+INFO: slot: 18.66.39.3 | conc:26 | delay:    8 ms (+2) | latency: 1113 ms | size:340598 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B001T7QJ9O/> (referer: https://www.amazon.com/s?k=Electronics&page=10)
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B07Q585X37/>
+{'Rating': '66,214 ratings'}
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B0002OP7VQ/>
+{'Rating': '2,871 ratings'}
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B001T7QJ9O/>
+{'Rating': '39,961 ratings'}
+INFO: slot: 18.66.39.3 | conc:26 | delay:    6 ms (-2) | latency:  521 ms | size:292933 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B07QBCYL5X/> (referer: https://www.amazon.com/s?k=Electronics&page=10)
+INFO: slot: 18.66.39.3 | conc:26 | delay:    5 ms (+0) | latency:  586 ms | size:306897 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B007IP8NNQ/> (referer: https://www.amazon.com/s?k=Electronics&page=10)
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B07QBCYL5X/>
+{'Rating': '512 ratings'}
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B007IP8NNQ/>
+{'Rating': '789 ratings'}
+INFO: slot: 18.66.39.3 | conc:26 | delay:    5 ms (+0) | latency:  585 ms | size:303268 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B07P61KRFK/> (referer: https://www.amazon.com/s?k=Electronics&page=9)
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B07P61KRFK/>
+{'Rating': '1,476 ratings'}
+INFO: slot: 18.66.39.3 | conc:26 | delay:    4 ms (+0) | latency:  556 ms | size:306933 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B07Q44XSYX/> (referer: https://www.amazon.com/s?k=Electronics&page=9)
+INFO: slot: 18.66.39.3 | conc:26 | delay:    4 ms (+0) | latency:  595 ms | size:304741 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B07PC2F1CY/> (referer: https://www.amazon.com/s?k=Electronics&page=9)
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B07Q44XSYX/>
+{'Rating': '98,702 ratings'}
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B07PC2F1CY/>
+{'Rating': '32 ratings'}
+INFO: slot: 18.66.39.3 | conc:26 | delay:    4 ms (+0) | latency:  540 ms | size:293149 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B08N44CQT2/> (referer: https://www.amazon.com/s?k=Electronics&page=15)
+INFO: slot: 18.66.39.3 | conc:26 | delay:    5 ms (+0) | latency:  688 ms | size:297610 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B08F7Z5MDV/> (referer: https://www.amazon.com/s?k=Electronics&page=10)
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B08N44CQT2/>
+{'Rating': '137 ratings'}
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B08F7Z5MDV/>
+{'Rating': '1 rating'}
+INFO: slot: 18.66.39.3 | conc:26 | delay:    9 ms (+4) | latency: 1210 ms | size:305758 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B07P6YPML2/> (referer: https://www.amazon.com/s?k=Electronics&page=4)
+INFO: slot: 18.66.39.3 | conc:26 | delay:    8 ms (+0) | latency: 1056 ms | size:302560 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B07Q58H92N/> (referer: https://www.amazon.com/s?k=Electronics&page=9)
+INFO: slot: 18.66.39.3 | conc:26 | delay:    8 ms (+0) | latency:  933 ms | size:315111 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B005UMF4B8/> (referer: https://www.amazon.com/s?k=Electronics&page=15)
+INFO: slot: 18.66.39.3 | conc:25 | delay:    6 ms (-1) | latency:  574 ms | size:253214 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/1533611866/> (referer: https://www.amazon.com/s?k=Electronics&page=9)
+INFO: slot: 18.66.39.3 | conc:26 | delay:    7 ms (+1) | latency:  977 ms | size:308501 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B07PBD887Z/> (referer: https://www.amazon.com/s?k=Electronics&page=11)
+INFO: slot: 18.66.39.3 | conc:25 | delay:    5 ms (-2) | latency:  411 ms | size:308038 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B07PBCYHYH/> (referer: https://www.amazon.com/s?k=Electronics&page=15)
+INFO: slot: 18.66.39.3 | conc:24 | delay:    5 ms (+0) | latency:  685 ms | size:315797 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B08F7YSG8S/> (referer: https://www.amazon.com/s?k=Electronics&page=15)
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B07P6YPML2/>
+{'Rating': '49 ratings'}
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B07Q58H92N/>
+{'Rating': '11,648 ratings'}
+INFO: slot: 18.66.39.3 | conc:24 | delay:    9 ms (+4) | latency: 1223 ms | size:398585 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B08N2FRMPN/> (referer: https://www.amazon.com/s?k=Electronics&page=5)
+INFO: slot: 18.66.39.3 | conc:23 | delay:   11 ms (+1) | latency: 1425 ms | size:158545 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B07C3FKJF7/> (referer: https://www.amazon.com/s?k=Electronics&page=14)
+INFO: slot: 18.66.39.3 | conc:22 | delay:    8 ms (-2) | latency:  743 ms | size:297953 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B07PC2LTSJ/> (referer: https://www.amazon.com/s?k=Electronics&page=14)
+INFO: slot: 18.66.39.3 | conc:21 | delay:    8 ms (+0) | latency: 1048 ms | size:254784 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B09G9CJM1Z/> (referer: https://www.amazon.com/s?k=Electronics&page=11)
+INFO: slot: 18.66.39.3 | conc:20 | delay:    8 ms (+0) | latency: 1004 ms | size:311818 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B000CMM202/> (referer: https://www.amazon.com/s?k=Electronics&page=15)
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B005UMF4B8/>
+{'Rating': '32 ratings'}
+DEBUG: Scraped from <200 https://www.amazon.com/dp/1533611866/>
+{'Rating': '8 ratings'}
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B07PBD887Z/>
+{'Rating': '50 ratings'}
+INFO: slot: 18.66.39.3 | conc:20 | delay:    6 ms (-1) | latency:  586 ms | size:360431 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B071Y3MSRK/> (referer: https://www.amazon.com/s?k=Electronics&page=9)
+INFO: slot: 18.66.39.3 | conc:19 | delay:    5 ms (-1) | latency:  471 ms | size:343545 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B000GSLKIW/> (referer: https://www.amazon.com/s?k=Electronics&page=15)
+INFO: slot: 18.66.39.3 | conc:18 | delay:    6 ms (+1) | latency:  779 ms | size:304869 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B07P97TRPF/> (referer: https://www.amazon.com/s?k=Electronics&page=15)
+INFO: slot: 18.66.39.3 | conc:17 | delay:    6 ms (+0) | latency:  891 ms | size:300950 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B08Q4FFCNS/> (referer: https://www.amazon.com/s?k=Electronics&page=15)
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B07PBCYHYH/>
+{'Rating': '5,729 ratings'}
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B08F7YSG8S/>
+{'Rating': '32 ratings'}
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B08N2FRMPN/>
+{'Rating': '1,145 ratings'}
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B07C3FKJF7/>
+{'Rating': None}
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B07PC2LTSJ/>
+{'Rating': '396 ratings'}
+INFO: slot: 18.66.39.3 | conc:21 | delay:    6 ms (+0) | latency:  735 ms | size:335062 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B09H1LFJDB/> (referer: https://www.amazon.com/s?k=Electronics&page=15)
+INFO: slot: 18.66.39.3 | conc:20 | delay:    4 ms (-1) | latency:  424 ms | size:352584 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B01M3XJUAD/> (referer: https://www.amazon.com/s?k=Electronics&page=15)
+INFO: slot: 18.66.39.3 | conc:19 | delay:    7 ms (+2) | latency:  982 ms | size:335945 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B087YW8FQB/> (referer: https://www.amazon.com/s?k=Electronics&page=15)
+INFO: slot: 18.66.39.3 | conc:18 | delay:    7 ms (+0) | latency:  901 ms | size:341517 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B074PYYM51/> (referer: https://www.amazon.com/s?k=Electronics&page=15)
+INFO: slot: 18.66.39.3 | conc:17 | delay:   10 ms (+2) | latency: 1314 ms | size:297168 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B01BP6GJNE/> (referer: https://www.amazon.com/s?k=Electronics&page=15)
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B09G9CJM1Z/>
+{'Rating': '34,293 ratings'}
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B000CMM202/>
+{'Rating': '1,061 ratings'}
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B071Y3MSRK/>
+{'Rating': '69,945 ratings'}
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B000GSLKIW/>
+{'Rating': '19,016 ratings'}
+INFO: slot: 18.66.39.3 | conc:17 | delay:    8 ms (-1) | latency:  958 ms | size:329126 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B08TRQS1TX/> (referer: https://www.amazon.com/s?k=Electronics&page=14)
+INFO: slot: 18.66.39.3 | conc:16 | delay:    6 ms (-1) | latency:  644 ms | size:302001 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B07PC1MG12/> (referer: https://www.amazon.com/s?k=Electronics&page=14)
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B07P97TRPF/>
+{'Rating': '14 ratings'}
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B08Q4FFCNS/>
+{'Rating': '348 ratings'}
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B09H1LFJDB/>
+{'Rating': '162 ratings'}
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B01M3XJUAD/>
+{'Rating': '7,031 ratings'}
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B087YW8FQB/>
+{'Rating': '4,233 ratings'}
+INFO: slot: 18.66.39.3 | conc:16 | delay:   12 ms (+5) | latency: 1542 ms | size:314859 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B072L856YC/> (referer: https://www.amazon.com/s?k=Electronics&page=14)
+INFO: slot: 18.66.39.3 | conc:15 | delay:   12 ms (+0) | latency: 1586 ms | size:229531 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B0BBMJ21Y3/> (referer: https://www.amazon.com/s?k=Electronics&page=14)
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B074PYYM51/>
+{'Rating': '29,585 ratings'}
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B01BP6GJNE/>
+{'Rating': '234 ratings'}
+INFO: slot: 18.66.39.3 | conc:15 | delay:   11 ms (+0) | latency: 1384 ms | size:293858 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B07P6YXWZW/> (referer: https://www.amazon.com/s?k=Electronics&page=14)
+INFO: slot: 18.66.39.3 | conc:14 | delay:   10 ms (-1) | latency: 1222 ms | size:298011 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B08F7Z6DMV/> (referer: https://www.amazon.com/s?k=Electronics&page=14)
+INFO: slot: 18.66.39.3 | conc:13 | delay:   10 ms (+0) | latency: 1218 ms | size:295848 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B07P97P4DP/> (referer: https://www.amazon.com/s?k=Electronics&page=17)
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B08TRQS1TX/>
+{'Rating': '1,875 ratings'}
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B07PC1MG12/>
+{'Rating': '673 ratings'}
+INFO: slot: 18.66.39.3 | conc:13 | delay:    6 ms (-3) | latency:  421 ms | size:285599 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B08MDR868K/> (referer: https://www.amazon.com/s?k=Electronics&page=14)
+INFO: slot: 18.66.39.3 | conc:12 | delay:   11 ms (+4) | latency: 1445 ms | size:364302 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B0B4PSQHD5/> (referer: https://www.amazon.com/s?k=Electronics&page=14)
+INFO: slot: 18.66.39.3 | conc:11 | delay:   13 ms (+1) | latency: 1692 ms | size:295845 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B07SPWFJ5B/> (referer: https://www.amazon.com/s?k=Electronics&page=17)
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B072L856YC/>
+{'Rating': '836 ratings'}
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B0BBMJ21Y3/>
+{'Rating': None}
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B07P6YXWZW/>
+{'Rating': '404 ratings'}
+INFO: slot: 18.66.39.3 | conc:11 | delay:   11 ms (-2) | latency: 1169 ms | size:317581 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B09C2GGJWB/> (referer: https://www.amazon.com/s?k=Electronics&page=17)
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B08F7Z6DMV/>
+{'Rating': '208 ratings'}
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B07P97P4DP/>
+{'Rating': '4,634 ratings'}
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B08MDR868K/>
+{'Rating': '1,399 ratings'}
+INFO: slot: 18.66.39.3 | conc:11 | delay:   13 ms (+2) | latency: 1783 ms | size:290838 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B01LZITKXC/> (referer: https://www.amazon.com/s?k=Electronics&page=17)
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B0B4PSQHD5/>
+{'Rating': '1,153 ratings'}
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B07SPWFJ5B/>
+{'Rating': '3 ratings'}
+INFO: slot: 18.66.39.3 | conc:11 | delay:   13 ms (+0) | latency: 1791 ms | size:344961 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B073JP6WK4/> (referer: https://www.amazon.com/s?k=Electronics&page=17)
+INFO: slot: 18.66.39.3 | conc:10 | delay:   12 ms (-1) | latency: 1435 ms | size:291380 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B07PBD2DNZ/> (referer: https://www.amazon.com/s?k=Electronics&page=17)
+INFO: slot: 18.66.39.3 | conc: 9 | delay:   10 ms (-1) | latency: 1158 ms | size:246734 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B00LPGBTIA/> (referer: https://www.amazon.com/s?k=Electronics&page=17)
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B09C2GGJWB/>
+{'Rating': '267 ratings'}
+INFO: slot: 18.66.39.3 | conc: 9 | delay:   28 ms (+17) | latency: 3629 ms | size:245482 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B06XMQTWQL/> (referer: https://www.amazon.com/s?k=Electronics&page=17)
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B01LZITKXC/>
+{'Rating': '702 ratings'}
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B073JP6WK4/>
+{'Rating': '1,924 ratings'}
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B07PBD2DNZ/>
+{'Rating': '157 ratings'}
+INFO: slot: 18.66.39.3 | conc: 9 | delay:   26 ms (-1) | latency: 3210 ms | size:321806 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B07FTKJCMS/> (referer: https://www.amazon.com/s?k=Electronics&page=17)
+INFO: slot: 18.66.39.3 | conc: 8 | delay:   44 ms (+17) | latency: 5636 ms | size:311807 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B0002BEVXY/> (referer: https://www.amazon.com/s?k=Electronics&page=17)
+INFO: slot: 18.66.39.3 | conc: 7 | delay:   44 ms (+0) | latency: 5630 ms | size:297285 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B07P83ZYTH/> (referer: https://www.amazon.com/s?k=Electronics&page=17)
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B00LPGBTIA/>
+{'Rating': '21 ratings'}
+INFO: slot: 18.66.39.3 | conc: 7 | delay:   44 ms (+0) | latency: 5633 ms | size:351394 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B000NJDRDA/> (referer: https://www.amazon.com/s?k=Electronics&page=17)
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B06XMQTWQL/>
+{'Rating': '1,638 ratings'}
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B07FTKJCMS/>
+{'Rating': '5,063 ratings'}
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B0002BEVXY/>
+{'Rating': '1,458 ratings'}
+INFO: slot: 18.66.39.3 | conc: 7 | delay:   28 ms (-15) | latency: 1627 ms | size:246596 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B06XMQTWQL/> (referer: https://www.amazon.com/s?k=Electronics&page=16)
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B07P83ZYTH/>
+{'Rating': '1,673 ratings'}
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B000NJDRDA/>
+{'Rating': '14,831 ratings'}
+INFO: slot: 18.66.39.3 | conc: 7 | delay:   21 ms (-6) | latency: 1928 ms | size:318601 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B01N39QLRQ/> (referer: https://www.amazon.com/s?k=Electronics&page=17)
+INFO: slot: 18.66.39.3 | conc: 6 | delay:   16 ms (-5) | latency: 1365 ms | size:295208 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B0BQHC9SHJ/> (referer: https://www.amazon.com/s?k=Electronics&page=16)
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B06XMQTWQL/>
+{'Rating': '1,638 ratings'}
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B01N39QLRQ/>
+{'Rating': '768 ratings'}
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B0BQHC9SHJ/>
+{'Rating': '39 ratings'}
+INFO: slot: 18.66.39.3 | conc: 9 | delay:   10 ms (-5) | latency:  624 ms | size:317075 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B01N39QLRQ/> (referer: https://www.amazon.com/s?k=Electronics&page=16)
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B01N39QLRQ/>
+{'Rating': '768 ratings'}
+INFO: slot: 18.66.39.3 | conc:16 | delay:   10 ms (+0) | latency: 1242 ms | size:339434 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B00ODDE7K4/> (referer: https://www.amazon.com/s?k=Electronics&page=15)
+INFO: slot: 18.66.39.3 | conc:15 | delay:    7 ms (-2) | latency:  684 ms | size:305122 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B000HJT0Q4/> (referer: https://www.amazon.com/s?k=Electronics&page=16)
+INFO: slot: 18.66.39.3 | conc:14 | delay:    7 ms (+0) | latency:  861 ms | size:304781 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B000HJT0Q4/> (referer: https://www.amazon.com/s?k=Electronics&page=17)
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B00ODDE7K4/>
+{'Rating': '12,073 ratings'}
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B000HJT0Q4/>
+{'Rating': '1,791 ratings'}
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B000HJT0Q4/>
+{'Rating': '1,791 ratings'}
+INFO: slot: 18.66.39.3 | conc:13 | delay:    5 ms (-1) | latency:  505 ms | size:280277 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B08Q4HZXZ4/> (referer: https://www.amazon.com/s?k=Electronics&page=14)
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B08Q4HZXZ4/>
+{'Rating': '3 ratings'}
+INFO: slot: 18.66.39.3 | conc:12 | delay:    4 ms (+0) | latency:  506 ms | size:309994 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B009WSN8PK/> (referer: https://www.amazon.com/s?k=Electronics&page=16)
+INFO: slot: 18.66.39.3 | conc:11 | delay:    7 ms (+3) | latency: 1007 ms | size:293918 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B00PHEP79S/> (referer: https://www.amazon.com/s?k=Electronics&page=16)
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B009WSN8PK/>
+{'Rating': '4,675 ratings'}
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B00PHEP79S/>
+{'Rating': '688 ratings'}
+INFO: slot: 18.66.39.3 | conc:10 | delay:    6 ms (-1) | latency:  561 ms | size:314631 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B083YL2QMM/> (referer: https://www.amazon.com/s?k=Electronics&page=16)
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B083YL2QMM/>
+{'Rating': '1,053 ratings'}
+INFO: slot: 18.66.39.3 | conc: 9 | delay:   10 ms (+4) | latency: 1325 ms | size:238930 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B0B6R4NTZ4/> (referer: https://www.amazon.com/s?k=Electronics&page=16)
+INFO: slot: 18.66.39.3 | conc: 8 | delay:    7 ms (-3) | latency:  552 ms | size:294086 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B08N44CQT2/> (referer: https://www.amazon.com/s?k=Electronics&page=16)
+INFO: slot: 18.66.39.3 | conc: 7 | delay:    5 ms (-1) | latency:  549 ms | size:307370 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B07PBCYHYH/> (referer: https://www.amazon.com/s?k=Electronics&page=16)
+INFO: slot: 18.66.39.3 | conc: 6 | delay:    5 ms (+0) | latency:  538 ms | size:299904 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B07Q38RQG7/> (referer: https://www.amazon.com/s?k=Electronics&page=16)
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B0B6R4NTZ4/>
+{'Rating': '4 ratings'}
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B08N44CQT2/>
+{'Rating': '137 ratings'}
+INFO: slot: 18.66.39.3 | conc: 5 | delay:    4 ms (+0) | latency:  580 ms | size:311835 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B000CMM202/> (referer: https://www.amazon.com/s?k=Electronics&page=16)
+INFO: slot: 18.66.39.3 | conc: 4 | delay:    5 ms (+0) | latency:  722 ms | size:320759 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B004K4O38W/> (referer: https://www.amazon.com/s?k=Electronics&page=16)
+INFO: slot: 18.66.39.3 | conc: 3 | delay:    8 ms (+2) | latency: 1086 ms | size:340661 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B00081NX5U/> (referer: https://www.amazon.com/s?k=Electronics&page=16)
+INFO: slot: 18.66.39.3 | conc: 2 | delay:    7 ms (+0) | latency:  952 ms | size:337463 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B00IHVQ2FQ/> (referer: https://www.amazon.com/s?k=Electronics&page=16)
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B07PBCYHYH/>
+{'Rating': '5,729 ratings'}
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B07Q38RQG7/>
+{'Rating': '35,314 ratings'}
+INFO: slot: 18.66.39.3 | conc: 1 | delay:    6 ms (-1) | latency:  592 ms | size:313562 bytes
+DEBUG: Crawled (200) <GET https://www.amazon.com/dp/B005UMF4B8/> (referer: https://www.amazon.com/s?k=Electronics&page=16)
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B000CMM202/>
+{'Rating': '1,061 ratings'}
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B004K4O38W/>
+{'Rating': '606 ratings'}
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B00081NX5U/>
+{'Rating': '9,065 ratings'}
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B00IHVQ2FQ/>
+{'Rating': '1,682 ratings'}
+DEBUG: Scraped from <200 https://www.amazon.com/dp/B005UMF4B8/>
+{'Rating': '32 ratings'}
+INFO: Closing spider (finished)
+INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 203571,
+ 'downloader/request_count': 338,
+ 'downloader/request_method_count/GET': 338,
+ 'downloader/response_bytes': 101680656,
+ 'downloader/response_count': 338,
+ 'downloader/response_status_count/200': 338,
+ 'elapsed_time_seconds': 82.719446,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2022, 12, 27, 6, 42, 34, 948264),
+ 'httpcompression/response_bytes': 523378848,
+ 'httpcompression/response_count': 338,
+ 'item_scraped_count': 317,
+ 'log_count/DEBUG': 655,
+ 'log_count/INFO': 350,
+ 'memusage/max': 657858560,
+ 'memusage/startup': 77553664,
+ 'request_depth_max': 4,
+ 'response_received_count': 338,
+ 'scheduler/dequeued': 338,
+ 'scheduler/dequeued/disk': 338,
+ 'scheduler/enqueued': 338,
+ 'scheduler/enqueued/disk': 338,
+ 'start_time': datetime.datetime(2022, 12, 27, 6, 41, 12, 228818)}
+INFO: Spider closed (finished)

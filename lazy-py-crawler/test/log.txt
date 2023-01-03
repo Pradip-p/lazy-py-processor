@@ -1,0 +1,1710 @@
+INFO: Scrapy 2.5.1 started (bot: lazy_py_crawler)
+INFO: Versions: lxml 4.8.0.0, libxml2 2.9.12, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 22.1.0, Python 3.8.10 (default, Nov 14 2022, 12:59:47) - [GCC 9.4.0], pyOpenSSL 22.0.0 (OpenSSL 1.1.1m  14 Dec 2021), cryptography 36.0.1, Platform Linux-5.15.0-56-generic-x86_64-with-glibc2.29
+DEBUG: Using reactor: twisted.internet.epollreactor.EPollReactor
+INFO: Overridden settings:
+{'AUTOTHROTTLE_DEBUG': True,
+ 'AUTOTHROTTLE_ENABLED': True,
+ 'AUTOTHROTTLE_MAX_DELAY': 0.25,
+ 'AUTOTHROTTLE_START_DELAY': 1,
+ 'AUTOTHROTTLE_TARGET_CONCURRENCY': 128,
+ 'BOT_NAME': 'lazy_py_crawler',
+ 'CONCURRENT_REQUESTS': 126,
+ 'CONCURRENT_REQUESTS_PER_DOMAIN': 2,
+ 'CONCURRENT_REQUESTS_PER_IP': 26,
+ 'DOWNLOAD_TIMEOUT': 500,
+ 'FEED_EXPORT_ENCODING': 'utf-8',
+ 'NEWSPIDER_MODULE': 'lazy_crawler.crawler.spiders',
+ 'REACTOR_THREADPOOL_MAXSIZE': 128,
+ 'RETRY_HTTP_CODES': [500,
+                      502,
+                      503,
+                      504,
+                      400,
+                      401,
+                      403,
+                      404,
+                      405,
+                      406,
+                      407,
+                      408,
+                      409,
+                      410,
+                      429],
+ 'SPIDER_MODULES': ['lazy_crawler.crawler.spiders'],
+ 'USER_AGENT': 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like '
+               'Gecko) Chrome/41.0.2228.0 Safari/537.36'}
+INFO: Telnet Password: 27626bc761d96864
+INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.spiderstate.SpiderState',
+ 'scrapy.extensions.throttle.AutoThrottle']
+INFO: Enabled downloader middlewares:
+['scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'lazy_crawler.crawler.middlewares.CrawlerSpiderMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware']
+INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+INFO: Enabled item pipelines:
+['lazy_crawler.crawler.pipelines.ExcelWriterPipeline']
+INFO: Spider opened
+INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+INFO: Spider opened: laptop
+INFO: Telnet console listening on 127.0.0.1:6023
+INFO: slot: latop10.it | conc: 1 | delay:  250 ms (-750) | latency:  968 ms | size: 41946 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/auto/> (referer: None)
+INFO: slot: 172.67.213.25 | conc: 1 | delay:  250 ms (-750) | latency:  214 ms | size: 32424 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-caschi-integrali/> (referer: https://latop10.it/auto/)
+DEBUG: Scraped from <200 https://latop10.it/migliori-caschi-integrali/>
+{'Title': 'Il Miglior Casco Integrale (anche Economico, Silenzioso) del 2022', 'URL': 'https://latop10.it/migliori-caschi-integrali/', 'Category 1': 'Auto', 'Category 2': 'Moto'}
+INFO: slot: 172.67.213.25 | conc: 1 | delay:  125 ms (-124) | latency:  209 ms | size: 29670 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-parasole-per-auto/> (referer: https://latop10.it/auto/)
+DEBUG: Scraped from <200 https://latop10.it/migliori-parasole-per-auto/>
+{'Title': 'Il Miglior Parasole per Auto (anche Interno) – Classifica 2022', 'URL': 'https://latop10.it/migliori-parasole-per-auto/', 'Category 1': 'Auto', 'Category 2': 'Altro'}
+INFO: slot: 172.67.213.25 | conc: 2 | delay:   63 ms (-62) | latency:  209 ms | size: 29912 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-cric-idraulici-a-carrello/> (referer: https://latop10.it/auto/)
+DEBUG: Scraped from <200 https://latop10.it/migliori-cric-idraulici-a-carrello/>
+{'Title': 'Il Miglior Cric Idraulico a Carrello (anche Professionali) – Classifica 2022', 'URL': 'https://latop10.it/migliori-cric-idraulici-a-carrello/', 'Category 1': 'Auto', 'Category 2': 'Altro'}
+INFO: slot: 172.67.213.25 | conc: 5 | delay:   32 ms (-31) | latency:  206 ms | size: 30889 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-sensori-di-parcheggio/> (referer: https://latop10.it/auto/)
+DEBUG: Scraped from <200 https://latop10.it/migliori-sensori-di-parcheggio/>
+{'Title': 'I Migliori Sensori di Parcheggio (Posteriori e Anteriori) del 2022', 'URL': 'https://latop10.it/migliori-sensori-di-parcheggio/', 'Category 1': 'Auto', 'Category 2': 'Sicurezza'}
+INFO: slot: 172.67.213.25 | conc:10 | delay:   17 ms (-15) | latency:  214 ms | size: 31161 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-pneumatici-invernali/> (referer: https://latop10.it/auto/)
+DEBUG: Scraped from <200 https://latop10.it/migliori-pneumatici-invernali/>
+{'Title': 'I Migliori Pneumatici Invernali – Confronto, Classifica 2022', 'URL': 'https://latop10.it/migliori-pneumatici-invernali/', 'Category 1': 'Auto', 'Category 2': 'Pneumatici'}
+INFO: slot: 172.67.213.25 | conc:17 | delay:    9 ms (-7) | latency:  243 ms | size: 31718 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-oli-motore/> (referer: https://latop10.it/auto/)
+INFO: slot: 172.67.213.25 | conc:20 | delay:    8 ms (-1) | latency:  942 ms | size: 30851 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-retrocamere-per-auto/> (referer: https://latop10.it/auto/)
+DEBUG: Scraped from <200 https://latop10.it/migliori-oli-motore/>
+{'Title': 'Il Miglior Olio Motore (5W-30, 5W-40) – Classifica 2022', 'URL': 'https://latop10.it/migliori-oli-motore/', 'Category 1': 'Auto', 'Category 2': 'Olio & Pulitore'}
+INFO: slot: 172.67.213.25 | conc:25 | delay:    5 ms (-3) | latency:  235 ms | size: 28400 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-batterie-per-auto/> (referer: https://latop10.it/auto/)
+DEBUG: Scraped from <200 https://latop10.it/migliori-retrocamere-per-auto/>
+{'Title': 'La Migliore Retrocamera per Auto – Classifica 2022', 'URL': 'https://latop10.it/migliori-retrocamere-per-auto/', 'Category 1': 'Auto', 'Category 2': 'Camera'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-batterie-per-auto/>
+{'Title': 'La Migliore Batteria per Auto – Guida all’Acquisto, Classifica 2022', 'URL': 'https://latop10.it/migliori-batterie-per-auto/', 'Category 1': 'Auto', 'Category 2': 'Batteria'}
+INFO: slot: 172.67.213.25 | conc:26 | delay:    7 ms (+1) | latency:  911 ms | size: 38801 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-caricabatterie-per-auto/> (referer: https://latop10.it/auto/)
+INFO: slot: 172.67.213.25 | conc:26 | delay:    4 ms (-2) | latency:  208 ms | size: 28819 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-navigatori-satellitari-garmin/> (referer: https://latop10.it/auto/)
+INFO: slot: 172.67.213.25 | conc:26 | delay:    3 ms (+0) | latency:  319 ms | size: 26855 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-autoradio-2-din-pioneer/> (referer: https://latop10.it/auto/)
+INFO: slot: 172.67.213.25 | conc:26 | delay:    7 ms (+3) | latency:  939 ms | size: 30755 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-casse-per-auto/> (referer: https://latop10.it/auto/)
+DEBUG: Scraped from <200 https://latop10.it/migliori-caricabatterie-per-auto/>
+{'Title': 'Il Miglior Caricabatteria per Auto – Classifica 2022', 'URL': 'https://latop10.it/migliori-caricabatterie-per-auto/', 'Category 1': 'Auto', 'Category 2': 'Batteria'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-navigatori-satellitari-garmin/>
+{'Title': 'Il Miglior Navigatore GPS Garmin – Opinioni, Recensioni 2022', 'URL': 'https://latop10.it/migliori-navigatori-satellitari-garmin/', 'Category 1': 'Auto', 'Category 2': 'Navigatore'}
+INFO: slot: 172.67.213.25 | conc:26 | delay:    7 ms (+0) | latency:  931 ms | size: 42256 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-autoradio-2-din/> (referer: https://latop10.it/auto/)
+DEBUG: Scraped from <200 https://latop10.it/migliori-autoradio-2-din-pioneer/>
+{'Title': 'La Migliore Autoradio Pioneer 2 DIN – Classifica 2022', 'URL': 'https://latop10.it/migliori-autoradio-2-din-pioneer/', 'Category 1': 'Auto', 'Category 2': 'Audio'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-casse-per-auto/>
+{'Title': 'I Migliori Altoparlanti per Auto – Guida all’Acquisto, Classifica 2022', 'URL': 'https://latop10.it/migliori-casse-per-auto/', 'Category 1': 'Auto', 'Category 2': 'Audio'}
+INFO: slot: 172.67.213.25 | conc:26 | delay:    4 ms (-2) | latency:  208 ms | size: 29250 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-teli-antigrandine-per-auto/> (referer: https://latop10.it/auto/)
+INFO: slot: 172.67.213.25 | conc:26 | delay:    3 ms (-1) | latency:  224 ms | size: 32225 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-oli-5w30/> (referer: https://latop10.it/auto/)
+INFO: slot: 172.67.213.25 | conc:26 | delay:    7 ms (+4) | latency:  930 ms | size: 32640 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-avviatori-di-emergenza/> (referer: https://latop10.it/auto/)
+DEBUG: Scraped from <200 https://latop10.it/migliori-autoradio-2-din/>
+{'Title': 'La Miglior Autoradio 2 DIN (anche Economica) – Classifica 2022', 'URL': 'https://latop10.it/migliori-autoradio-2-din/', 'Category 1': 'Auto', 'Category 2': 'Audio'}
+INFO: slot: 172.67.213.25 | conc:26 | delay:    4 ms (-2) | latency:  222 ms | size: 30777 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-pulitori-per-iniettori/> (referer: https://latop10.it/auto/)
+INFO: slot: 172.67.213.25 | conc:26 | delay:    7 ms (+2) | latency:  933 ms | size: 40694 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-interfoni-per-moto/> (referer: https://latop10.it/auto/)
+INFO: slot: 172.67.213.25 | conc:26 | delay:    4 ms (-2) | latency:  219 ms | size: 27329 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-autoradio-2-din-cinesi/> (referer: https://latop10.it/auto/)
+DEBUG: Scraped from <200 https://latop10.it/migliori-teli-antigrandine-per-auto/>
+{'Title': 'Il Miglior Telo Antigrandine per Auto (Copriauto) – Classifica 2022', 'URL': 'https://latop10.it/migliori-teli-antigrandine-per-auto/', 'Category 1': 'Auto', 'Category 2': 'Sicurezza'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-oli-5w30/>
+{'Title': 'Il Miglior Olio Motore 5w30 (per Diesel, Benzina) – Classifica 2022', 'URL': 'https://latop10.it/migliori-oli-5w30/', 'Category 1': 'Auto', 'Category 2': 'Olio & Pulitore'}
+INFO: slot: 172.67.213.25 | conc:26 | delay:    3 ms (-1) | latency:  222 ms | size: 30423 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-kit-di-riparazione-gomme/> (referer: https://latop10.it/auto/)
+DEBUG: Scraped from <200 https://latop10.it/migliori-avviatori-di-emergenza/>
+{'Title': 'Il Miglior Avviatore di Emergenza Auto (Booster) del 2022', 'URL': 'https://latop10.it/migliori-avviatori-di-emergenza/', 'Category 1': 'Auto', 'Category 2': 'Batteria'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-pulitori-per-iniettori/>
+{'Title': 'Il Miglior Pulitore per Iniettori (Benzina, Diesel) + Opinioni', 'URL': 'https://latop10.it/migliori-pulitori-per-iniettori/', 'Category 1': 'Auto', 'Category 2': 'Olio & Pulitore'}
+INFO: slot: 172.67.213.25 | conc:26 | delay:    7 ms (+3) | latency:  908 ms | size: 34878 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-navigatori-satellitari/> (referer: https://latop10.it/auto/)
+DEBUG: Scraped from <200 https://latop10.it/migliori-interfoni-per-moto/>
+{'Title': 'Il Miglior Interfono per Moto Bluetooth – Classifica 2022', 'URL': 'https://latop10.it/migliori-interfoni-per-moto/', 'Category 1': 'Auto', 'Category 2': 'Moto'}
+INFO: slot: 172.67.213.25 | conc:26 | delay:    4 ms (-2) | latency:  220 ms | size: 33650 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-pneumatici/> (referer: https://latop10.it/auto/)
+INFO: slot: 172.67.213.25 | conc:26 | delay:    3 ms (-1) | latency:  216 ms | size: 29739 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-kit-rinnova-fari/> (referer: https://latop10.it/auto/)
+DEBUG: Scraped from <200 https://latop10.it/migliori-autoradio-2-din-cinesi/>
+{'Title': 'La Miglior Autoradio 2 DIN Cinese – Classifica 2022', 'URL': 'https://latop10.it/migliori-autoradio-2-din-cinesi/', 'Category 1': 'Auto', 'Category 2': 'Audio'}
+INFO: slot: 172.67.213.25 | conc:26 | delay:    2 ms (+0) | latency:  232 ms | size: 29679 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-portabici-posteriori-per-auto/> (referer: https://latop10.it/auto/)
+INFO: slot: 172.67.213.25 | conc:25 | delay:    7 ms (+5) | latency: 1006 ms | size: 30506 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-catene-da-neve/> (referer: https://latop10.it/auto/)
+INFO: slot: 172.67.213.25 | conc:25 | delay:    7 ms (+0) | latency:  973 ms | size: 32787 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-caschi-jet/> (referer: https://latop10.it/auto/)
+DEBUG: Scraped from <200 https://latop10.it/migliori-kit-di-riparazione-gomme/>
+{'Title': 'Il Miglior Kit di Riparazione Gomme (Pneumatici) per Auto / Moto', 'URL': 'https://latop10.it/migliori-kit-di-riparazione-gomme/', 'Category 1': 'Auto', 'Category 2': 'Pneumatici'}
+INFO: slot: 172.67.213.25 | conc:25 | delay:    4 ms (-2) | latency:  238 ms | size: 33989 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-trasmettitori-fm-per-auto/> (referer: https://latop10.it/auto/)
+INFO: slot: 172.67.213.25 | conc:24 | delay:    7 ms (+2) | latency:  977 ms | size: 28279 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-additivi-diesel/> (referer: https://latop10.it/auto/)
+DEBUG: Scraped from <200 https://latop10.it/migliori-navigatori-satellitari/>
+{'Title': 'Il Miglior Navigatore Satellitare per Auto – Classifica 2022', 'URL': 'https://latop10.it/migliori-navigatori-satellitari/', 'Category 1': 'Auto', 'Category 2': 'Navigatore'}
+INFO: slot: 172.67.213.25 | conc:25 | delay:    7 ms (+0) | latency:  971 ms | size: 38733 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-dash-cam/> (referer: https://latop10.it/auto/)
+INFO: slot: 172.67.213.25 | conc:24 | delay:    4 ms (-2) | latency:  244 ms | size: 29785 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-spazzole-tergicristallo/> (referer: https://latop10.it/auto/)
+INFO: slot: 172.67.213.25 | conc:23 | delay:    3 ms (-1) | latency:  252 ms | size: 31024 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-lampade-h7/> (referer: https://latop10.it/auto/)
+INFO: slot: 172.67.213.25 | conc:23 | delay:    9 ms (+5) | latency: 1189 ms | size: 34951 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-autoradio/> (referer: https://latop10.it/auto/)
+INFO: slot: 172.67.213.25 | conc:22 | delay:    5 ms (-3) | latency:  241 ms | size: 31224 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-pistole-per-il-gonfiaggio-dei-pneumatici/> (referer: https://latop10.it/auto/)
+INFO: slot: 172.67.213.25 | conc:21 | delay:    7 ms (+1) | latency:  925 ms | size: 35221 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-lucidatrici-per-auto/> (referer: https://latop10.it/auto/)
+DEBUG: Scraped from <200 https://latop10.it/migliori-pneumatici/>
+{'Title': 'I Migliori Pneumatici Auto (Gomme, per Estate e Inverno, Marche Top)', 'URL': 'https://latop10.it/migliori-pneumatici/', 'Category 1': 'Auto', 'Category 2': 'Pneumatici'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-kit-rinnova-fari/>
+{'Title': 'Il Miglior Kit Rinnova Fari / Fanali? + Opinioni, Recensioni 2022', 'URL': 'https://latop10.it/migliori-kit-rinnova-fari/', 'Category 1': 'Auto', 'Category 2': 'Vernice & Lampade'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-portabici-posteriori-per-auto/>
+{'Title': 'Il Miglior Portabici Posteriore per Auto (anche Universale) del 2022', 'URL': 'https://latop10.it/migliori-portabici-posteriori-per-auto/', 'Category 1': 'Auto', 'Category 2': 'Altro'}
+INFO: slot: 172.67.213.25 | conc:21 | delay:    4 ms (-2) | latency:  260 ms | size: 26999 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-oli-total-5w30/> (referer: https://latop10.it/auto/)
+INFO: slot: 172.67.213.25 | conc:20 | delay:    3 ms (-1) | latency:  229 ms | size: 26837 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-caricabatterie-per-auto-professionali/> (referer: https://latop10.it/auto/)
+DEBUG: Scraped from <200 https://latop10.it/migliori-catene-da-neve/>
+{'Title': 'Le Migliori Catene da Neve del 2022? Anche per Cerchi in Lega', 'URL': 'https://latop10.it/migliori-catene-da-neve/', 'Category 1': 'Auto', 'Category 2': 'Pneumatici'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-caschi-jet/>
+{'Title': 'Il Miglior Casco Jet (e Demi-Jet) per Moto e Scooter del 2022', 'URL': 'https://latop10.it/migliori-caschi-jet/', 'Category 1': 'Auto', 'Category 2': 'Moto'}
+INFO: slot: 172.67.213.25 | conc:20 | delay:    7 ms (+4) | latency:  955 ms | size: 26311 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-portabici-peruzzo/> (referer: https://latop10.it/auto/)
+INFO: slot: 172.67.213.25 | conc:19 | delay:    4 ms (-2) | latency:  264 ms | size: 26987 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-navigatori-per-camper/> (referer: https://latop10.it/auto/)
+INFO: slot: 172.67.213.25 | conc:18 | delay:    3 ms (-1) | latency:  249 ms | size: 26851 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-oli-5w30-dexos2/> (referer: https://latop10.it/auto/)
+DEBUG: Scraped from <200 https://latop10.it/migliori-trasmettitori-fm-per-auto/>
+{'Title': 'Il Miglior Trasmettitore FM per Auto (Bluetooth) – Classifica 2022', 'URL': 'https://latop10.it/migliori-trasmettitori-fm-per-auto/', 'Category 1': 'Auto', 'Category 2': 'Audio'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-additivi-diesel/>
+{'Title': 'Il Miglior Additivo e Pulitore Iniettori Diesel – Classifica 2022', 'URL': 'https://latop10.it/migliori-additivi-diesel/', 'Category 1': 'Auto', 'Category 2': 'Olio & Pulitore'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-dash-cam/>
+{'Title': 'La Migliore Dash Cam – Guida all’Acquisto, Classifica 2022', 'URL': 'https://latop10.it/migliori-dash-cam/', 'Category 1': 'Auto', 'Category 2': 'Camera'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-spazzole-tergicristallo/>
+{'Title': 'Le Migliori Spazzole Tergicristallo – Classifica del 2022', 'URL': 'https://latop10.it/migliori-spazzole-tergicristallo/', 'Category 1': 'Auto', 'Category 2': 'Altro'}
+INFO: slot: 172.67.213.25 | conc:18 | delay:    9 ms (+6) | latency: 1233 ms | size: 36389 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-kit-vivavoce-bluetooth/> (referer: https://latop10.it/auto/)
+INFO: slot: 172.67.213.25 | conc:17 | delay:    9 ms (+0) | latency: 1192 ms | size: 36979 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-antifurti-auto/> (referer: https://latop10.it/auto/)
+INFO: slot: 172.67.213.25 | conc:16 | delay:    9 ms (+0) | latency: 1133 ms | size: 28783 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-autoradio-2-din-android/> (referer: https://latop10.it/auto/)
+INFO: slot: 172.67.213.25 | conc:15 | delay:    5 ms (-3) | latency:  327 ms | size: 26587 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-parasole-auto-per-bimbi/> (referer: https://latop10.it/auto/)
+INFO: slot: 172.67.213.25 | conc:14 | delay:    4 ms (-1) | latency:  310 ms | size: 26895 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-interfono-per-moto-midland/> (referer: https://latop10.it/auto/)
+INFO: slot: 172.67.213.25 | conc:13 | delay:    9 ms (+5) | latency: 1194 ms | size: 30020 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-caschi-modulari/> (referer: https://latop10.it/auto/)
+INFO: slot: 172.67.213.25 | conc:12 | delay:    8 ms (+0) | latency: 1046 ms | size: 32024 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-manometri-per-pneumatici/> (referer: https://latop10.it/auto/)
+INFO: slot: 172.67.213.25 | conc:11 | delay:    5 ms (-3) | latency:  310 ms | size: 27202 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-telecamere-per-auto-anteriori-e-posteriori/> (referer: https://latop10.it/auto/)
+INFO: slot: 172.67.213.25 | conc:10 | delay:    7 ms (+2) | latency:  988 ms | size: 29622 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-giacche-da-moto/> (referer: https://latop10.it/auto/)
+DEBUG: Scraped from <200 https://latop10.it/migliori-lampade-h7/>
+{'Title': 'La Miglior Lampada H7 (Più Luminose, anche LED Omologate, con Effetto Xenon)', 'URL': 'https://latop10.it/migliori-lampade-h7/', 'Category 1': 'Auto', 'Category 2': 'Vernice & Lampade'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-autoradio/>
+{'Title': 'La Miglior Autoradio 1 DIN – Guida all’Acquisto, Classifica 2022', 'URL': 'https://latop10.it/migliori-autoradio/', 'Category 1': 'Auto', 'Category 2': 'Audio'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-pistole-per-il-gonfiaggio-dei-pneumatici/>
+{'Title': 'La Migliore Pistola per il Gonfiaggio dei Pneumatici (anche Professionale)', 'URL': 'https://latop10.it/migliori-pistole-per-il-gonfiaggio-dei-pneumatici/', 'Category 1': 'Auto', 'Category 2': 'Pneumatici'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-lucidatrici-per-auto/>
+{'Title': 'La Migliore Lucidatrice per Auto – Classifica 2022', 'URL': 'https://latop10.it/migliori-lucidatrici-per-auto/', 'Category 1': 'Auto', 'Category 2': 'Vernice & Lampade'}
+INFO: slot: 172.67.213.25 | conc:10 | delay:    8 ms (+1) | latency: 1148 ms | size: 28286 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-cric-idraulici-per-auto/> (referer: https://latop10.it/auto/)
+INFO: slot: 172.67.213.25 | conc: 9 | delay:    8 ms (+0) | latency: 1116 ms | size: 27181 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-oli-castrol-5w30/> (referer: https://latop10.it/auto/)
+INFO: slot: 172.67.213.25 | conc: 8 | delay:    5 ms (-3) | latency:  310 ms | size: 27082 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-avviatori-di-emergenza-auto-diesel/> (referer: https://latop10.it/auto/)
+INFO: slot: 172.67.213.25 | conc: 7 | delay:    3 ms (-1) | latency:  262 ms | size: 31603 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-caschi-moto-per-bambini/> (referer: https://latop10.it/auto/)
+DEBUG: Scraped from <200 https://latop10.it/migliori-oli-total-5w30/>
+{'Title': 'Il Miglior Olio Total 5w30 – Guida all’Acquisto, Classifica 2022', 'URL': 'https://latop10.it/migliori-oli-total-5w30/', 'Category 1': 'Auto', 'Category 2': 'Olio & Pulitore'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-caricabatterie-per-auto-professionali/>
+{'Title': 'Il Miglior Caricabatteria per Auto Professionale – Classifica 2022', 'URL': 'https://latop10.it/migliori-caricabatterie-per-auto-professionali/', 'Category 1': 'Auto', 'Category 2': 'Batteria'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-portabici-peruzzo/>
+{'Title': 'Il Miglior Portabici Peruzzo – Opinioni, Recensioni, Prezzi', 'URL': 'https://latop10.it/migliori-portabici-peruzzo/', 'Category 1': 'Auto', 'Category 2': 'Altro'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-navigatori-per-camper/>
+{'Title': 'Il Miglior Navigatore per Camper – Classifica 2022', 'URL': 'https://latop10.it/migliori-navigatori-per-camper/', 'Category 1': 'Auto', 'Category 2': 'Navigatore'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-oli-5w30-dexos2/>
+{'Title': 'Il Miglior Olio 5W30 DEXOS2 – Opinioni, Recensioni 2022', 'URL': 'https://latop10.it/migliori-oli-5w30-dexos2/', 'Category 1': 'Auto', 'Category 2': 'Olio & Pulitore'}
+INFO: slot: 172.67.213.25 | conc: 7 | delay:    9 ms (+6) | latency: 1276 ms | size: 27397 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-autoradio-alpine/> (referer: https://latop10.it/auto/)
+INFO: slot: 172.67.213.25 | conc: 6 | delay:   10 ms (+0) | latency: 1315 ms | size: 31298 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-copriauto/> (referer: https://latop10.it/auto/)
+INFO: slot: 172.67.213.25 | conc: 5 | delay:    6 ms (-3) | latency:  356 ms | size: 29191 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-retrocamere-per-auto-wifi/> (referer: https://latop10.it/auto/)
+INFO: slot: 172.67.213.25 | conc: 4 | delay:   10 ms (+3) | latency: 1345 ms | size: 28703 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-autoradio-2-din-con-navigatore/> (referer: https://latop10.it/auto/)
+INFO: slot: 172.67.213.25 | conc: 3 | delay:    6 ms (-3) | latency:  366 ms | size: 26914 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-autoradio-dab/> (referer: https://latop10.it/auto/)
+DEBUG: Scraped from <200 https://latop10.it/migliori-kit-vivavoce-bluetooth/>
+{'Title': 'Il Miglior Kit Vivavoce Bluetooth per Auto del 2022 – Quale scegliere?', 'URL': 'https://latop10.it/migliori-kit-vivavoce-bluetooth/', 'Category 1': 'Auto', 'Category 2': 'Audio'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-antifurti-auto/>
+{'Title': 'Il Miglior Antifurto per Auto (anche Meccanico) – Classifica 2022', 'URL': 'https://latop10.it/migliori-antifurti-auto/', 'Category 1': 'Auto', 'Category 2': 'Sicurezza'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-autoradio-2-din-android/>
+{'Title': 'Il Miglior Autoradio 2 DIN Android – Opinioni, Recensioni 2022', 'URL': 'https://latop10.it/migliori-autoradio-2-din-android/', 'Category 1': 'Auto', 'Category 2': 'Audio'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-parasole-auto-per-bimbi/>
+{'Title': 'Il Miglior Parasole Auto per Bimbi – Classifica 2022', 'URL': 'https://latop10.it/migliori-parasole-auto-per-bimbi/', 'Category 1': 'Auto', 'Category 2': 'Altro'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-interfono-per-moto-midland/>
+{'Title': 'Il Miglior Interfono per Moto Midland – Classifica 2022', 'URL': 'https://latop10.it/migliori-interfono-per-moto-midland/', 'Category 1': 'Auto', 'Category 2': 'Moto'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-caschi-modulari/>
+{'Title': 'Il Miglior Casco Modulare (Silenzioso, Leggero) del 2022', 'URL': 'https://latop10.it/migliori-caschi-modulari/', 'Category 1': 'Auto', 'Category 2': 'Moto'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-manometri-per-pneumatici/>
+{'Title': 'Il Miglior Manometro per Pneumatici (per la Pressione delle Gomme)', 'URL': 'https://latop10.it/migliori-manometri-per-pneumatici/', 'Category 1': 'Auto', 'Category 2': 'Pneumatici'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-telecamere-per-auto-anteriori-e-posteriori/>
+{'Title': 'La Miglior Telecamera per Auto Anteriore e Posteriore del 2022', 'URL': 'https://latop10.it/migliori-telecamere-per-auto-anteriori-e-posteriori/', 'Category 1': 'Auto', 'Category 2': 'Camera'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-giacche-da-moto/>
+{'Title': 'La Miglior Giacca da Moto (Estiva o Invernale) – Consigli 2020', 'URL': 'https://latop10.it/migliori-giacche-da-moto/', 'Category 1': 'Auto', 'Category 2': 'Moto'}
+INFO: slot: 172.67.213.25 | conc: 3 | delay:    4 ms (-1) | latency:  400 ms | size: 32639 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-telecamere-per-auto/> (referer: https://latop10.it/auto/)
+DEBUG: Scraped from <200 https://latop10.it/migliori-cric-idraulici-per-auto/>
+{'Title': 'Il Miglior Cric Idraulico per Auto (Martinetto) – Classifica 2022', 'URL': 'https://latop10.it/migliori-cric-idraulici-per-auto/', 'Category 1': 'Auto', 'Category 2': 'Altro'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-oli-castrol-5w30/>
+{'Title': 'Il Miglior Olio Castrol 5W30 – Opinioni, Recensioni, Prezzi', 'URL': 'https://latop10.it/migliori-oli-castrol-5w30/', 'Category 1': 'Auto', 'Category 2': 'Olio & Pulitore'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-avviatori-di-emergenza-auto-diesel/>
+{'Title': 'Il Miglior Avviatore Emergenza Auto Diesel – Classifica 2022', 'URL': 'https://latop10.it/migliori-avviatori-di-emergenza-auto-diesel/', 'Category 1': 'Auto', 'Category 2': 'Batteria'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-caschi-moto-per-bambini/>
+{'Title': 'Il Miglior Casco da Moto per Bambini – Classifica 2022', 'URL': 'https://latop10.it/migliori-caschi-moto-per-bambini/', 'Category 1': 'Auto', 'Category 2': 'Moto'}
+INFO: slot: 172.67.213.25 | conc: 3 | delay:    3 ms (-1) | latency:  330 ms | size: 28806 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-kit-casse-auto/> (referer: https://latop10.it/auto/)
+DEBUG: Scraped from <200 https://latop10.it/migliori-autoradio-alpine/>
+{'Title': 'La Miglior Autoradio Alpine – Opinioni, Recensioni 2022', 'URL': 'https://latop10.it/migliori-autoradio-alpine/', 'Category 1': 'Auto', 'Category 2': 'Audio'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-copriauto/>
+{'Title': 'Il Miglior Copriauto (anche Felpato, Gonfiabile e Impermeabile)', 'URL': 'https://latop10.it/migliori-copriauto/', 'Category 1': 'Auto', 'Category 2': 'Sicurezza'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-retrocamere-per-auto-wifi/>
+{'Title': 'La Miglior Retrocamera per Auto WiFi – Classifica 2022', 'URL': 'https://latop10.it/migliori-retrocamere-per-auto-wifi/', 'Category 1': 'Auto', 'Category 2': 'Camera'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-autoradio-2-din-con-navigatore/>
+{'Title': 'La Migliore Autoradio 2 DIN con Navigatore GPS – Classifica 2022', 'URL': 'https://latop10.it/migliori-autoradio-2-din-con-navigatore/', 'Category 1': 'Auto', 'Category 2': 'Audio'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-autoradio-dab/>
+{'Title': 'La Migliore Autoradio DAB (anche con Bluetooth) – Classifica 2022', 'URL': 'https://latop10.it/migliori-autoradio-dab/', 'Category 1': 'Auto', 'Category 2': 'Audio'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-telecamere-per-auto/>
+{'Title': 'La Miglior Telecamera per Auto (Antivandalismo, anche Professionale)', 'URL': 'https://latop10.it/migliori-telecamere-per-auto/', 'Category 1': 'Auto', 'Category 2': 'Camera'}
+INFO: slot: 172.67.213.25 | conc: 6 | delay:    2 ms (+0) | latency:  260 ms | size: 27233 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-pneumatici-205-55-r16/> (referer: https://latop10.it/auto/)
+DEBUG: Scraped from <200 https://latop10.it/migliori-kit-casse-auto/>
+{'Title': 'Il Miglior Kit Casse Auto (Altoparlanti) – Classifica 2022', 'URL': 'https://latop10.it/migliori-kit-casse-auto/', 'Category 1': 'Auto', 'Category 2': 'Audio'}
+INFO: slot: 172.67.213.25 | conc:19 | delay:    2 ms (+0) | latency:  215 ms | size: 26074 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/parrot-bebop-2-recensione/> (referer: https://latop10.it/auto/)
+DEBUG: Scraped from <200 https://latop10.it/migliori-pneumatici-205-55-r16/>
+{'Title': 'I Migliori Pneumatici 205 55 r16 (anche Estivi) del 2022', 'URL': 'https://latop10.it/migliori-pneumatici-205-55-r16/', 'Category 1': 'Auto', 'Category 2': 'Pneumatici'}
+INFO: slot: 172.67.213.25 | conc:26 | delay:    1 ms (+0) | latency:  204 ms | size: 29382 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-kit-xenon-h7/> (referer: https://latop10.it/auto/)
+DEBUG: Scraped from <200 https://latop10.it/parrot-bebop-2-recensione/>
+{'Title': 'Parrot Bebop 2 – Recensione, Opinioni, Prezzi del 2022', 'URL': 'https://latop10.it/parrot-bebop-2-recensione/', 'Category 1': 'Auto', 'Category 2': 'Audio'}
+INFO: slot: 172.67.213.25 | conc:26 | delay:    1 ms (+0) | latency:  218 ms | size: 27385 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-giacche-da-moto-4-stagioni/> (referer: https://latop10.it/auto/)
+INFO: slot: 172.67.213.25 | conc:26 | delay:    1 ms (+0) | latency:  219 ms | size: 28885 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-oli-per-moto-4-tempi/> (referer: https://latop10.it/auto/)
+INFO: slot: 172.67.213.25 | conc:26 | delay:    2 ms (+0) | latency:  256 ms | size: 28543 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-subwoofer-attivi-per-auto/> (referer: https://latop10.it/auto/)
+INFO: slot: 172.67.213.25 | conc:26 | delay:    1 ms (+0) | latency:  236 ms | size: 26924 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-lucidatrici-per-auto-bosch/> (referer: https://latop10.it/auto/)
+INFO: slot: 172.67.213.25 | conc:26 | delay:    1 ms (+0) | latency:  246 ms | size: 25999 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-oli-10w40-da-moto/> (referer: https://latop10.it/auto/)
+DEBUG: Scraped from <200 https://latop10.it/migliori-kit-xenon-h7/>
+{'Title': 'Il Miglior Kit Xenon H7 – Guida all’Acquisto, Classifica 2022', 'URL': 'https://latop10.it/migliori-kit-xenon-h7/', 'Category 1': 'Auto', 'Category 2': 'Vernice & Lampade'}
+INFO: slot: 172.67.213.25 | conc:26 | delay:    2 ms (+0) | latency:  303 ms | size: 37998 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-caschi-per-moto/> (referer: https://latop10.it/auto/)
+INFO: slot: 172.67.213.25 | conc:26 | delay:    2 ms (+0) | latency:  269 ms | size: 26266 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-autoradio-pioneer/> (referer: https://latop10.it/auto/)
+INFO: slot: 172.67.213.25 | conc:26 | delay:    2 ms (+0) | latency:  272 ms | size: 29804 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-pneumatici-per-moto/> (referer: https://latop10.it/auto/)
+INFO: slot: 172.67.213.25 | conc:26 | delay:    1 ms (+0) | latency:  226 ms | size: 26627 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-avviatori-di-emergenza-per-auto-suaoki/> (referer: https://latop10.it/auto/)
+INFO: slot: 172.67.213.25 | conc:26 | delay:    2 ms (+0) | latency:  295 ms | size: 31240 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-oli-10w40/> (referer: https://latop10.it/auto/)
+INFO: slot: 172.67.213.25 | conc:26 | delay:    2 ms (+0) | latency:  295 ms | size: 28093 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-telecamere-a-360-gradi-per-auto/> (referer: https://latop10.it/auto/)
+DEBUG: Scraped from <200 https://latop10.it/migliori-giacche-da-moto-4-stagioni/>
+{'Title': 'Il Miglior Giacca da Moto 4 Stagioni – Classifica 2022', 'URL': 'https://latop10.it/migliori-giacche-da-moto-4-stagioni/', 'Category 1': 'Auto', 'Category 2': 'Moto'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-oli-per-moto-4-tempi/>
+{'Title': 'Il Miglior Olio per Moto 4 Tempi (4t) – Classifica 2022', 'URL': 'https://latop10.it/migliori-oli-per-moto-4-tempi/', 'Category 1': 'Auto', 'Category 2': 'Moto'}
+INFO: slot: 172.67.213.25 | conc:26 | delay:    2 ms (+0) | latency:  323 ms | size: 28819 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-autoradio-kenwood/> (referer: https://latop10.it/auto/)
+INFO: slot: 172.67.213.25 | conc:26 | delay:    2 ms (+0) | latency:  308 ms | size: 28509 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-portabici-thule/> (referer: https://latop10.it/auto/)
+INFO: slot: 172.67.213.25 | conc:25 | delay:    2 ms (+0) | latency:  302 ms | size: 26236 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-oli-motori-per-moto-15w50/> (referer: https://latop10.it/auto/)
+INFO: slot: 172.67.213.25 | conc:24 | delay:    2 ms (+0) | latency:  323 ms | size: 28529 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-giacche-da-moto-estive/> (referer: https://latop10.it/auto/)
+INFO: slot: 172.67.213.25 | conc:24 | delay:    2 ms (+0) | latency:  335 ms | size: 26227 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-oli-5w30-benzina/> (referer: https://latop10.it/auto/)
+INFO: slot: 172.67.213.25 | conc:23 | delay:    2 ms (+0) | latency:  377 ms | size: 27422 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-oli-5w30-mobil-1/> (referer: https://latop10.it/auto/)
+INFO: slot: 172.67.213.25 | conc:22 | delay:    3 ms (+0) | latency:  389 ms | size: 29129 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-retrocamere-per-camper/> (referer: https://latop10.it/auto/)
+INFO: slot: 172.67.213.25 | conc:21 | delay:    3 ms (+0) | latency:  397 ms | size: 30535 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-lucidatrici-orbitali/> (referer: https://latop10.it/auto/)
+INFO: slot: 172.67.213.25 | conc:20 | delay:    2 ms (+0) | latency:  325 ms | size: 30285 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-occhiali-da-moto/> (referer: https://latop10.it/auto/)
+INFO: slot: 172.67.213.25 | conc:19 | delay:    2 ms (+0) | latency:  342 ms | size: 26512 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-pneumatici-4-stagioni-michelin/> (referer: https://latop10.it/auto/)
+INFO: slot: 172.67.213.25 | conc:18 | delay:    2 ms (+0) | latency:  337 ms | size: 28858 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-kit-di-riparazione-di-pneumatici-per-moto/> (referer: https://latop10.it/auto/)
+INFO: slot: 172.67.213.25 | conc:17 | delay:    2 ms (+0) | latency:  339 ms | size: 28616 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-caschi-da-moto-da-donna/> (referer: https://latop10.it/auto/)
+INFO: slot: 172.67.213.25 | conc:16 | delay:    2 ms (+0) | latency:  324 ms | size: 31344 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-poggiatesta-dvd-per-auto/> (referer: https://latop10.it/auto/)
+DEBUG: Scraped from <200 https://latop10.it/migliori-subwoofer-attivi-per-auto/>
+{'Title': 'Il Miglior Subwoofer Attivo per Auto – Classifica 2022', 'URL': 'https://latop10.it/migliori-subwoofer-attivi-per-auto/', 'Category 1': 'Auto', 'Category 2': 'Audio'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-lucidatrici-per-auto-bosch/>
+{'Title': 'La Miglior Lucidatrice per Auto Bosch – Recensioni, Opinioni 2021', 'URL': 'https://latop10.it/migliori-lucidatrici-per-auto-bosch/', 'Category 1': 'Auto', 'Category 2': 'Vernice & Lampade'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-oli-10w40-da-moto/>
+{'Title': 'Il Miglior Olio 10w40 da Moto – Recensioni, Classifica 2022', 'URL': 'https://latop10.it/migliori-oli-10w40-da-moto/', 'Category 1': 'Auto', 'Category 2': 'Moto'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-caschi-per-moto/>
+{'Title': 'Il Miglior Casco per Moto (anche per Scooter, Marche Top) del 2022', 'URL': 'https://latop10.it/migliori-caschi-per-moto/', 'Category 1': 'Auto', 'Category 2': 'Moto'}
+INFO: slot: 172.67.213.25 | conc:15 | delay:    2 ms (+0) | latency:  314 ms | size: 31849 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-box-da-tetto-auto/> (referer: https://latop10.it/auto/)
+INFO: slot: 172.67.213.25 | conc:14 | delay:    2 ms (+0) | latency:  275 ms | size: 30859 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-guanti-da-motociclista/> (referer: https://latop10.it/auto/)
+INFO: slot: 172.67.213.25 | conc:13 | delay:    3 ms (+1) | latency:  483 ms | size: 29644 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-autoradio-con-bluetooth/> (referer: https://latop10.it/auto/)
+INFO: slot: 172.67.213.25 | conc:12 | delay:    3 ms (+0) | latency:  497 ms | size: 26299 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-autoradio-2-din-per-golf-5/> (referer: https://latop10.it/auto/)
+INFO: slot: 172.67.213.25 | conc:11 | delay:    4 ms (+0) | latency:  565 ms | size: 26682 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-oli-5w30-diesel/> (referer: https://latop10.it/auto/)
+INFO: slot: 172.67.213.25 | conc:10 | delay:    4 ms (+0) | latency:  569 ms | size: 26919 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-navigatori-gps-tomtom/> (referer: https://latop10.it/auto/)
+INFO: slot: 172.67.213.25 | conc: 9 | delay:    4 ms (+0) | latency:  477 ms | size: 31260 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-localizzatori-gps-tracker-per-auto/> (referer: https://latop10.it/auto/)
+INFO: slot: 172.67.213.25 | conc: 8 | delay:    3 ms (+0) | latency:  468 ms | size: 25134 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/auto/page/2/> (referer: https://latop10.it/auto/)
+INFO: slot: 172.67.213.25 | conc: 7 | delay:    3 ms (+0) | latency:  449 ms | size: 27337 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-autoradio-2-din-kenwood/> (referer: https://latop10.it/auto/)
+INFO: slot: 172.67.213.25 | conc: 6 | delay:    3 ms (+0) | latency:  441 ms | size: 26109 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-diffusori-di-aromi-per-auto/> (referer: https://latop10.it/auto/)
+INFO: slot: 172.67.213.25 | conc: 5 | delay:    3 ms (+0) | latency:  436 ms | size: 26331 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-pneumatici-bridgestone/> (referer: https://latop10.it/auto/)
+INFO: slot: 172.67.213.25 | conc: 4 | delay:    3 ms (+0) | latency:  451 ms | size: 25935 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-interfoni-per-moto-sena/> (referer: https://latop10.it/auto/)
+INFO: slot: 172.67.213.25 | conc: 3 | delay:    3 ms (+0) | latency:  499 ms | size: 32258 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-guanti-riscaldati-termici/> (referer: https://latop10.it/auto/)
+INFO: slot: 172.67.213.25 | conc: 2 | delay:    3 ms (+0) | latency:  451 ms | size: 29131 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-casse-bluetooth-auto/> (referer: https://latop10.it/auto/)
+INFO: slot: 172.67.213.25 | conc: 1 | delay:    3 ms (+0) | latency:  453 ms | size: 26486 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-copriauto-felpati/> (referer: https://latop10.it/auto/)
+DEBUG: Scraped from <200 https://latop10.it/migliori-autoradio-pioneer/>
+{'Title': 'La Migliore Autoradio Pioneer – Recensioni, Opinioni 2021', 'URL': 'https://latop10.it/migliori-autoradio-pioneer/', 'Category 1': 'Auto', 'Category 2': 'Audio'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-pneumatici-per-moto/>
+{'Title': 'I Migliori Pneumatici per Moto (Gomme, anche Sportive) del 2022', 'URL': 'https://latop10.it/migliori-pneumatici-per-moto/', 'Category 1': 'Auto', 'Category 2': 'Pneumatici'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-avviatori-di-emergenza-per-auto-suaoki/>
+{'Title': 'Il Miglior Avviatore di Emergenza per Auto Suaoki – Recensioni 2022', 'URL': 'https://latop10.it/migliori-avviatori-di-emergenza-per-auto-suaoki/', 'Category 1': 'Auto', 'Category 2': 'Batteria'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-oli-10w40/>
+{'Title': 'Il Miglior Olio 10w40 (anche Sintetici) – Recensioni, Classifica 2022', 'URL': 'https://latop10.it/migliori-oli-10w40/', 'Category 1': 'Auto', 'Category 2': 'Olio & Pulitore'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-telecamere-a-360-gradi-per-auto/>
+{'Title': 'La Miglior Telecamera a 360 Gradi per Auto – Classifica 2022', 'URL': 'https://latop10.it/migliori-telecamere-a-360-gradi-per-auto/', 'Category 1': 'Auto', 'Category 2': 'Camera'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-autoradio-kenwood/>
+{'Title': 'La Miglior Autoradio Kenwood (anche a 2 DIN) – Classifica 2022', 'URL': 'https://latop10.it/migliori-autoradio-kenwood/', 'Category 1': 'Auto', 'Category 2': 'Audio'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-portabici-thule/>
+{'Title': 'Il Miglior Portabici Thule – Recensioni, Opinioni 2021', 'URL': 'https://latop10.it/migliori-portabici-thule/', 'Category 1': 'Auto', 'Category 2': 'Altro'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-oli-motori-per-moto-15w50/>
+{'Title': 'Il Miglior Olio Motore per Moto 15w50 – Recensioni, Classifica 2022', 'URL': 'https://latop10.it/migliori-oli-motori-per-moto-15w50/', 'Category 1': 'Auto', 'Category 2': 'Moto'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-giacche-da-moto-estive/>
+{'Title': 'La Miglior Giacca da Moto Estiva – Recensioni, Classifica 2022', 'URL': 'https://latop10.it/migliori-giacche-da-moto-estive/', 'Category 1': 'Auto', 'Category 2': 'Moto'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-oli-5w30-benzina/>
+{'Title': 'Il Miglior Olio 5w30 Benzina – Recensioni, Classifica 2022', 'URL': 'https://latop10.it/migliori-oli-5w30-benzina/', 'Category 1': 'Auto', 'Category 2': 'Olio & Pulitore'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-oli-5w30-mobil-1/>
+{'Title': 'Il Miglior Olio 5w30 Mobil 1 – Recensioni, Opinioni 2021', 'URL': 'https://latop10.it/migliori-oli-5w30-mobil-1/', 'Category 1': 'Auto', 'Category 2': 'Olio & Pulitore'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-retrocamere-per-camper/>
+{'Title': 'La Miglior Retrocamera per Camper – Recensioni, Classifica 2022', 'URL': 'https://latop10.it/migliori-retrocamere-per-camper/', 'Category 1': 'Auto', 'Category 2': 'Camera'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-lucidatrici-orbitali/>
+{'Title': 'La Miglior Lucidatrice Orbitale – Recensioni, Classifica 2022', 'URL': 'https://latop10.it/migliori-lucidatrici-orbitali/', 'Category 1': 'Auto', 'Category 2': 'Vernice & Lampade'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-occhiali-da-moto/>
+{'Title': 'I Migliori Occhiali da Moto (anche Vintage) – Recensioni, Classifica 2022', 'URL': 'https://latop10.it/migliori-occhiali-da-moto/', 'Category 1': 'Auto', 'Category 2': 'Moto'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-pneumatici-4-stagioni-michelin/>
+{'Title': 'I Migliori Pneumatici 4 Stagioni Michelin – Opinioni, Recensioni 2022', 'URL': 'https://latop10.it/migliori-pneumatici-4-stagioni-michelin/', 'Category 1': 'Auto', 'Category 2': 'Pneumatici'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-kit-di-riparazione-di-pneumatici-per-moto/>
+{'Title': 'Il Miglior Kit per la Riparazione di Pneumatici per Moto del 2022', 'URL': 'https://latop10.it/migliori-kit-di-riparazione-di-pneumatici-per-moto/', 'Category 1': 'Auto', 'Category 2': 'Pneumatici'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-caschi-da-moto-da-donna/>
+{'Title': 'Il Miglior Casco da Moto da Donna – Recensioni, Classifica 2022', 'URL': 'https://latop10.it/migliori-caschi-da-moto-da-donna/', 'Category 1': 'Auto', 'Category 2': 'Moto'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-poggiatesta-dvd-per-auto/>
+{'Title': 'Il Miglior Poggiatesta DVD per Auto (Monitor) – Classifica 2022', 'URL': 'https://latop10.it/migliori-poggiatesta-dvd-per-auto/', 'Category 1': 'Auto', 'Category 2': 'Altro'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-box-da-tetto-auto/>
+{'Title': 'Il Miglior Box da Tetto per Auto – Recensioni, Classifica 2022', 'URL': 'https://latop10.it/migliori-box-da-tetto-auto/', 'Category 1': 'Auto', 'Category 2': 'Altro'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-guanti-da-motociclista/>
+{'Title': 'I Migliori Guanti da Moto – Recensioni, Classifica 2022', 'URL': 'https://latop10.it/migliori-guanti-da-motociclista/', 'Category 1': 'Auto', 'Category 2': 'Moto'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-autoradio-con-bluetooth/>
+{'Title': 'La Migliore Autoradio con Bluetooth – Recensioni, Classifica 2022', 'URL': 'https://latop10.it/migliori-autoradio-con-bluetooth/', 'Category 1': 'Auto', 'Category 2': 'Audio'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-autoradio-2-din-per-golf-5/>
+{'Title': 'La Migliore Autoradio 2 DIN per Golf 5 – Recensioni, Classifica 2022', 'URL': 'https://latop10.it/migliori-autoradio-2-din-per-golf-5/', 'Category 1': 'Auto', 'Category 2': 'Audio'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-oli-5w30-diesel/>
+{'Title': 'Il Miglior Olio 5w30 Diesel – Recensioni, Classifica 2022', 'URL': 'https://latop10.it/migliori-oli-5w30-diesel/', 'Category 1': 'Auto', 'Category 2': 'Olio & Pulitore'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-navigatori-gps-tomtom/>
+{'Title': 'Il Miglior Navigatore GPS TomTom – Recensioni, Opinioni 2021', 'URL': 'https://latop10.it/migliori-navigatori-gps-tomtom/', 'Category 1': 'Auto', 'Category 2': 'Navigatore'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-localizzatori-gps-tracker-per-auto/>
+{'Title': 'Il Miglior Localizzatore GPS per Auto – Recensioni, Classifica 2022', 'URL': 'https://latop10.it/migliori-localizzatori-gps-tracker-per-auto/', 'Category 1': 'Auto', 'Category 2': 'Sicurezza'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-autoradio-2-din-kenwood/>
+{'Title': 'La Migliore Autoradio 2 DIN Kenwood – Recensioni, Classifica 2022', 'URL': 'https://latop10.it/migliori-autoradio-2-din-kenwood/', 'Category 1': 'Auto', 'Category 2': 'Audio'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-diffusori-di-aromi-per-auto/>
+{'Title': 'Il Miglior Diffusore di Aromi per Auto – Recensioni, Classifica 2022', 'URL': 'https://latop10.it/migliori-diffusori-di-aromi-per-auto/', 'Category 1': 'Auto', 'Category 2': 'Altro'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-pneumatici-bridgestone/>
+{'Title': 'Il Miglior Pneumatico Bridgestone – Recensioni, Classifica 2022', 'URL': 'https://latop10.it/migliori-pneumatici-bridgestone/', 'Category 1': 'Auto', 'Category 2': 'Pneumatici'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-interfoni-per-moto-sena/>
+{'Title': 'Il Miglior Interfono per Moto Sena – Opinioni, Recensioni 2022', 'URL': 'https://latop10.it/migliori-interfoni-per-moto-sena/', 'Category 1': 'Auto', 'Category 2': 'Moto'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-guanti-riscaldati-termici/>
+{'Title': 'I Migliori Guanti Riscaldati (per Moto) – Recensioni, Classifica 2022', 'URL': 'https://latop10.it/migliori-guanti-riscaldati-termici/', 'Category 1': 'Auto', 'Category 2': 'Moto'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-casse-bluetooth-auto/>
+{'Title': 'Le Migliori Casse Bluetooth per Auto – Recensioni, Classifica 2022', 'URL': 'https://latop10.it/migliori-casse-bluetooth-auto/', 'Category 1': 'Auto', 'Category 2': 'Audio'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-copriauto-felpati/>
+{'Title': 'Il Miglior Copriauto Felpato – Recensioni, Classifica 2022', 'URL': 'https://latop10.it/migliori-copriauto-felpati/', 'Category 1': 'Auto', 'Category 2': 'Sicurezza'}
+INFO: slot: 172.67.213.25 | conc:18 | delay:    2 ms (+0) | latency:  234 ms | size: 30014 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-lampade-per-bambini/> (referer: https://latop10.it/auto/page/2/)
+INFO: slot: 172.67.213.25 | conc:17 | delay:    2 ms (+0) | latency:  289 ms | size: 28149 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-autoradio-sony/> (referer: https://latop10.it/auto/page/2/)
+INFO: slot: 172.67.213.25 | conc:16 | delay:    2 ms (+0) | latency:  262 ms | size: 29301 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-oli-motore-per-moto/> (referer: https://latop10.it/auto/page/2/)
+INFO: slot: 172.67.213.25 | conc:15 | delay:    2 ms (+0) | latency:  295 ms | size: 29021 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-copertoni-per-bici-da-corsa/> (referer: https://latop10.it/auto/page/2/)
+INFO: slot: 172.67.213.25 | conc:14 | delay:    2 ms (+0) | latency:  296 ms | size: 26262 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-giacche-da-moto-in-pelle/> (referer: https://latop10.it/auto/page/2/)
+INFO: slot: 172.67.213.25 | conc:13 | delay:    2 ms (+0) | latency:  355 ms | size: 25411 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-pulitori-per-iniettori-bardahl/> (referer: https://latop10.it/auto/page/2/)
+INFO: slot: 172.67.213.25 | conc:12 | delay:    3 ms (+0) | latency:  409 ms | size: 27821 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-casse-auto-pioneer/> (referer: https://latop10.it/auto/page/2/)
+INFO: slot: 172.67.213.25 | conc:11 | delay:    3 ms (+0) | latency:  413 ms | size: 26478 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-tendine-parasole-per-auto/> (referer: https://latop10.it/auto/page/2/)
+INFO: slot: 172.67.213.25 | conc:10 | delay:    3 ms (+0) | latency:  425 ms | size: 31620 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-mantenitori-di-carica/> (referer: https://latop10.it/auto/page/2/)
+DEBUG: Scraped from <200 https://latop10.it/migliori-lampade-per-bambini/>
+{'Title': 'La Migliore Lampada per Bambini (Luci Notturne) – Classifica 2022', 'URL': 'https://latop10.it/migliori-lampade-per-bambini/', 'Category 1': 'Auto', 'Category 2': 'Vernice & Lampade'}
+INFO: slot: 172.67.213.25 | conc: 9 | delay:    3 ms (+0) | latency:  470 ms | size: 26617 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-dash-cam-a-specchio/> (referer: https://latop10.it/auto/page/2/)
+INFO: slot: 172.67.213.25 | conc: 8 | delay:    4 ms (+0) | latency:  515 ms | size: 26304 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-oli-10w40-diesel/> (referer: https://latop10.it/auto/page/2/)
+INFO: slot: 172.67.213.25 | conc: 7 | delay:    3 ms (+0) | latency:  505 ms | size: 28449 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-giacche-da-moto-dainese/> (referer: https://latop10.it/auto/page/2/)
+INFO: slot: 172.67.213.25 | conc: 6 | delay:    3 ms (+0) | latency:  501 ms | size: 29224 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-cavalletti-alzamoto/> (referer: https://latop10.it/auto/page/2/)
+INFO: slot: 172.67.213.25 | conc: 5 | delay:    3 ms (+0) | latency:  486 ms | size: 29673 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-pettorine-da-motocross/> (referer: https://latop10.it/auto/page/2/)
+INFO: slot: 172.67.213.25 | conc: 4 | delay:    4 ms (+0) | latency:  544 ms | size: 30307 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-cere-per-auto/> (referer: https://latop10.it/auto/page/2/)
+INFO: slot: 172.67.213.25 | conc: 3 | delay:    4 ms (+0) | latency:  533 ms | size: 30768 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-occhiali-da-motocross/> (referer: https://latop10.it/auto/page/2/)
+INFO: slot: 172.67.213.25 | conc: 2 | delay:    4 ms (+0) | latency:  565 ms | size: 26079 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-oli-motore-per-moto-10w60/> (referer: https://latop10.it/auto/page/2/)
+INFO: slot: 172.67.213.25 | conc: 1 | delay:    4 ms (+0) | latency:  518 ms | size: 26677 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-kit-di-telecamere-posteriori-per-auto/> (referer: https://latop10.it/auto/page/2/)
+DEBUG: Scraped from <200 https://latop10.it/migliori-autoradio-sony/>
+{'Title': 'La Miglior Autoradio Sony – Recensioni, Opinioni 2020', 'URL': 'https://latop10.it/migliori-autoradio-sony/', 'Category 1': 'Auto', 'Category 2': 'Audio'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-oli-motore-per-moto/>
+{'Title': 'Il Miglior Olio Motore per Moto – Recensioni, Classifica 2022', 'URL': 'https://latop10.it/migliori-oli-motore-per-moto/', 'Category 1': 'Auto', 'Category 2': 'Olio & Pulitore'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-copertoni-per-bici-da-corsa/>
+{'Title': 'Il Miglior Copertone per Bici da Corsa – Recensioni, Classifica 2022', 'URL': 'https://latop10.it/migliori-copertoni-per-bici-da-corsa/', 'Category 1': 'Auto', 'Category 2': 'Pneumatici'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-giacche-da-moto-in-pelle/>
+{'Title': 'La Miglior Giacca in Pelle – Recensioni, Classifica 2022', 'URL': 'https://latop10.it/migliori-giacche-da-moto-in-pelle/', 'Category 1': 'Auto', 'Category 2': 'Moto'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-pulitori-per-iniettori-bardahl/>
+{'Title': 'Il Miglior Pulitore per Iniettori Bardahl – Opinioni, Recensioni 2022', 'URL': 'https://latop10.it/migliori-pulitori-per-iniettori-bardahl/', 'Category 1': 'Auto', 'Category 2': 'Olio & Pulitore'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-casse-auto-pioneer/>
+{'Title': 'La Miglior Cassa Auto Pioneer – Recensioni, Opinioni 2021', 'URL': 'https://latop10.it/migliori-casse-auto-pioneer/', 'Category 1': 'Auto', 'Category 2': 'Audio'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-tendine-parasole-per-auto/>
+{'Title': 'La Miglior Tendina Parasole per Auto – Recensioni, Classifica 2022', 'URL': 'https://latop10.it/migliori-tendine-parasole-per-auto/', 'Category 1': 'Auto', 'Category 2': 'Altro'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-mantenitori-di-carica/>
+{'Title': 'Il Miglior Mantenitore di Carica – Recensioni, Classifica 2022', 'URL': 'https://latop10.it/migliori-mantenitori-di-carica/', 'Category 1': 'Auto', 'Category 2': 'Batteria'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-dash-cam-a-specchio/>
+{'Title': 'La Migliore Dash Cam a Specchio – Recensioni, Classifica 2022', 'URL': 'https://latop10.it/migliori-dash-cam-a-specchio/', 'Category 1': 'Auto', 'Category 2': 'Camera'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-oli-10w40-diesel/>
+{'Title': 'Il Miglior Olio 10W40 Diesel – Recensioni, Classifica 2022', 'URL': 'https://latop10.it/migliori-oli-10w40-diesel/', 'Category 1': 'Auto', 'Category 2': 'Olio & Pulitore'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-giacche-da-moto-dainese/>
+{'Title': 'La Miglior Giacca da Moto Dainese – Recensioni, Classifica 2022', 'URL': 'https://latop10.it/migliori-giacche-da-moto-dainese/', 'Category 1': 'Auto', 'Category 2': 'Moto'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-cavalletti-alzamoto/>
+{'Title': 'Il Miglior Cavalletto Alzamoto – Recensioni, Classifica 2022', 'URL': 'https://latop10.it/migliori-cavalletti-alzamoto/', 'Category 1': 'Auto', 'Category 2': 'Moto'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-pettorine-da-motocross/>
+{'Title': 'La Migliore Pettorina da Motocross – Recensioni, Classifica 2022', 'URL': 'https://latop10.it/migliori-pettorine-da-motocross/', 'Category 1': 'Auto', 'Category 2': 'Moto'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-cere-per-auto/>
+{'Title': 'La Migliore Cera per Auto – Recensioni, Classifica 2022', 'URL': 'https://latop10.it/migliori-cere-per-auto/', 'Category 1': 'Auto', 'Category 2': 'Altro'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-occhiali-da-motocross/>
+{'Title': 'Il Miglior Occhiale da Motocross – Recensioni, Classifica 2022', 'URL': 'https://latop10.it/migliori-occhiali-da-motocross/', 'Category 1': 'Auto', 'Category 2': 'Moto'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-oli-motore-per-moto-10w60/>
+{'Title': 'Il Miglior Olio Motore per Moto 10W60 – Recensioni, Classifica 2022', 'URL': 'https://latop10.it/migliori-oli-motore-per-moto-10w60/', 'Category 1': 'Auto', 'Category 2': 'Moto'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-kit-di-telecamere-posteriori-per-auto/>
+{'Title': 'Il Miglior Kit di Telecamere Posteriori per Auto – Classifica 2022', 'URL': 'https://latop10.it/migliori-kit-di-telecamere-posteriori-per-auto/', 'Category 1': 'Auto', 'Category 2': 'Camera'}
+INFO: Closing spider (finished)
+INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 27387,
+ 'downloader/request_count': 120,
+ 'downloader/request_method_count/GET': 120,
+ 'downloader/response_bytes': 3643234,
+ 'downloader/response_count': 120,
+ 'downloader/response_status_count/200': 120,
+ 'elapsed_time_seconds': 7.846189,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2022, 12, 27, 5, 6, 46, 78457),
+ 'httpcompression/response_bytes': 18987990,
+ 'httpcompression/response_count': 120,
+ 'item_scraped_count': 118,
+ 'log_count/DEBUG': 238,
+ 'log_count/INFO': 131,
+ 'memusage/max': 76865536,
+ 'memusage/startup': 76865536,
+ 'request_depth_max': 2,
+ 'response_received_count': 120,
+ 'scheduler/dequeued': 120,
+ 'scheduler/dequeued/disk': 120,
+ 'scheduler/enqueued': 120,
+ 'scheduler/enqueued/disk': 120,
+ 'start_time': datetime.datetime(2022, 12, 27, 5, 6, 38, 232268)}
+INFO: Spider closed (finished)
+INFO: Scrapy 2.5.1 started (bot: lazy_py_crawler)
+INFO: Versions: lxml 4.8.0.0, libxml2 2.9.12, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 22.1.0, Python 3.8.10 (default, Nov 14 2022, 12:59:47) - [GCC 9.4.0], pyOpenSSL 22.0.0 (OpenSSL 1.1.1m  14 Dec 2021), cryptography 36.0.1, Platform Linux-5.15.0-56-generic-x86_64-with-glibc2.29
+DEBUG: Using reactor: twisted.internet.epollreactor.EPollReactor
+INFO: Overridden settings:
+{'AUTOTHROTTLE_DEBUG': True,
+ 'AUTOTHROTTLE_ENABLED': True,
+ 'AUTOTHROTTLE_MAX_DELAY': 0.25,
+ 'AUTOTHROTTLE_START_DELAY': 1,
+ 'AUTOTHROTTLE_TARGET_CONCURRENCY': 128,
+ 'BOT_NAME': 'lazy_py_crawler',
+ 'CONCURRENT_REQUESTS': 126,
+ 'CONCURRENT_REQUESTS_PER_DOMAIN': 2,
+ 'CONCURRENT_REQUESTS_PER_IP': 26,
+ 'DOWNLOAD_TIMEOUT': 500,
+ 'FEED_EXPORT_ENCODING': 'utf-8',
+ 'NEWSPIDER_MODULE': 'lazy_crawler.crawler.spiders',
+ 'REACTOR_THREADPOOL_MAXSIZE': 128,
+ 'RETRY_HTTP_CODES': [500,
+                      502,
+                      503,
+                      504,
+                      400,
+                      401,
+                      403,
+                      404,
+                      405,
+                      406,
+                      407,
+                      408,
+                      409,
+                      410,
+                      429],
+ 'SPIDER_MODULES': ['lazy_crawler.crawler.spiders'],
+ 'USER_AGENT': 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like '
+               'Gecko) Chrome/41.0.2228.0 Safari/537.36'}
+INFO: Telnet Password: af243384836759b4
+INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.spiderstate.SpiderState',
+ 'scrapy.extensions.throttle.AutoThrottle']
+INFO: Enabled downloader middlewares:
+['scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'lazy_crawler.crawler.middlewares.CrawlerSpiderMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware']
+INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+INFO: Enabled item pipelines:
+['lazy_crawler.crawler.pipelines.ExcelWriterPipeline']
+INFO: Spider opened
+INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+INFO: Spider opened: laptop
+INFO: Telnet console listening on 127.0.0.1:6023
+INFO: slot: latop10.it | conc: 1 | delay:  250 ms (-750) | latency:  270 ms | size: 41876 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/auto/> (referer: None)
+INFO: slot: 104.21.69.208 | conc: 1 | delay:  250 ms (-750) | latency:  229 ms | size: 32424 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-caschi-integrali/> (referer: https://latop10.it/auto/)
+DEBUG: Scraped from <200 https://latop10.it/migliori-caschi-integrali/>
+{'Title': 'Il Miglior Casco Integrale (anche Economico, Silenzioso) del 2022', 'URL': 'https://latop10.it/migliori-caschi-integrali/', 'Category 1': 'Auto', 'Category 2': 'Moto'}
+INFO: slot: 104.21.69.208 | conc: 1 | delay:  125 ms (-124) | latency:  209 ms | size: 32640 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-avviatori-di-emergenza/> (referer: https://latop10.it/auto/)
+DEBUG: Scraped from <200 https://latop10.it/migliori-avviatori-di-emergenza/>
+{'Title': 'Il Miglior Avviatore di Emergenza Auto (Booster) del 2022', 'URL': 'https://latop10.it/migliori-avviatori-di-emergenza/', 'Category 1': 'Auto', 'Category 2': 'Batteria'}
+INFO: slot: 104.21.69.208 | conc: 2 | delay:   63 ms (-62) | latency:  207 ms | size: 40699 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-interfoni-per-moto/> (referer: https://latop10.it/auto/)
+DEBUG: Scraped from <200 https://latop10.it/migliori-interfoni-per-moto/>
+{'Title': 'Il Miglior Interfono per Moto Bluetooth – Classifica 2022', 'URL': 'https://latop10.it/migliori-interfoni-per-moto/', 'Category 1': 'Auto', 'Category 2': 'Moto'}
+INFO: slot: 104.21.69.208 | conc: 4 | delay:   32 ms (-30) | latency:  279 ms | size: 35034 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-autoradio/> (referer: https://latop10.it/auto/)
+INFO: slot: 104.21.69.208 | conc: 4 | delay:   17 ms (-15) | latency:  254 ms | size: 31648 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-oli-motore/> (referer: https://latop10.it/auto/)
+DEBUG: Scraped from <200 https://latop10.it/migliori-autoradio/>
+{'Title': 'La Miglior Autoradio 1 DIN – Guida all’Acquisto, Classifica 2022', 'URL': 'https://latop10.it/migliori-autoradio/', 'Category 1': 'Auto', 'Category 2': 'Audio'}
+INFO: slot: 104.21.69.208 | conc: 7 | delay:    9 ms (-7) | latency:  273 ms | size: 30388 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-catene-da-neve/> (referer: https://latop10.it/auto/)
+DEBUG: Scraped from <200 https://latop10.it/migliori-oli-motore/>
+{'Title': 'Il Miglior Olio Motore (5W-30, 5W-40) – Classifica 2022', 'URL': 'https://latop10.it/migliori-oli-motore/', 'Category 1': 'Auto', 'Category 2': 'Olio & Pulitore'}
+INFO: slot: 104.21.69.208 | conc: 7 | delay:    5 ms (-3) | latency:  259 ms | size: 34787 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-navigatori-satellitari/> (referer: https://latop10.it/auto/)
+INFO: slot: 104.21.69.208 | conc: 9 | delay:    3 ms (-2) | latency:  213 ms | size: 32698 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-caschi-jet/> (referer: https://latop10.it/auto/)
+INFO: slot: 104.21.69.208 | conc:13 | delay:    2 ms (-1) | latency:  215 ms | size: 28184 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-additivi-diesel/> (referer: https://latop10.it/auto/)
+DEBUG: Scraped from <200 https://latop10.it/migliori-catene-da-neve/>
+{'Title': 'Le Migliori Catene da Neve del 2022? Anche per Cerchi in Lega', 'URL': 'https://latop10.it/migliori-catene-da-neve/', 'Category 1': 'Auto', 'Category 2': 'Pneumatici'}
+INFO: slot: 104.21.69.208 | conc:16 | delay:    2 ms (+0) | latency:  305 ms | size: 38732 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-dash-cam/> (referer: https://latop10.it/auto/)
+INFO: slot: 104.21.69.208 | conc:15 | delay:    2 ms (+0) | latency:  241 ms | size: 36951 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-antifurti-auto/> (referer: https://latop10.it/auto/)
+INFO: slot: 104.21.69.208 | conc:14 | delay:    2 ms (+0) | latency:  296 ms | size: 36454 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-kit-vivavoce-bluetooth/> (referer: https://latop10.it/auto/)
+DEBUG: Scraped from <200 https://latop10.it/migliori-navigatori-satellitari/>
+{'Title': 'Il Miglior Navigatore Satellitare per Auto – Classifica 2022', 'URL': 'https://latop10.it/migliori-navigatori-satellitari/', 'Category 1': 'Auto', 'Category 2': 'Navigatore'}
+INFO: slot: 104.21.69.208 | conc:14 | delay:    2 ms (+0) | latency:  244 ms | size: 29934 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-caschi-modulari/> (referer: https://latop10.it/auto/)
+DEBUG: Scraped from <200 https://latop10.it/migliori-caschi-jet/>
+{'Title': 'Il Miglior Casco Jet (e Demi-Jet) per Moto e Scooter del 2022', 'URL': 'https://latop10.it/migliori-caschi-jet/', 'Category 1': 'Auto', 'Category 2': 'Moto'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-additivi-diesel/>
+{'Title': 'Il Miglior Additivo e Pulitore Iniettori Diesel – Classifica 2022', 'URL': 'https://latop10.it/migliori-additivi-diesel/', 'Category 1': 'Auto', 'Category 2': 'Olio & Pulitore'}
+INFO: slot: 104.21.69.208 | conc:14 | delay:    2 ms (+0) | latency:  247 ms | size: 31052 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-lampade-h7/> (referer: https://latop10.it/auto/)
+INFO: slot: 104.21.69.208 | conc:13 | delay:    2 ms (+0) | latency:  365 ms | size: 28499 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-batterie-per-auto/> (referer: https://latop10.it/auto/)
+INFO: slot: 104.21.69.208 | conc:15 | delay:    2 ms (+0) | latency:  259 ms | size: 30889 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-sensori-di-parcheggio/> (referer: https://latop10.it/auto/)
+DEBUG: Scraped from <200 https://latop10.it/migliori-dash-cam/>
+{'Title': 'La Migliore Dash Cam – Guida all’Acquisto, Classifica 2022', 'URL': 'https://latop10.it/migliori-dash-cam/', 'Category 1': 'Auto', 'Category 2': 'Camera'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-antifurti-auto/>
+{'Title': 'Il Miglior Antifurto per Auto (anche Meccanico) – Classifica 2022', 'URL': 'https://latop10.it/migliori-antifurti-auto/', 'Category 1': 'Auto', 'Category 2': 'Sicurezza'}
+INFO: slot: 104.21.69.208 | conc:26 | delay:    3 ms (+0) | latency:  431 ms | size: 29907 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-spazzole-tergicristallo/> (referer: https://latop10.it/auto/)
+INFO: slot: 104.21.69.208 | conc:26 | delay:    3 ms (+0) | latency:  447 ms | size: 33950 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-trasmettitori-fm-per-auto/> (referer: https://latop10.it/auto/)
+DEBUG: Scraped from <200 https://latop10.it/migliori-kit-vivavoce-bluetooth/>
+{'Title': 'Il Miglior Kit Vivavoce Bluetooth per Auto del 2022 – Quale scegliere?', 'URL': 'https://latop10.it/migliori-kit-vivavoce-bluetooth/', 'Category 1': 'Auto', 'Category 2': 'Audio'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-caschi-modulari/>
+{'Title': 'Il Miglior Casco Modulare (Silenzioso, Leggero) del 2022', 'URL': 'https://latop10.it/migliori-caschi-modulari/', 'Category 1': 'Auto', 'Category 2': 'Moto'}
+INFO: slot: 104.21.69.208 | conc:26 | delay:    2 ms (+0) | latency:  270 ms | size: 31097 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-pneumatici-invernali/> (referer: https://latop10.it/auto/)
+INFO: slot: 104.21.69.208 | conc:25 | delay:    3 ms (+0) | latency:  450 ms | size: 30851 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-retrocamere-per-auto/> (referer: https://latop10.it/auto/)
+DEBUG: Scraped from <200 https://latop10.it/migliori-lampade-h7/>
+{'Title': 'La Miglior Lampada H7 (Più Luminose, anche LED Omologate, con Effetto Xenon)', 'URL': 'https://latop10.it/migliori-lampade-h7/', 'Category 1': 'Auto', 'Category 2': 'Vernice & Lampade'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-batterie-per-auto/>
+{'Title': 'La Migliore Batteria per Auto – Guida all’Acquisto, Classifica 2022', 'URL': 'https://latop10.it/migliori-batterie-per-auto/', 'Category 1': 'Auto', 'Category 2': 'Batteria'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-sensori-di-parcheggio/>
+{'Title': 'I Migliori Sensori di Parcheggio (Posteriori e Anteriori) del 2022', 'URL': 'https://latop10.it/migliori-sensori-di-parcheggio/', 'Category 1': 'Auto', 'Category 2': 'Sicurezza'}
+INFO: slot: 104.21.69.208 | conc:25 | delay:    3 ms (+0) | latency:  507 ms | size: 29912 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-cric-idraulici-a-carrello/> (referer: https://latop10.it/auto/)
+INFO: slot: 104.21.69.208 | conc:24 | delay:    4 ms (+0) | latency:  524 ms | size: 29670 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-parasole-per-auto/> (referer: https://latop10.it/auto/)
+INFO: slot: 104.21.69.208 | conc:23 | delay:    3 ms (+0) | latency:  310 ms | size: 28208 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-cric-idraulici-per-auto/> (referer: https://latop10.it/auto/)
+INFO: slot: 104.21.69.208 | conc:22 | delay:    4 ms (+0) | latency:  540 ms | size: 31306 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-pistole-per-il-gonfiaggio-dei-pneumatici/> (referer: https://latop10.it/auto/)
+INFO: slot: 104.21.69.208 | conc:21 | delay:    3 ms (-1) | latency:  279 ms | size: 28620 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-autoradio-2-din-con-navigatore/> (referer: https://latop10.it/auto/)
+INFO: slot: 104.21.69.208 | conc:21 | delay:    2 ms (+0) | latency:  329 ms | size: 31961 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-manometri-per-pneumatici/> (referer: https://latop10.it/auto/)
+DEBUG: Scraped from <200 https://latop10.it/migliori-spazzole-tergicristallo/>
+{'Title': 'Le Migliori Spazzole Tergicristallo – Classifica del 2022', 'URL': 'https://latop10.it/migliori-spazzole-tergicristallo/', 'Category 1': 'Auto', 'Category 2': 'Altro'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-trasmettitori-fm-per-auto/>
+{'Title': 'Il Miglior Trasmettitore FM per Auto (Bluetooth) – Classifica 2022', 'URL': 'https://latop10.it/migliori-trasmettitori-fm-per-auto/', 'Category 1': 'Auto', 'Category 2': 'Audio'}
+INFO: slot: 104.21.69.208 | conc:21 | delay:    4 ms (+1) | latency:  575 ms | size: 30598 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-casse-per-auto/> (referer: https://latop10.it/auto/)
+INFO: slot: 104.21.69.208 | conc:20 | delay:    3 ms (+0) | latency:  357 ms | size: 27148 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-oli-castrol-5w30/> (referer: https://latop10.it/auto/)
+INFO: slot: 104.21.69.208 | conc:19 | delay:    4 ms (+1) | latency:  608 ms | size: 38816 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-caricabatterie-per-auto/> (referer: https://latop10.it/auto/)
+INFO: slot: 104.21.69.208 | conc:18 | delay:    4 ms (+0) | latency:  607 ms | size: 42206 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-autoradio-2-din/> (referer: https://latop10.it/auto/)
+DEBUG: Scraped from <200 https://latop10.it/migliori-pneumatici-invernali/>
+{'Title': 'I Migliori Pneumatici Invernali – Confronto, Classifica 2022', 'URL': 'https://latop10.it/migliori-pneumatici-invernali/', 'Category 1': 'Auto', 'Category 2': 'Pneumatici'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-retrocamere-per-auto/>
+{'Title': 'La Migliore Retrocamera per Auto – Classifica 2022', 'URL': 'https://latop10.it/migliori-retrocamere-per-auto/', 'Category 1': 'Auto', 'Category 2': 'Camera'}
+INFO: slot: 104.21.69.208 | conc:18 | delay:    3 ms (-1) | latency:  307 ms | size: 27454 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-giacche-da-moto-4-stagioni/> (referer: https://latop10.it/auto/)
+INFO: slot: 104.21.69.208 | conc:17 | delay:    3 ms (+0) | latency:  358 ms | size: 29315 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-kit-xenon-h7/> (referer: https://latop10.it/auto/)
+DEBUG: Scraped from <200 https://latop10.it/migliori-cric-idraulici-a-carrello/>
+{'Title': 'Il Miglior Cric Idraulico a Carrello (anche Professionali) – Classifica 2022', 'URL': 'https://latop10.it/migliori-cric-idraulici-a-carrello/', 'Category 1': 'Auto', 'Category 2': 'Altro'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-parasole-per-auto/>
+{'Title': 'Il Miglior Parasole per Auto (anche Interno) – Classifica 2022', 'URL': 'https://latop10.it/migliori-parasole-per-auto/', 'Category 1': 'Auto', 'Category 2': 'Altro'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-cric-idraulici-per-auto/>
+{'Title': 'Il Miglior Cric Idraulico per Auto (Martinetto) – Classifica 2022', 'URL': 'https://latop10.it/migliori-cric-idraulici-per-auto/', 'Category 1': 'Auto', 'Category 2': 'Altro'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-pistole-per-il-gonfiaggio-dei-pneumatici/>
+{'Title': 'La Migliore Pistola per il Gonfiaggio dei Pneumatici (anche Professionale)', 'URL': 'https://latop10.it/migliori-pistole-per-il-gonfiaggio-dei-pneumatici/', 'Category 1': 'Auto', 'Category 2': 'Pneumatici'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-autoradio-2-din-con-navigatore/>
+{'Title': 'La Migliore Autoradio 2 DIN con Navigatore GPS – Classifica 2022', 'URL': 'https://latop10.it/migliori-autoradio-2-din-con-navigatore/', 'Category 1': 'Auto', 'Category 2': 'Audio'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-manometri-per-pneumatici/>
+{'Title': 'Il Miglior Manometro per Pneumatici (per la Pressione delle Gomme)', 'URL': 'https://latop10.it/migliori-manometri-per-pneumatici/', 'Category 1': 'Auto', 'Category 2': 'Pneumatici'}
+INFO: slot: 104.21.69.208 | conc:17 | delay:    2 ms (+0) | latency:  328 ms | size: 28629 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-subwoofer-attivi-per-auto/> (referer: https://latop10.it/auto/)
+INFO: slot: 104.21.69.208 | conc:16 | delay:    4 ms (+1) | latency:  581 ms | size: 31339 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-copriauto/> (referer: https://latop10.it/auto/)
+DEBUG: Scraped from <200 https://latop10.it/migliori-casse-per-auto/>
+{'Title': 'I Migliori Altoparlanti per Auto – Guida all’Acquisto, Classifica 2022', 'URL': 'https://latop10.it/migliori-casse-per-auto/', 'Category 1': 'Auto', 'Category 2': 'Audio'}
+INFO: slot: 104.21.69.208 | conc:17 | delay:    4 ms (+0) | latency:  575 ms | size: 29596 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-giacche-da-moto/> (referer: https://latop10.it/auto/)
+INFO: slot: 104.21.69.208 | conc:16 | delay:    4 ms (+0) | latency:  576 ms | size: 29289 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-teli-antigrandine-per-auto/> (referer: https://latop10.it/auto/)
+INFO: slot: 104.21.69.208 | conc:15 | delay:    3 ms (+0) | latency:  343 ms | size: 37998 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-caschi-per-moto/> (referer: https://latop10.it/auto/)
+INFO: slot: 104.21.69.208 | conc:14 | delay:    4 ms (+0) | latency:  557 ms | size: 29739 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-kit-rinnova-fari/> (referer: https://latop10.it/auto/)
+DEBUG: Scraped from <200 https://latop10.it/migliori-oli-castrol-5w30/>
+{'Title': 'Il Miglior Olio Castrol 5W30 – Opinioni, Recensioni, Prezzi', 'URL': 'https://latop10.it/migliori-oli-castrol-5w30/', 'Category 1': 'Auto', 'Category 2': 'Olio & Pulitore'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-caricabatterie-per-auto/>
+{'Title': 'Il Miglior Caricabatteria per Auto – Classifica 2022', 'URL': 'https://latop10.it/migliori-caricabatterie-per-auto/', 'Category 1': 'Auto', 'Category 2': 'Batteria'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-autoradio-2-din/>
+{'Title': 'La Miglior Autoradio 2 DIN (anche Economica) – Classifica 2022', 'URL': 'https://latop10.it/migliori-autoradio-2-din/', 'Category 1': 'Auto', 'Category 2': 'Audio'}
+INFO: slot: 104.21.69.208 | conc:14 | delay:    4 ms (+0) | latency:  625 ms | size: 27449 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-autoradio-2-din-cinesi/> (referer: https://latop10.it/auto/)
+INFO: slot: 104.21.69.208 | conc:13 | delay:    4 ms (+0) | latency:  616 ms | size: 29583 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-portabici-posteriori-per-auto/> (referer: https://latop10.it/auto/)
+INFO: slot: 104.21.69.208 | conc:12 | delay:    3 ms (-1) | latency:  336 ms | size: 28885 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-oli-per-moto-4-tempi/> (referer: https://latop10.it/auto/)
+INFO: slot: 104.21.69.208 | conc:11 | delay:    4 ms (+1) | latency:  639 ms | size: 30494 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-kit-di-riparazione-gomme/> (referer: https://latop10.it/auto/)
+INFO: slot: 104.21.69.208 | conc:10 | delay:    5 ms (+0) | latency:  658 ms | size: 32137 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-oli-5w30/> (referer: https://latop10.it/auto/)
+DEBUG: Scraped from <200 https://latop10.it/migliori-giacche-da-moto-4-stagioni/>
+{'Title': 'Il Miglior Giacca da Moto 4 Stagioni – Classifica 2022', 'URL': 'https://latop10.it/migliori-giacche-da-moto-4-stagioni/', 'Category 1': 'Auto', 'Category 2': 'Moto'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-kit-xenon-h7/>
+{'Title': 'Il Miglior Kit Xenon H7 – Guida all’Acquisto, Classifica 2022', 'URL': 'https://latop10.it/migliori-kit-xenon-h7/', 'Category 1': 'Auto', 'Category 2': 'Vernice & Lampade'}
+INFO: slot: 104.21.69.208 | conc:10 | delay:    5 ms (+0) | latency:  677 ms | size: 26153 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/parrot-bebop-2-recensione/> (referer: https://latop10.it/auto/)
+INFO: slot: 104.21.69.208 | conc: 9 | delay:    3 ms (-1) | latency:  295 ms | size: 35215 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-lucidatrici-per-auto/> (referer: https://latop10.it/auto/)
+INFO: slot: 104.21.69.208 | conc: 8 | delay:    5 ms (+1) | latency:  712 ms | size: 30777 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-pulitori-per-iniettori/> (referer: https://latop10.it/auto/)
+INFO: slot: 104.21.69.208 | conc: 7 | delay:    5 ms (+0) | latency:  747 ms | size: 27289 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-autoradio-alpine/> (referer: https://latop10.it/auto/)
+INFO: slot: 104.21.69.208 | conc: 6 | delay:    5 ms (+0) | latency:  713 ms | size: 33650 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-pneumatici/> (referer: https://latop10.it/auto/)
+DEBUG: Scraped from <200 https://latop10.it/migliori-subwoofer-attivi-per-auto/>
+{'Title': 'Il Miglior Subwoofer Attivo per Auto – Classifica 2022', 'URL': 'https://latop10.it/migliori-subwoofer-attivi-per-auto/', 'Category 1': 'Auto', 'Category 2': 'Audio'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-copriauto/>
+{'Title': 'Il Miglior Copriauto (anche Felpato, Gonfiabile e Impermeabile)', 'URL': 'https://latop10.it/migliori-copriauto/', 'Category 1': 'Auto', 'Category 2': 'Sicurezza'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-giacche-da-moto/>
+{'Title': 'La Miglior Giacca da Moto (Estiva o Invernale) – Consigli 2020', 'URL': 'https://latop10.it/migliori-giacche-da-moto/', 'Category 1': 'Auto', 'Category 2': 'Moto'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-teli-antigrandine-per-auto/>
+{'Title': 'Il Miglior Telo Antigrandine per Auto (Copriauto) – Classifica 2022', 'URL': 'https://latop10.it/migliori-teli-antigrandine-per-auto/', 'Category 1': 'Auto', 'Category 2': 'Sicurezza'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-caschi-per-moto/>
+{'Title': 'Il Miglior Casco per Moto (anche per Scooter, Marche Top) del 2022', 'URL': 'https://latop10.it/migliori-caschi-per-moto/', 'Category 1': 'Auto', 'Category 2': 'Moto'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-kit-rinnova-fari/>
+{'Title': 'Il Miglior Kit Rinnova Fari / Fanali? + Opinioni, Recensioni 2022', 'URL': 'https://latop10.it/migliori-kit-rinnova-fari/', 'Category 1': 'Auto', 'Category 2': 'Vernice & Lampade'}
+INFO: slot: 104.21.69.208 | conc: 6 | delay:    4 ms (-1) | latency:  353 ms | size: 28783 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-autoradio-2-din-android/> (referer: https://latop10.it/auto/)
+INFO: slot: 104.21.69.208 | conc: 5 | delay:    3 ms (+0) | latency:  309 ms | size: 26360 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-portabici-peruzzo/> (referer: https://latop10.it/auto/)
+DEBUG: Scraped from <200 https://latop10.it/migliori-autoradio-2-din-cinesi/>
+{'Title': 'La Miglior Autoradio 2 DIN Cinese – Classifica 2022', 'URL': 'https://latop10.it/migliori-autoradio-2-din-cinesi/', 'Category 1': 'Auto', 'Category 2': 'Audio'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-portabici-posteriori-per-auto/>
+{'Title': 'Il Miglior Portabici Posteriore per Auto (anche Universale) del 2022', 'URL': 'https://latop10.it/migliori-portabici-posteriori-per-auto/', 'Category 1': 'Auto', 'Category 2': 'Altro'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-oli-per-moto-4-tempi/>
+{'Title': 'Il Miglior Olio per Moto 4 Tempi (4t) – Classifica 2022', 'URL': 'https://latop10.it/migliori-oli-per-moto-4-tempi/', 'Category 1': 'Auto', 'Category 2': 'Moto'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-kit-di-riparazione-gomme/>
+{'Title': 'Il Miglior Kit di Riparazione Gomme (Pneumatici) per Auto / Moto', 'URL': 'https://latop10.it/migliori-kit-di-riparazione-gomme/', 'Category 1': 'Auto', 'Category 2': 'Pneumatici'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-oli-5w30/>
+{'Title': 'Il Miglior Olio Motore 5w30 (per Diesel, Benzina) – Classifica 2022', 'URL': 'https://latop10.it/migliori-oli-5w30/', 'Category 1': 'Auto', 'Category 2': 'Olio & Pulitore'}
+INFO: slot: 104.21.69.208 | conc: 5 | delay:    3 ms (+0) | latency:  400 ms | size: 26855 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-autoradio-2-din-pioneer/> (referer: https://latop10.it/auto/)
+INFO: slot: 104.21.69.208 | conc: 4 | delay:    2 ms (+0) | latency:  326 ms | size: 28819 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-navigatori-satellitari-garmin/> (referer: https://latop10.it/auto/)
+DEBUG: Scraped from <200 https://latop10.it/parrot-bebop-2-recensione/>
+{'Title': 'Parrot Bebop 2 – Recensione, Opinioni, Prezzi del 2022', 'URL': 'https://latop10.it/parrot-bebop-2-recensione/', 'Category 1': 'Auto', 'Category 2': 'Audio'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-lucidatrici-per-auto/>
+{'Title': 'La Migliore Lucidatrice per Auto – Classifica 2022', 'URL': 'https://latop10.it/migliori-lucidatrici-per-auto/', 'Category 1': 'Auto', 'Category 2': 'Vernice & Lampade'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-pulitori-per-iniettori/>
+{'Title': 'Il Miglior Pulitore per Iniettori (Benzina, Diesel) + Opinioni', 'URL': 'https://latop10.it/migliori-pulitori-per-iniettori/', 'Category 1': 'Auto', 'Category 2': 'Olio & Pulitore'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-autoradio-alpine/>
+{'Title': 'La Miglior Autoradio Alpine – Opinioni, Recensioni 2022', 'URL': 'https://latop10.it/migliori-autoradio-alpine/', 'Category 1': 'Auto', 'Category 2': 'Audio'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-pneumatici/>
+{'Title': 'I Migliori Pneumatici Auto (Gomme, per Estate e Inverno, Marche Top)', 'URL': 'https://latop10.it/migliori-pneumatici/', 'Category 1': 'Auto', 'Category 2': 'Pneumatici'}
+INFO: slot: 104.21.69.208 | conc: 4 | delay:    2 ms (+0) | latency:  341 ms | size: 26202 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-autoradio-2-din-per-golf-5/> (referer: https://latop10.it/auto/)
+INFO: slot: 104.21.69.208 | conc: 3 | delay:    2 ms (+0) | latency:  260 ms | size: 29644 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-autoradio-con-bluetooth/> (referer: https://latop10.it/auto/)
+DEBUG: Scraped from <200 https://latop10.it/migliori-autoradio-2-din-android/>
+{'Title': 'Il Miglior Autoradio 2 DIN Android – Opinioni, Recensioni 2022', 'URL': 'https://latop10.it/migliori-autoradio-2-din-android/', 'Category 1': 'Auto', 'Category 2': 'Audio'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-portabici-peruzzo/>
+{'Title': 'Il Miglior Portabici Peruzzo – Opinioni, Recensioni, Prezzi', 'URL': 'https://latop10.it/migliori-portabici-peruzzo/', 'Category 1': 'Auto', 'Category 2': 'Altro'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-autoradio-2-din-pioneer/>
+{'Title': 'La Migliore Autoradio Pioneer 2 DIN – Classifica 2022', 'URL': 'https://latop10.it/migliori-autoradio-2-din-pioneer/', 'Category 1': 'Auto', 'Category 2': 'Audio'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-navigatori-satellitari-garmin/>
+{'Title': 'Il Miglior Navigatore GPS Garmin – Opinioni, Recensioni 2022', 'URL': 'https://latop10.it/migliori-navigatori-satellitari-garmin/', 'Category 1': 'Auto', 'Category 2': 'Navigatore'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-autoradio-2-din-per-golf-5/>
+{'Title': 'La Migliore Autoradio 2 DIN per Golf 5 – Recensioni, Classifica 2022', 'URL': 'https://latop10.it/migliori-autoradio-2-din-per-golf-5/', 'Category 1': 'Auto', 'Category 2': 'Audio'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-autoradio-con-bluetooth/>
+{'Title': 'La Migliore Autoradio con Bluetooth – Recensioni, Classifica 2022', 'URL': 'https://latop10.it/migliori-autoradio-con-bluetooth/', 'Category 1': 'Auto', 'Category 2': 'Audio'}
+INFO: slot: 104.21.69.208 | conc:16 | delay:    2 ms (+0) | latency:  345 ms | size: 31196 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-localizzatori-gps-tracker-per-auto/> (referer: https://latop10.it/auto/)
+INFO: slot: 104.21.69.208 | conc:24 | delay:    2 ms (+0) | latency:  287 ms | size: 26999 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-oli-total-5w30/> (referer: https://latop10.it/auto/)
+INFO: slot: 104.21.69.208 | conc:26 | delay:    2 ms (+0) | latency:  244 ms | size: 26837 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-caricabatterie-per-auto-professionali/> (referer: https://latop10.it/auto/)
+INFO: slot: 104.21.69.208 | conc:26 | delay:    1 ms (+0) | latency:  222 ms | size: 26987 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-navigatori-per-camper/> (referer: https://latop10.it/auto/)
+DEBUG: Scraped from <200 https://latop10.it/migliori-localizzatori-gps-tracker-per-auto/>
+{'Title': 'Il Miglior Localizzatore GPS per Auto – Recensioni, Classifica 2022', 'URL': 'https://latop10.it/migliori-localizzatori-gps-tracker-per-auto/', 'Category 1': 'Auto', 'Category 2': 'Sicurezza'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-oli-total-5w30/>
+{'Title': 'Il Miglior Olio Total 5w30 – Guida all’Acquisto, Classifica 2022', 'URL': 'https://latop10.it/migliori-oli-total-5w30/', 'Category 1': 'Auto', 'Category 2': 'Olio & Pulitore'}
+INFO: slot: 104.21.69.208 | conc:26 | delay:    2 ms (+0) | latency:  279 ms | size: 26851 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-oli-5w30-dexos2/> (referer: https://latop10.it/auto/)
+INFO: slot: 104.21.69.208 | conc:26 | delay:    2 ms (+0) | latency:  270 ms | size: 26587 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-parasole-auto-per-bimbi/> (referer: https://latop10.it/auto/)
+DEBUG: Scraped from <200 https://latop10.it/migliori-caricabatterie-per-auto-professionali/>
+{'Title': 'Il Miglior Caricabatteria per Auto Professionale – Classifica 2022', 'URL': 'https://latop10.it/migliori-caricabatterie-per-auto-professionali/', 'Category 1': 'Auto', 'Category 2': 'Batteria'}
+INFO: slot: 104.21.69.208 | conc:26 | delay:    2 ms (+0) | latency:  271 ms | size: 27082 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-avviatori-di-emergenza-auto-diesel/> (referer: https://latop10.it/auto/)
+INFO: slot: 104.21.69.208 | conc:26 | delay:    2 ms (+0) | latency:  295 ms | size: 29191 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-retrocamere-per-auto-wifi/> (referer: https://latop10.it/auto/)
+INFO: slot: 104.21.69.208 | conc:25 | delay:    2 ms (+0) | latency:  304 ms | size: 27274 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-telecamere-per-auto-anteriori-e-posteriori/> (referer: https://latop10.it/auto/)
+DEBUG: Scraped from <200 https://latop10.it/migliori-navigatori-per-camper/>
+{'Title': 'Il Miglior Navigatore per Camper – Classifica 2022', 'URL': 'https://latop10.it/migliori-navigatori-per-camper/', 'Category 1': 'Auto', 'Category 2': 'Navigatore'}
+INFO: slot: 104.21.69.208 | conc:25 | delay:    2 ms (+0) | latency:  326 ms | size: 26939 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-interfono-per-moto-midland/> (referer: https://latop10.it/auto/)
+INFO: slot: 104.21.69.208 | conc:24 | delay:    2 ms (+0) | latency:  245 ms | size: 30599 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-lucidatrici-orbitali/> (referer: https://latop10.it/auto/)
+INFO: slot: 104.21.69.208 | conc:26 | delay:    2 ms (+0) | latency:  299 ms | size: 32651 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-telecamere-per-auto/> (referer: https://latop10.it/auto/)
+INFO: slot: 104.21.69.208 | conc:26 | delay:    2 ms (+0) | latency:  330 ms | size: 26830 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-autoradio-dab/> (referer: https://latop10.it/auto/)
+INFO: slot: 104.21.69.208 | conc:26 | delay:    2 ms (+0) | latency:  335 ms | size: 31641 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-caschi-moto-per-bambini/> (referer: https://latop10.it/auto/)
+INFO: slot: 104.21.69.208 | conc:26 | delay:    2 ms (+0) | latency:  318 ms | size: 28881 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-kit-casse-auto/> (referer: https://latop10.it/auto/)
+DEBUG: Scraped from <200 https://latop10.it/migliori-oli-5w30-dexos2/>
+{'Title': 'Il Miglior Olio 5W30 DEXOS2 – Opinioni, Recensioni 2022', 'URL': 'https://latop10.it/migliori-oli-5w30-dexos2/', 'Category 1': 'Auto', 'Category 2': 'Olio & Pulitore'}
+INFO: slot: 104.21.69.208 | conc:26 | delay:    2 ms (+0) | latency:  313 ms | size: 27461 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-oli-5w30-mobil-1/> (referer: https://latop10.it/auto/)
+INFO: slot: 104.21.69.208 | conc:25 | delay:    2 ms (+0) | latency:  323 ms | size: 29129 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-retrocamere-per-camper/> (referer: https://latop10.it/auto/)
+INFO: slot: 104.21.69.208 | conc:24 | delay:    2 ms (+0) | latency:  281 ms | size: 30285 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-occhiali-da-moto/> (referer: https://latop10.it/auto/)
+DEBUG: Scraped from <200 https://latop10.it/migliori-parasole-auto-per-bimbi/>
+{'Title': 'Il Miglior Parasole Auto per Bimbi – Classifica 2022', 'URL': 'https://latop10.it/migliori-parasole-auto-per-bimbi/', 'Category 1': 'Auto', 'Category 2': 'Altro'}
+INFO: slot: 104.21.69.208 | conc:25 | delay:    2 ms (+0) | latency:  278 ms | size: 26784 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-oli-5w30-diesel/> (referer: https://latop10.it/auto/)
+INFO: slot: 104.21.69.208 | conc:24 | delay:    2 ms (+0) | latency:  383 ms | size: 28819 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-autoradio-kenwood/> (referer: https://latop10.it/auto/)
+INFO: slot: 104.21.69.208 | conc:23 | delay:    3 ms (+0) | latency:  393 ms | size: 27233 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-pneumatici-205-55-r16/> (referer: https://latop10.it/auto/)
+INFO: slot: 104.21.69.208 | conc:22 | delay:    2 ms (+0) | latency:  285 ms | size: 26919 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-navigatori-gps-tomtom/> (referer: https://latop10.it/auto/)
+INFO: slot: 104.21.69.208 | conc:21 | delay:    2 ms (+0) | latency:  351 ms | size: 26410 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-pneumatici-4-stagioni-michelin/> (referer: https://latop10.it/auto/)
+INFO: slot: 104.21.69.208 | conc:20 | delay:    2 ms (+0) | latency:  362 ms | size: 26227 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-oli-5w30-benzina/> (referer: https://latop10.it/auto/)
+DEBUG: Scraped from <200 https://latop10.it/migliori-avviatori-di-emergenza-auto-diesel/>
+{'Title': 'Il Miglior Avviatore Emergenza Auto Diesel – Classifica 2022', 'URL': 'https://latop10.it/migliori-avviatori-di-emergenza-auto-diesel/', 'Category 1': 'Auto', 'Category 2': 'Batteria'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-retrocamere-per-auto-wifi/>
+{'Title': 'La Miglior Retrocamera per Auto WiFi – Classifica 2022', 'URL': 'https://latop10.it/migliori-retrocamere-per-auto-wifi/', 'Category 1': 'Auto', 'Category 2': 'Camera'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-telecamere-per-auto-anteriori-e-posteriori/>
+{'Title': 'La Miglior Telecamera per Auto Anteriore e Posteriore del 2022', 'URL': 'https://latop10.it/migliori-telecamere-per-auto-anteriori-e-posteriori/', 'Category 1': 'Auto', 'Category 2': 'Camera'}
+INFO: slot: 104.21.69.208 | conc:20 | delay:    2 ms (+0) | latency:  383 ms | size: 28704 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-caschi-da-moto-da-donna/> (referer: https://latop10.it/auto/)
+INFO: slot: 104.21.69.208 | conc:19 | delay:    2 ms (+0) | latency:  283 ms | size: 31272 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-poggiatesta-dvd-per-auto/> (referer: https://latop10.it/auto/)
+INFO: slot: 104.21.69.208 | conc:18 | delay:    2 ms (+0) | latency:  279 ms | size: 25289 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/auto/page/2/> (referer: https://latop10.it/auto/)
+INFO: slot: 104.21.69.208 | conc:17 | delay:    2 ms (+0) | latency:  258 ms | size: 32276 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-guanti-riscaldati-termici/> (referer: https://latop10.it/auto/)
+DEBUG: Scraped from <200 https://latop10.it/migliori-interfono-per-moto-midland/>
+{'Title': 'Il Miglior Interfono per Moto Midland – Classifica 2022', 'URL': 'https://latop10.it/migliori-interfono-per-moto-midland/', 'Category 1': 'Auto', 'Category 2': 'Moto'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-lucidatrici-orbitali/>
+{'Title': 'La Miglior Lucidatrice Orbitale – Recensioni, Classifica 2022', 'URL': 'https://latop10.it/migliori-lucidatrici-orbitali/', 'Category 1': 'Auto', 'Category 2': 'Vernice & Lampade'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-telecamere-per-auto/>
+{'Title': 'La Miglior Telecamera per Auto (Antivandalismo, anche Professionale)', 'URL': 'https://latop10.it/migliori-telecamere-per-auto/', 'Category 1': 'Auto', 'Category 2': 'Camera'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-autoradio-dab/>
+{'Title': 'La Migliore Autoradio DAB (anche con Bluetooth) – Classifica 2022', 'URL': 'https://latop10.it/migliori-autoradio-dab/', 'Category 1': 'Auto', 'Category 2': 'Audio'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-caschi-moto-per-bambini/>
+{'Title': 'Il Miglior Casco da Moto per Bambini – Classifica 2022', 'URL': 'https://latop10.it/migliori-caschi-moto-per-bambini/', 'Category 1': 'Auto', 'Category 2': 'Moto'}
+INFO: slot: 104.21.69.208 | conc:17 | delay:    2 ms (+0) | latency:  292 ms | size: 26044 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-interfoni-per-moto-sena/> (referer: https://latop10.it/auto/)
+INFO: slot: 104.21.69.208 | conc:16 | delay:    2 ms (+0) | latency:  301 ms | size: 26109 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-diffusori-di-aromi-per-auto/> (referer: https://latop10.it/auto/)
+INFO: slot: 104.21.69.208 | conc:15 | delay:    2 ms (+0) | latency:  294 ms | size: 29090 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-casse-bluetooth-auto/> (referer: https://latop10.it/auto/)
+INFO: slot: 104.21.69.208 | conc:14 | delay:    2 ms (+0) | latency:  326 ms | size: 27348 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-autoradio-2-din-kenwood/> (referer: https://latop10.it/auto/)
+INFO: slot: 104.21.69.208 | conc:13 | delay:    2 ms (+0) | latency:  293 ms | size: 26347 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-copriauto-felpati/> (referer: https://latop10.it/auto/)
+DEBUG: Scraped from <200 https://latop10.it/migliori-kit-casse-auto/>
+{'Title': 'Il Miglior Kit Casse Auto (Altoparlanti) – Classifica 2022', 'URL': 'https://latop10.it/migliori-kit-casse-auto/', 'Category 1': 'Auto', 'Category 2': 'Audio'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-oli-5w30-mobil-1/>
+{'Title': 'Il Miglior Olio 5w30 Mobil 1 – Recensioni, Opinioni 2021', 'URL': 'https://latop10.it/migliori-oli-5w30-mobil-1/', 'Category 1': 'Auto', 'Category 2': 'Olio & Pulitore'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-retrocamere-per-camper/>
+{'Title': 'La Miglior Retrocamera per Camper – Recensioni, Classifica 2022', 'URL': 'https://latop10.it/migliori-retrocamere-per-camper/', 'Category 1': 'Auto', 'Category 2': 'Camera'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-occhiali-da-moto/>
+{'Title': 'I Migliori Occhiali da Moto (anche Vintage) – Recensioni, Classifica 2022', 'URL': 'https://latop10.it/migliori-occhiali-da-moto/', 'Category 1': 'Auto', 'Category 2': 'Moto'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-oli-5w30-diesel/>
+{'Title': 'Il Miglior Olio 5w30 Diesel – Recensioni, Classifica 2022', 'URL': 'https://latop10.it/migliori-oli-5w30-diesel/', 'Category 1': 'Auto', 'Category 2': 'Olio & Pulitore'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-autoradio-kenwood/>
+{'Title': 'La Miglior Autoradio Kenwood (anche a 2 DIN) – Classifica 2022', 'URL': 'https://latop10.it/migliori-autoradio-kenwood/', 'Category 1': 'Auto', 'Category 2': 'Audio'}
+INFO: slot: 104.21.69.208 | conc:13 | delay:    4 ms (+1) | latency:  549 ms | size: 26331 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-pneumatici-bridgestone/> (referer: https://latop10.it/auto/)
+INFO: slot: 104.21.69.208 | conc:12 | delay:    3 ms (+0) | latency:  308 ms | size: 31353 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-oli-10w40/> (referer: https://latop10.it/auto/)
+INFO: slot: 104.21.69.208 | conc:11 | delay:    4 ms (+0) | latency:  532 ms | size: 31849 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-box-da-tetto-auto/> (referer: https://latop10.it/auto/)
+INFO: slot: 104.21.69.208 | conc:10 | delay:    3 ms (+0) | latency:  475 ms | size: 26924 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-lucidatrici-per-auto-bosch/> (referer: https://latop10.it/auto/)
+INFO: slot: 104.21.69.208 | conc: 9 | delay:    4 ms (+0) | latency:  519 ms | size: 30820 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-guanti-da-motociclista/> (referer: https://latop10.it/auto/)
+INFO: slot: 104.21.69.208 | conc: 8 | delay:    3 ms (+0) | latency:  484 ms | size: 26138 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-oli-10w40-da-moto/> (referer: https://latop10.it/auto/)
+INFO: slot: 104.21.69.208 | conc: 7 | delay:    3 ms (+0) | latency:  414 ms | size: 26266 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-autoradio-pioneer/> (referer: https://latop10.it/auto/)
+DEBUG: Scraped from <200 https://latop10.it/migliori-pneumatici-205-55-r16/>
+{'Title': 'I Migliori Pneumatici 205 55 r16 (anche Estivi) del 2022', 'URL': 'https://latop10.it/migliori-pneumatici-205-55-r16/', 'Category 1': 'Auto', 'Category 2': 'Pneumatici'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-navigatori-gps-tomtom/>
+{'Title': 'Il Miglior Navigatore GPS TomTom – Recensioni, Opinioni 2021', 'URL': 'https://latop10.it/migliori-navigatori-gps-tomtom/', 'Category 1': 'Auto', 'Category 2': 'Navigatore'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-pneumatici-4-stagioni-michelin/>
+{'Title': 'I Migliori Pneumatici 4 Stagioni Michelin – Opinioni, Recensioni 2022', 'URL': 'https://latop10.it/migliori-pneumatici-4-stagioni-michelin/', 'Category 1': 'Auto', 'Category 2': 'Pneumatici'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-oli-5w30-benzina/>
+{'Title': 'Il Miglior Olio 5w30 Benzina – Recensioni, Classifica 2022', 'URL': 'https://latop10.it/migliori-oli-5w30-benzina/', 'Category 1': 'Auto', 'Category 2': 'Olio & Pulitore'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-caschi-da-moto-da-donna/>
+{'Title': 'Il Miglior Casco da Moto da Donna – Recensioni, Classifica 2022', 'URL': 'https://latop10.it/migliori-caschi-da-moto-da-donna/', 'Category 1': 'Auto', 'Category 2': 'Moto'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-poggiatesta-dvd-per-auto/>
+{'Title': 'Il Miglior Poggiatesta DVD per Auto (Monitor) – Classifica 2022', 'URL': 'https://latop10.it/migliori-poggiatesta-dvd-per-auto/', 'Category 1': 'Auto', 'Category 2': 'Altro'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-guanti-riscaldati-termici/>
+{'Title': 'I Migliori Guanti Riscaldati (per Moto) – Recensioni, Classifica 2022', 'URL': 'https://latop10.it/migliori-guanti-riscaldati-termici/', 'Category 1': 'Auto', 'Category 2': 'Moto'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-interfoni-per-moto-sena/>
+{'Title': 'Il Miglior Interfono per Moto Sena – Opinioni, Recensioni 2022', 'URL': 'https://latop10.it/migliori-interfoni-per-moto-sena/', 'Category 1': 'Auto', 'Category 2': 'Moto'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-diffusori-di-aromi-per-auto/>
+{'Title': 'Il Miglior Diffusore di Aromi per Auto – Recensioni, Classifica 2022', 'URL': 'https://latop10.it/migliori-diffusori-di-aromi-per-auto/', 'Category 1': 'Auto', 'Category 2': 'Altro'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-casse-bluetooth-auto/>
+{'Title': 'Le Migliori Casse Bluetooth per Auto – Recensioni, Classifica 2022', 'URL': 'https://latop10.it/migliori-casse-bluetooth-auto/', 'Category 1': 'Auto', 'Category 2': 'Audio'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-autoradio-2-din-kenwood/>
+{'Title': 'La Migliore Autoradio 2 DIN Kenwood – Recensioni, Classifica 2022', 'URL': 'https://latop10.it/migliori-autoradio-2-din-kenwood/', 'Category 1': 'Auto', 'Category 2': 'Audio'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-copriauto-felpati/>
+{'Title': 'Il Miglior Copriauto Felpato – Recensioni, Classifica 2022', 'URL': 'https://latop10.it/migliori-copriauto-felpati/', 'Category 1': 'Auto', 'Category 2': 'Sicurezza'}
+INFO: slot: 104.21.69.208 | conc: 8 | delay:    8 ms (+4) | latency: 1046 ms | size: 26720 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-avviatori-di-emergenza-per-auto-suaoki/> (referer: https://latop10.it/auto/)
+INFO: slot: 104.21.69.208 | conc: 7 | delay:    8 ms (+0) | latency: 1067 ms | size: 28612 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-giacche-da-moto-estive/> (referer: https://latop10.it/auto/)
+INFO: slot: 104.21.69.208 | conc: 6 | delay:    8 ms (+0) | latency: 1065 ms | size: 26342 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-oli-motori-per-moto-15w50/> (referer: https://latop10.it/auto/)
+INFO: slot: 104.21.69.208 | conc: 5 | delay:    5 ms (-2) | latency:  325 ms | size: 29804 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-pneumatici-per-moto/> (referer: https://latop10.it/auto/)
+INFO: slot: 104.21.69.208 | conc: 4 | delay:    8 ms (+2) | latency: 1049 ms | size: 28858 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-kit-di-riparazione-di-pneumatici-per-moto/> (referer: https://latop10.it/auto/)
+DEBUG: Scraped from <200 https://latop10.it/migliori-pneumatici-bridgestone/>
+{'Title': 'Il Miglior Pneumatico Bridgestone – Recensioni, Classifica 2022', 'URL': 'https://latop10.it/migliori-pneumatici-bridgestone/', 'Category 1': 'Auto', 'Category 2': 'Pneumatici'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-oli-10w40/>
+{'Title': 'Il Miglior Olio 10w40 (anche Sintetici) – Recensioni, Classifica 2022', 'URL': 'https://latop10.it/migliori-oli-10w40/', 'Category 1': 'Auto', 'Category 2': 'Olio & Pulitore'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-box-da-tetto-auto/>
+{'Title': 'Il Miglior Box da Tetto per Auto – Recensioni, Classifica 2022', 'URL': 'https://latop10.it/migliori-box-da-tetto-auto/', 'Category 1': 'Auto', 'Category 2': 'Altro'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-lucidatrici-per-auto-bosch/>
+{'Title': 'La Miglior Lucidatrice per Auto Bosch – Recensioni, Opinioni 2021', 'URL': 'https://latop10.it/migliori-lucidatrici-per-auto-bosch/', 'Category 1': 'Auto', 'Category 2': 'Vernice & Lampade'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-guanti-da-motociclista/>
+{'Title': 'I Migliori Guanti da Moto – Recensioni, Classifica 2022', 'URL': 'https://latop10.it/migliori-guanti-da-motociclista/', 'Category 1': 'Auto', 'Category 2': 'Moto'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-oli-10w40-da-moto/>
+{'Title': 'Il Miglior Olio 10w40 da Moto – Recensioni, Classifica 2022', 'URL': 'https://latop10.it/migliori-oli-10w40-da-moto/', 'Category 1': 'Auto', 'Category 2': 'Moto'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-autoradio-pioneer/>
+{'Title': 'La Migliore Autoradio Pioneer – Recensioni, Opinioni 2021', 'URL': 'https://latop10.it/migliori-autoradio-pioneer/', 'Category 1': 'Auto', 'Category 2': 'Audio'}
+INFO: slot: 104.21.69.208 | conc: 4 | delay:    9 ms (+1) | latency: 1212 ms | size: 28509 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-portabici-thule/> (referer: https://latop10.it/auto/)
+INFO: slot: 104.21.69.208 | conc: 3 | delay:    5 ms (-3) | latency:  321 ms | size: 28093 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-telecamere-a-360-gradi-per-auto/> (referer: https://latop10.it/auto/)
+DEBUG: Scraped from <200 https://latop10.it/migliori-avviatori-di-emergenza-per-auto-suaoki/>
+{'Title': 'Il Miglior Avviatore di Emergenza per Auto Suaoki – Recensioni 2022', 'URL': 'https://latop10.it/migliori-avviatori-di-emergenza-per-auto-suaoki/', 'Category 1': 'Auto', 'Category 2': 'Batteria'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-giacche-da-moto-estive/>
+{'Title': 'La Miglior Giacca da Moto Estiva – Recensioni, Classifica 2022', 'URL': 'https://latop10.it/migliori-giacche-da-moto-estive/', 'Category 1': 'Auto', 'Category 2': 'Moto'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-oli-motori-per-moto-15w50/>
+{'Title': 'Il Miglior Olio Motore per Moto 15w50 – Recensioni, Classifica 2022', 'URL': 'https://latop10.it/migliori-oli-motori-per-moto-15w50/', 'Category 1': 'Auto', 'Category 2': 'Moto'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-pneumatici-per-moto/>
+{'Title': 'I Migliori Pneumatici per Moto (Gomme, anche Sportive) del 2022', 'URL': 'https://latop10.it/migliori-pneumatici-per-moto/', 'Category 1': 'Auto', 'Category 2': 'Pneumatici'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-kit-di-riparazione-di-pneumatici-per-moto/>
+{'Title': 'Il Miglior Kit per la Riparazione di Pneumatici per Moto del 2022', 'URL': 'https://latop10.it/migliori-kit-di-riparazione-di-pneumatici-per-moto/', 'Category 1': 'Auto', 'Category 2': 'Pneumatici'}
+INFO: slot: 104.21.69.208 | conc: 4 | delay:    4 ms (-1) | latency:  332 ms | size: 26617 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-dash-cam-a-specchio/> (referer: https://latop10.it/auto/page/2/)
+DEBUG: Scraped from <200 https://latop10.it/migliori-portabici-thule/>
+{'Title': 'Il Miglior Portabici Thule – Recensioni, Opinioni 2021', 'URL': 'https://latop10.it/migliori-portabici-thule/', 'Category 1': 'Auto', 'Category 2': 'Altro'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-telecamere-a-360-gradi-per-auto/>
+{'Title': 'La Miglior Telecamera a 360 Gradi per Auto – Classifica 2022', 'URL': 'https://latop10.it/migliori-telecamere-a-360-gradi-per-auto/', 'Category 1': 'Auto', 'Category 2': 'Camera'}
+INFO: slot: 104.21.69.208 | conc: 9 | delay:    3 ms (+0) | latency:  337 ms | size: 26677 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-kit-di-telecamere-posteriori-per-auto/> (referer: https://latop10.it/auto/page/2/)
+INFO: slot: 104.21.69.208 | conc: 8 | delay:    2 ms (+0) | latency:  257 ms | size: 29673 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-pettorine-da-motocross/> (referer: https://latop10.it/auto/page/2/)
+DEBUG: Scraped from <200 https://latop10.it/migliori-dash-cam-a-specchio/>
+{'Title': 'La Migliore Dash Cam a Specchio – Recensioni, Classifica 2022', 'URL': 'https://latop10.it/migliori-dash-cam-a-specchio/', 'Category 1': 'Auto', 'Category 2': 'Camera'}
+INFO: slot: 104.21.69.208 | conc:15 | delay:    2 ms (+0) | latency:  283 ms | size: 28149 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-autoradio-sony/> (referer: https://latop10.it/auto/page/2/)
+DEBUG: Scraped from <200 https://latop10.it/migliori-kit-di-telecamere-posteriori-per-auto/>
+{'Title': 'Il Miglior Kit di Telecamere Posteriori per Auto – Classifica 2022', 'URL': 'https://latop10.it/migliori-kit-di-telecamere-posteriori-per-auto/', 'Category 1': 'Auto', 'Category 2': 'Camera'}
+INFO: slot: 104.21.69.208 | conc:14 | delay:    2 ms (+0) | latency:  261 ms | size: 29985 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-lampade-per-bambini/> (referer: https://latop10.it/auto/page/2/)
+DEBUG: Scraped from <200 https://latop10.it/migliori-pettorine-da-motocross/>
+{'Title': 'La Migliore Pettorina da Motocross – Recensioni, Classifica 2022', 'URL': 'https://latop10.it/migliori-pettorine-da-motocross/', 'Category 1': 'Auto', 'Category 2': 'Moto'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-autoradio-sony/>
+{'Title': 'La Miglior Autoradio Sony – Recensioni, Opinioni 2020', 'URL': 'https://latop10.it/migliori-autoradio-sony/', 'Category 1': 'Auto', 'Category 2': 'Audio'}
+INFO: slot: 104.21.69.208 | conc:13 | delay:    1 ms (+0) | latency:  220 ms | size: 26116 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-oli-motore-per-moto-10w60/> (referer: https://latop10.it/auto/page/2/)
+DEBUG: Scraped from <200 https://latop10.it/migliori-lampade-per-bambini/>
+{'Title': 'La Migliore Lampada per Bambini (Luci Notturne) – Classifica 2022', 'URL': 'https://latop10.it/migliori-lampade-per-bambini/', 'Category 1': 'Auto', 'Category 2': 'Vernice & Lampade'}
+INFO: slot: 104.21.69.208 | conc:12 | delay:    3 ms (+1) | latency:  387 ms | size: 29021 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-copertoni-per-bici-da-corsa/> (referer: https://latop10.it/auto/page/2/)
+INFO: slot: 104.21.69.208 | conc:11 | delay:    2 ms (+0) | latency:  238 ms | size: 26207 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-oli-10w40-diesel/> (referer: https://latop10.it/auto/page/2/)
+INFO: slot: 104.21.69.208 | conc:10 | delay:    3 ms (+0) | latency:  420 ms | size: 29214 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-oli-motore-per-moto/> (referer: https://latop10.it/auto/page/2/)
+INFO: slot: 104.21.69.208 | conc: 9 | delay:    3 ms (+0) | latency:  376 ms | size: 25411 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-pulitori-per-iniettori-bardahl/> (referer: https://latop10.it/auto/page/2/)
+INFO: slot: 104.21.69.208 | conc: 8 | delay:    2 ms (+0) | latency:  340 ms | size: 26156 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-giacche-da-moto-in-pelle/> (referer: https://latop10.it/auto/page/2/)
+INFO: slot: 104.21.69.208 | conc: 7 | delay:    2 ms (+0) | latency:  292 ms | size: 30307 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-cere-per-auto/> (referer: https://latop10.it/auto/page/2/)
+INFO: slot: 104.21.69.208 | conc: 6 | delay:    2 ms (+0) | latency:  289 ms | size: 28363 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-giacche-da-moto-dainese/> (referer: https://latop10.it/auto/page/2/)
+INFO: slot: 104.21.69.208 | conc: 5 | delay:    3 ms (+0) | latency:  384 ms | size: 27763 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-casse-auto-pioneer/> (referer: https://latop10.it/auto/page/2/)
+INFO: slot: 104.21.69.208 | conc: 4 | delay:    2 ms (+0) | latency:  317 ms | size: 30699 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-occhiali-da-motocross/> (referer: https://latop10.it/auto/page/2/)
+INFO: slot: 104.21.69.208 | conc: 3 | delay:    2 ms (+0) | latency:  320 ms | size: 29224 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-cavalletti-alzamoto/> (referer: https://latop10.it/auto/page/2/)
+INFO: slot: 104.21.69.208 | conc: 2 | delay:    2 ms (+0) | latency:  341 ms | size: 26478 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-tendine-parasole-per-auto/> (referer: https://latop10.it/auto/page/2/)
+DEBUG: Scraped from <200 https://latop10.it/migliori-oli-motore-per-moto-10w60/>
+{'Title': 'Il Miglior Olio Motore per Moto 10W60 – Recensioni, Classifica 2022', 'URL': 'https://latop10.it/migliori-oli-motore-per-moto-10w60/', 'Category 1': 'Auto', 'Category 2': 'Moto'}
+INFO: slot: 104.21.69.208 | conc: 1 | delay:    3 ms (+0) | latency:  384 ms | size: 31681 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-mantenitori-di-carica/> (referer: https://latop10.it/auto/page/2/)
+DEBUG: Scraped from <200 https://latop10.it/migliori-copertoni-per-bici-da-corsa/>
+{'Title': 'Il Miglior Copertone per Bici da Corsa – Recensioni, Classifica 2022', 'URL': 'https://latop10.it/migliori-copertoni-per-bici-da-corsa/', 'Category 1': 'Auto', 'Category 2': 'Pneumatici'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-oli-10w40-diesel/>
+{'Title': 'Il Miglior Olio 10W40 Diesel – Recensioni, Classifica 2022', 'URL': 'https://latop10.it/migliori-oli-10w40-diesel/', 'Category 1': 'Auto', 'Category 2': 'Olio & Pulitore'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-oli-motore-per-moto/>
+{'Title': 'Il Miglior Olio Motore per Moto – Recensioni, Classifica 2022', 'URL': 'https://latop10.it/migliori-oli-motore-per-moto/', 'Category 1': 'Auto', 'Category 2': 'Olio & Pulitore'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-pulitori-per-iniettori-bardahl/>
+{'Title': 'Il Miglior Pulitore per Iniettori Bardahl – Opinioni, Recensioni 2022', 'URL': 'https://latop10.it/migliori-pulitori-per-iniettori-bardahl/', 'Category 1': 'Auto', 'Category 2': 'Olio & Pulitore'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-giacche-da-moto-in-pelle/>
+{'Title': 'La Miglior Giacca in Pelle – Recensioni, Classifica 2022', 'URL': 'https://latop10.it/migliori-giacche-da-moto-in-pelle/', 'Category 1': 'Auto', 'Category 2': 'Moto'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-cere-per-auto/>
+{'Title': 'La Migliore Cera per Auto – Recensioni, Classifica 2022', 'URL': 'https://latop10.it/migliori-cere-per-auto/', 'Category 1': 'Auto', 'Category 2': 'Altro'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-giacche-da-moto-dainese/>
+{'Title': 'La Miglior Giacca da Moto Dainese – Recensioni, Classifica 2022', 'URL': 'https://latop10.it/migliori-giacche-da-moto-dainese/', 'Category 1': 'Auto', 'Category 2': 'Moto'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-casse-auto-pioneer/>
+{'Title': 'La Miglior Cassa Auto Pioneer – Recensioni, Opinioni 2021', 'URL': 'https://latop10.it/migliori-casse-auto-pioneer/', 'Category 1': 'Auto', 'Category 2': 'Audio'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-occhiali-da-motocross/>
+{'Title': 'Il Miglior Occhiale da Motocross – Recensioni, Classifica 2022', 'URL': 'https://latop10.it/migliori-occhiali-da-motocross/', 'Category 1': 'Auto', 'Category 2': 'Moto'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-cavalletti-alzamoto/>
+{'Title': 'Il Miglior Cavalletto Alzamoto – Recensioni, Classifica 2022', 'URL': 'https://latop10.it/migliori-cavalletti-alzamoto/', 'Category 1': 'Auto', 'Category 2': 'Moto'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-tendine-parasole-per-auto/>
+{'Title': 'La Miglior Tendina Parasole per Auto – Recensioni, Classifica 2022', 'URL': 'https://latop10.it/migliori-tendine-parasole-per-auto/', 'Category 1': 'Auto', 'Category 2': 'Altro'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-mantenitori-di-carica/>
+{'Title': 'Il Miglior Mantenitore di Carica – Recensioni, Classifica 2022', 'URL': 'https://latop10.it/migliori-mantenitori-di-carica/', 'Category 1': 'Auto', 'Category 2': 'Batteria'}
+INFO: Closing spider (finished)
+INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 27387,
+ 'downloader/request_count': 120,
+ 'downloader/request_method_count/GET': 120,
+ 'downloader/response_bytes': 3642874,
+ 'downloader/response_count': 120,
+ 'downloader/response_status_count/200': 120,
+ 'elapsed_time_seconds': 6.305849,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2022, 12, 27, 5, 7, 25, 673462),
+ 'httpcompression/response_bytes': 18987990,
+ 'httpcompression/response_count': 120,
+ 'item_scraped_count': 118,
+ 'log_count/DEBUG': 238,
+ 'log_count/INFO': 131,
+ 'memusage/max': 77135872,
+ 'memusage/startup': 77135872,
+ 'request_depth_max': 2,
+ 'response_received_count': 120,
+ 'scheduler/dequeued': 120,
+ 'scheduler/dequeued/disk': 120,
+ 'scheduler/enqueued': 120,
+ 'scheduler/enqueued/disk': 120,
+ 'start_time': datetime.datetime(2022, 12, 27, 5, 7, 19, 367613)}
+INFO: Spider closed (finished)
+INFO: Scrapy 2.5.1 started (bot: lazy_py_crawler)
+INFO: Versions: lxml 4.8.0.0, libxml2 2.9.12, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 22.1.0, Python 3.8.10 (default, Nov 14 2022, 12:59:47) - [GCC 9.4.0], pyOpenSSL 22.0.0 (OpenSSL 1.1.1m  14 Dec 2021), cryptography 36.0.1, Platform Linux-5.15.0-56-generic-x86_64-with-glibc2.29
+DEBUG: Using reactor: twisted.internet.epollreactor.EPollReactor
+INFO: Overridden settings:
+{'AUTOTHROTTLE_DEBUG': True,
+ 'AUTOTHROTTLE_ENABLED': True,
+ 'AUTOTHROTTLE_MAX_DELAY': 0.25,
+ 'AUTOTHROTTLE_START_DELAY': 1,
+ 'AUTOTHROTTLE_TARGET_CONCURRENCY': 128,
+ 'BOT_NAME': 'lazy_py_crawler',
+ 'CONCURRENT_REQUESTS': 126,
+ 'CONCURRENT_REQUESTS_PER_DOMAIN': 2,
+ 'CONCURRENT_REQUESTS_PER_IP': 26,
+ 'DOWNLOAD_TIMEOUT': 500,
+ 'FEED_EXPORT_ENCODING': 'utf-8',
+ 'NEWSPIDER_MODULE': 'lazy_crawler.crawler.spiders',
+ 'REACTOR_THREADPOOL_MAXSIZE': 128,
+ 'RETRY_HTTP_CODES': [500,
+                      502,
+                      503,
+                      504,
+                      400,
+                      401,
+                      403,
+                      404,
+                      405,
+                      406,
+                      407,
+                      408,
+                      409,
+                      410,
+                      429],
+ 'SPIDER_MODULES': ['lazy_crawler.crawler.spiders'],
+ 'USER_AGENT': 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like '
+               'Gecko) Chrome/41.0.2228.0 Safari/537.36'}
+INFO: Telnet Password: 1d28488d3a25118b
+INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.spiderstate.SpiderState',
+ 'scrapy.extensions.throttle.AutoThrottle']
+INFO: Enabled downloader middlewares:
+['scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'lazy_crawler.crawler.middlewares.CrawlerSpiderMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware']
+INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+INFO: Enabled item pipelines:
+['lazy_crawler.crawler.pipelines.ExcelWriterPipeline']
+INFO: Spider opened
+INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+INFO: Spider opened: laptop
+INFO: Telnet console listening on 127.0.0.1:6023
+INFO: slot: latop10.it | conc: 1 | delay:  250 ms (-750) | latency: 2840 ms | size: 42024 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/auto/> (referer: None)
+INFO: slot: 104.21.69.208 | conc: 1 | delay:  250 ms (-750) | latency:  266 ms | size: 32438 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-caschi-integrali/> (referer: https://latop10.it/auto/)
+DEBUG: Scraped from <200 https://latop10.it/migliori-caschi-integrali/>
+{'Title': 'Il Miglior Casco Integrale (anche Economico, Silenzioso) del 2022', 'URL': 'https://latop10.it/migliori-caschi-integrali/', 'Category 1': 'Auto', 'Category 2': 'Moto'}
+INFO: slot: 104.21.69.208 | conc: 1 | delay:  125 ms (-124) | latency:  245 ms | size: 31097 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-pneumatici-invernali/> (referer: https://latop10.it/auto/)
+DEBUG: Scraped from <200 https://latop10.it/migliori-pneumatici-invernali/>
+{'Title': 'I Migliori Pneumatici Invernali – Confronto, Classifica 2022', 'URL': 'https://latop10.it/migliori-pneumatici-invernali/', 'Category 1': 'Auto', 'Category 2': 'Pneumatici'}
+INFO: slot: 104.21.69.208 | conc: 2 | delay:   63 ms (-62) | latency:  240 ms | size: 32640 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-avviatori-di-emergenza/> (referer: https://latop10.it/auto/)
+DEBUG: Scraped from <200 https://latop10.it/migliori-avviatori-di-emergenza/>
+{'Title': 'Il Miglior Avviatore di Emergenza Auto (Booster) del 2022', 'URL': 'https://latop10.it/migliori-avviatori-di-emergenza/', 'Category 1': 'Auto', 'Category 2': 'Batteria'}
+INFO: slot: 104.21.69.208 | conc: 4 | delay:   32 ms (-31) | latency:  234 ms | size: 35011 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-autoradio/> (referer: https://latop10.it/auto/)
+DEBUG: Scraped from <200 https://latop10.it/migliori-autoradio/>
+{'Title': 'La Miglior Autoradio 1 DIN – Guida all’Acquisto, Classifica 2022', 'URL': 'https://latop10.it/migliori-autoradio/', 'Category 1': 'Auto', 'Category 2': 'Audio'}
+INFO: slot: 104.21.69.208 | conc: 9 | delay:   17 ms (-15) | latency:  241 ms | size: 34787 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-navigatori-satellitari/> (referer: https://latop10.it/auto/)
+DEBUG: Scraped from <200 https://latop10.it/migliori-navigatori-satellitari/>
+{'Title': 'Il Miglior Navigatore Satellitare per Auto – Classifica 2022', 'URL': 'https://latop10.it/migliori-navigatori-satellitari/', 'Category 1': 'Auto', 'Category 2': 'Navigatore'}
+INFO: slot: 104.21.69.208 | conc:17 | delay:    9 ms (-7) | latency:  239 ms | size: 36996 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-antifurti-auto/> (referer: https://latop10.it/auto/)
+INFO: slot: 104.21.69.208 | conc:25 | delay:    9 ms (+0) | latency: 1161 ms | size: 40699 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-interfoni-per-moto/> (referer: https://latop10.it/auto/)
+INFO: slot: 104.21.69.208 | conc:24 | delay:    8 ms (+0) | latency:  955 ms | size: 31748 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-oli-motore/> (referer: https://latop10.it/auto/)
+DEBUG: Scraped from <200 https://latop10.it/migliori-antifurti-auto/>
+{'Title': 'Il Miglior Antifurto per Auto (anche Meccanico) – Classifica 2022', 'URL': 'https://latop10.it/migliori-antifurti-auto/', 'Category 1': 'Auto', 'Category 2': 'Sicurezza'}
+INFO: slot: 104.21.69.208 | conc:24 | delay:    5 ms (-2) | latency:  350 ms | size: 38846 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-caricabatterie-per-auto/> (referer: https://latop10.it/auto/)
+INFO: slot: 104.21.69.208 | conc:23 | delay:    7 ms (+2) | latency:  979 ms | size: 30506 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-catene-da-neve/> (referer: https://latop10.it/auto/)
+DEBUG: Scraped from <200 https://latop10.it/migliori-interfoni-per-moto/>
+{'Title': 'Il Miglior Interfono per Moto Bluetooth – Classifica 2022', 'URL': 'https://latop10.it/migliori-interfoni-per-moto/', 'Category 1': 'Auto', 'Category 2': 'Moto'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-oli-motore/>
+{'Title': 'Il Miglior Olio Motore (5W-30, 5W-40) – Classifica 2022', 'URL': 'https://latop10.it/migliori-oli-motore/', 'Category 1': 'Auto', 'Category 2': 'Olio & Pulitore'}
+INFO: slot: 104.21.69.208 | conc:26 | delay:    8 ms (+0) | latency: 1032 ms | size: 28279 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-additivi-diesel/> (referer: https://latop10.it/auto/)
+INFO: slot: 104.21.69.208 | conc:26 | delay:    8 ms (+0) | latency: 1124 ms | size: 32767 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-caschi-jet/> (referer: https://latop10.it/auto/)
+INFO: slot: 104.21.69.208 | conc:25 | delay:    8 ms (+0) | latency: 1067 ms | size: 38669 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-dash-cam/> (referer: https://latop10.it/auto/)
+DEBUG: Scraped from <200 https://latop10.it/migliori-caricabatterie-per-auto/>
+{'Title': 'Il Miglior Caricabatteria per Auto – Classifica 2022', 'URL': 'https://latop10.it/migliori-caricabatterie-per-auto/', 'Category 1': 'Auto', 'Category 2': 'Batteria'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-catene-da-neve/>
+{'Title': 'Le Migliori Catene da Neve del 2022? Anche per Cerchi in Lega', 'URL': 'https://latop10.it/migliori-catene-da-neve/', 'Category 1': 'Auto', 'Category 2': 'Pneumatici'}
+INFO: slot: 104.21.69.208 | conc:25 | delay:    7 ms (-1) | latency:  738 ms | size: 33650 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-pneumatici/> (referer: https://latop10.it/auto/)
+INFO: slot: 104.21.69.208 | conc:24 | delay:    9 ms (+1) | latency: 1154 ms | size: 36454 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-kit-vivavoce-bluetooth/> (referer: https://latop10.it/auto/)
+INFO: slot: 104.21.69.208 | conc:23 | delay:    6 ms (-2) | latency:  490 ms | size: 30777 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-pulitori-per-iniettori/> (referer: https://latop10.it/auto/)
+INFO: slot: 104.21.69.208 | conc:22 | delay:    6 ms (+0) | latency:  777 ms | size: 29739 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-kit-rinnova-fari/> (referer: https://latop10.it/auto/)
+INFO: slot: 104.21.69.208 | conc:21 | delay:    8 ms (+2) | latency: 1105 ms | size: 30020 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-caschi-modulari/> (referer: https://latop10.it/auto/)
+INFO: slot: 104.21.69.208 | conc:21 | delay:    8 ms (+0) | latency: 1105 ms | size: 31297 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-pistole-per-il-gonfiaggio-dei-pneumatici/> (referer: https://latop10.it/auto/)
+INFO: slot: 104.21.69.208 | conc:20 | delay:    8 ms (+0) | latency: 1093 ms | size: 29750 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-parasole-per-auto/> (referer: https://latop10.it/auto/)
+INFO: slot: 104.21.69.208 | conc:19 | delay:   10 ms (+1) | latency: 1309 ms | size: 28499 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-batterie-per-auto/> (referer: https://latop10.it/auto/)
+INFO: slot: 104.21.69.208 | conc:18 | delay:    9 ms (+0) | latency: 1235 ms | size: 29907 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-spazzole-tergicristallo/> (referer: https://latop10.it/auto/)
+INFO: slot: 104.21.69.208 | conc:17 | delay:    8 ms (-1) | latency:  998 ms | size: 27410 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-autoradio-2-din-cinesi/> (referer: https://latop10.it/auto/)
+INFO: slot: 104.21.69.208 | conc:16 | delay:    8 ms (+0) | latency: 1023 ms | size: 42246 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-autoradio-2-din/> (referer: https://latop10.it/auto/)
+DEBUG: Scraped from <200 https://latop10.it/migliori-additivi-diesel/>
+{'Title': 'Il Miglior Additivo e Pulitore Iniettori Diesel – Classifica 2022', 'URL': 'https://latop10.it/migliori-additivi-diesel/', 'Category 1': 'Auto', 'Category 2': 'Olio & Pulitore'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-caschi-jet/>
+{'Title': 'Il Miglior Casco Jet (e Demi-Jet) per Moto e Scooter del 2022', 'URL': 'https://latop10.it/migliori-caschi-jet/', 'Category 1': 'Auto', 'Category 2': 'Moto'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-dash-cam/>
+{'Title': 'La Migliore Dash Cam – Guida all’Acquisto, Classifica 2022', 'URL': 'https://latop10.it/migliori-dash-cam/', 'Category 1': 'Auto', 'Category 2': 'Camera'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-pneumatici/>
+{'Title': 'I Migliori Pneumatici Auto (Gomme, per Estate e Inverno, Marche Top)', 'URL': 'https://latop10.it/migliori-pneumatici/', 'Category 1': 'Auto', 'Category 2': 'Pneumatici'}
+INFO: slot: 104.21.69.208 | conc:16 | delay:   10 ms (+2) | latency: 1397 ms | size: 31121 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-lampade-h7/> (referer: https://latop10.it/auto/)
+INFO: slot: 104.21.69.208 | conc:15 | delay:    7 ms (-2) | latency:  631 ms | size: 26360 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-portabici-peruzzo/> (referer: https://latop10.it/auto/)
+INFO: slot: 104.21.69.208 | conc:14 | delay:    9 ms (+1) | latency: 1197 ms | size: 30494 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-kit-di-riparazione-gomme/> (referer: https://latop10.it/auto/)
+INFO: slot: 104.21.69.208 | conc:13 | delay:    8 ms (+0) | latency: 1049 ms | size: 33993 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-trasmettitori-fm-per-auto/> (referer: https://latop10.it/auto/)
+INFO: slot: 104.21.69.208 | conc:12 | delay:   10 ms (+1) | latency: 1352 ms | size: 30008 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-cric-idraulici-a-carrello/> (referer: https://latop10.it/auto/)
+INFO: slot: 104.21.69.208 | conc:11 | delay:   10 ms (+0) | latency: 1341 ms | size: 30851 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-retrocamere-per-auto/> (referer: https://latop10.it/auto/)
+INFO: slot: 104.21.69.208 | conc:10 | delay:   10 ms (+0) | latency: 1333 ms | size: 30906 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-sensori-di-parcheggio/> (referer: https://latop10.it/auto/)
+INFO: slot: 104.21.69.208 | conc: 9 | delay:   10 ms (+0) | latency: 1236 ms | size: 29586 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-portabici-posteriori-per-auto/> (referer: https://latop10.it/auto/)
+INFO: slot: 104.21.69.208 | conc: 8 | delay:   10 ms (+0) | latency: 1337 ms | size: 30636 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-casse-per-auto/> (referer: https://latop10.it/auto/)
+INFO: slot: 104.21.69.208 | conc: 7 | delay:    7 ms (-2) | latency:  583 ms | size: 28819 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-navigatori-satellitari-garmin/> (referer: https://latop10.it/auto/)
+DEBUG: Scraped from <200 https://latop10.it/migliori-kit-vivavoce-bluetooth/>
+{'Title': 'Il Miglior Kit Vivavoce Bluetooth per Auto del 2022 – Quale scegliere?', 'URL': 'https://latop10.it/migliori-kit-vivavoce-bluetooth/', 'Category 1': 'Auto', 'Category 2': 'Audio'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-pulitori-per-iniettori/>
+{'Title': 'Il Miglior Pulitore per Iniettori (Benzina, Diesel) + Opinioni', 'URL': 'https://latop10.it/migliori-pulitori-per-iniettori/', 'Category 1': 'Auto', 'Category 2': 'Olio & Pulitore'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-kit-rinnova-fari/>
+{'Title': 'Il Miglior Kit Rinnova Fari / Fanali? + Opinioni, Recensioni 2022', 'URL': 'https://latop10.it/migliori-kit-rinnova-fari/', 'Category 1': 'Auto', 'Category 2': 'Vernice & Lampade'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-caschi-modulari/>
+{'Title': 'Il Miglior Casco Modulare (Silenzioso, Leggero) del 2022', 'URL': 'https://latop10.it/migliori-caschi-modulari/', 'Category 1': 'Auto', 'Category 2': 'Moto'}
+INFO: slot: 104.21.69.208 | conc: 7 | delay:    8 ms (+0) | latency: 1078 ms | size: 29523 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-giacche-da-moto/> (referer: https://latop10.it/auto/)
+INFO: slot: 104.21.69.208 | conc: 6 | delay:    6 ms (-1) | latency:  636 ms | size: 28208 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-cric-idraulici-per-auto/> (referer: https://latop10.it/auto/)
+INFO: slot: 104.21.69.208 | conc: 5 | delay:    8 ms (+2) | latency: 1139 ms | size: 27289 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-autoradio-alpine/> (referer: https://latop10.it/auto/)
+INFO: slot: 104.21.69.208 | conc: 4 | delay:    9 ms (+0) | latency: 1251 ms | size: 32173 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-oli-5w30/> (referer: https://latop10.it/auto/)
+DEBUG: Scraped from <200 https://latop10.it/migliori-pistole-per-il-gonfiaggio-dei-pneumatici/>
+{'Title': 'La Migliore Pistola per il Gonfiaggio dei Pneumatici (anche Professionale)', 'URL': 'https://latop10.it/migliori-pistole-per-il-gonfiaggio-dei-pneumatici/', 'Category 1': 'Auto', 'Category 2': 'Pneumatici'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-parasole-per-auto/>
+{'Title': 'Il Miglior Parasole per Auto (anche Interno) – Classifica 2022', 'URL': 'https://latop10.it/migliori-parasole-per-auto/', 'Category 1': 'Auto', 'Category 2': 'Altro'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-batterie-per-auto/>
+{'Title': 'La Migliore Batteria per Auto – Guida all’Acquisto, Classifica 2022', 'URL': 'https://latop10.it/migliori-batterie-per-auto/', 'Category 1': 'Auto', 'Category 2': 'Batteria'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-spazzole-tergicristallo/>
+{'Title': 'Le Migliori Spazzole Tergicristallo – Classifica del 2022', 'URL': 'https://latop10.it/migliori-spazzole-tergicristallo/', 'Category 1': 'Auto', 'Category 2': 'Altro'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-autoradio-2-din-cinesi/>
+{'Title': 'La Miglior Autoradio 2 DIN Cinese – Classifica 2022', 'URL': 'https://latop10.it/migliori-autoradio-2-din-cinesi/', 'Category 1': 'Auto', 'Category 2': 'Audio'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-autoradio-2-din/>
+{'Title': 'La Miglior Autoradio 2 DIN (anche Economica) – Classifica 2022', 'URL': 'https://latop10.it/migliori-autoradio-2-din/', 'Category 1': 'Auto', 'Category 2': 'Audio'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-lampade-h7/>
+{'Title': 'La Miglior Lampada H7 (Più Luminose, anche LED Omologate, con Effetto Xenon)', 'URL': 'https://latop10.it/migliori-lampade-h7/', 'Category 1': 'Auto', 'Category 2': 'Vernice & Lampade'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-portabici-peruzzo/>
+{'Title': 'Il Miglior Portabici Peruzzo – Opinioni, Recensioni, Prezzi', 'URL': 'https://latop10.it/migliori-portabici-peruzzo/', 'Category 1': 'Auto', 'Category 2': 'Altro'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-kit-di-riparazione-gomme/>
+{'Title': 'Il Miglior Kit di Riparazione Gomme (Pneumatici) per Auto / Moto', 'URL': 'https://latop10.it/migliori-kit-di-riparazione-gomme/', 'Category 1': 'Auto', 'Category 2': 'Pneumatici'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-trasmettitori-fm-per-auto/>
+{'Title': 'Il Miglior Trasmettitore FM per Auto (Bluetooth) – Classifica 2022', 'URL': 'https://latop10.it/migliori-trasmettitori-fm-per-auto/', 'Category 1': 'Auto', 'Category 2': 'Audio'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-cric-idraulici-a-carrello/>
+{'Title': 'Il Miglior Cric Idraulico a Carrello (anche Professionali) – Classifica 2022', 'URL': 'https://latop10.it/migliori-cric-idraulici-a-carrello/', 'Category 1': 'Auto', 'Category 2': 'Altro'}
+INFO: slot: 104.21.69.208 | conc: 4 | delay:    6 ms (-2) | latency:  513 ms | size: 28703 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-autoradio-2-din-con-navigatore/> (referer: https://latop10.it/auto/)
+INFO: slot: 104.21.69.208 | conc: 3 | delay:    6 ms (+0) | latency:  838 ms | size: 31943 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-manometri-per-pneumatici/> (referer: https://latop10.it/auto/)
+DEBUG: Scraped from <200 https://latop10.it/migliori-retrocamere-per-auto/>
+{'Title': 'La Migliore Retrocamera per Auto – Classifica 2022', 'URL': 'https://latop10.it/migliori-retrocamere-per-auto/', 'Category 1': 'Auto', 'Category 2': 'Camera'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-sensori-di-parcheggio/>
+{'Title': 'I Migliori Sensori di Parcheggio (Posteriori e Anteriori) del 2022', 'URL': 'https://latop10.it/migliori-sensori-di-parcheggio/', 'Category 1': 'Auto', 'Category 2': 'Sicurezza'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-portabici-posteriori-per-auto/>
+{'Title': 'Il Miglior Portabici Posteriore per Auto (anche Universale) del 2022', 'URL': 'https://latop10.it/migliori-portabici-posteriori-per-auto/', 'Category 1': 'Auto', 'Category 2': 'Altro'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-casse-per-auto/>
+{'Title': 'I Migliori Altoparlanti per Auto – Guida all’Acquisto, Classifica 2022', 'URL': 'https://latop10.it/migliori-casse-per-auto/', 'Category 1': 'Auto', 'Category 2': 'Audio'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-navigatori-satellitari-garmin/>
+{'Title': 'Il Miglior Navigatore GPS Garmin – Opinioni, Recensioni 2022', 'URL': 'https://latop10.it/migliori-navigatori-satellitari-garmin/', 'Category 1': 'Auto', 'Category 2': 'Navigatore'}
+INFO: slot: 104.21.69.208 | conc: 3 | delay:   13 ms (+6) | latency: 1679 ms | size: 29282 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-teli-antigrandine-per-auto/> (referer: https://latop10.it/auto/)
+DEBUG: Scraped from <200 https://latop10.it/migliori-giacche-da-moto/>
+{'Title': 'La Miglior Giacca da Moto (Estiva o Invernale) – Consigli 2020', 'URL': 'https://latop10.it/migliori-giacche-da-moto/', 'Category 1': 'Auto', 'Category 2': 'Moto'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-cric-idraulici-per-auto/>
+{'Title': 'Il Miglior Cric Idraulico per Auto (Martinetto) – Classifica 2022', 'URL': 'https://latop10.it/migliori-cric-idraulici-per-auto/', 'Category 1': 'Auto', 'Category 2': 'Altro'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-autoradio-alpine/>
+{'Title': 'La Miglior Autoradio Alpine – Opinioni, Recensioni 2022', 'URL': 'https://latop10.it/migliori-autoradio-alpine/', 'Category 1': 'Auto', 'Category 2': 'Audio'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-oli-5w30/>
+{'Title': 'Il Miglior Olio Motore 5w30 (per Diesel, Benzina) – Classifica 2022', 'URL': 'https://latop10.it/migliori-oli-5w30/', 'Category 1': 'Auto', 'Category 2': 'Olio & Pulitore'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-autoradio-2-din-con-navigatore/>
+{'Title': 'La Migliore Autoradio 2 DIN con Navigatore GPS – Classifica 2022', 'URL': 'https://latop10.it/migliori-autoradio-2-din-con-navigatore/', 'Category 1': 'Auto', 'Category 2': 'Audio'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-manometri-per-pneumatici/>
+{'Title': 'Il Miglior Manometro per Pneumatici (per la Pressione delle Gomme)', 'URL': 'https://latop10.it/migliori-manometri-per-pneumatici/', 'Category 1': 'Auto', 'Category 2': 'Pneumatici'}
+INFO: slot: 104.21.69.208 | conc: 3 | delay:    8 ms (-5) | latency:  381 ms | size: 31355 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-copriauto/> (referer: https://latop10.it/auto/)
+DEBUG: Scraped from <200 https://latop10.it/migliori-teli-antigrandine-per-auto/>
+{'Title': 'Il Miglior Telo Antigrandine per Auto (Copriauto) – Classifica 2022', 'URL': 'https://latop10.it/migliori-teli-antigrandine-per-auto/', 'Category 1': 'Auto', 'Category 2': 'Sicurezza'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-copriauto/>
+{'Title': 'Il Miglior Copriauto (anche Felpato, Gonfiabile e Impermeabile)', 'URL': 'https://latop10.it/migliori-copriauto/', 'Category 1': 'Auto', 'Category 2': 'Sicurezza'}
+INFO: slot: 104.21.69.208 | conc:11 | delay:    5 ms (-3) | latency:  261 ms | size: 27148 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-oli-castrol-5w30/> (referer: https://latop10.it/auto/)
+INFO: slot: 104.21.69.208 | conc:15 | delay:    3 ms (-1) | latency:  219 ms | size: 35216 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-lucidatrici-per-auto/> (referer: https://latop10.it/auto/)
+INFO: slot: 104.21.69.208 | conc:22 | delay:    2 ms (+0) | latency:  208 ms | size: 26855 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-autoradio-2-din-pioneer/> (referer: https://latop10.it/auto/)
+INFO: slot: 104.21.69.208 | conc:26 | delay:    2 ms (+0) | latency:  304 ms | size: 28783 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-autoradio-2-din-android/> (referer: https://latop10.it/auto/)
+INFO: slot: 104.21.69.208 | conc:26 | delay:    2 ms (+0) | latency:  304 ms | size: 27319 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-pneumatici-205-55-r16/> (referer: https://latop10.it/auto/)
+DEBUG: Scraped from <200 https://latop10.it/migliori-oli-castrol-5w30/>
+{'Title': 'Il Miglior Olio Castrol 5W30 – Opinioni, Recensioni, Prezzi', 'URL': 'https://latop10.it/migliori-oli-castrol-5w30/', 'Category 1': 'Auto', 'Category 2': 'Olio & Pulitore'}
+INFO: slot: 104.21.69.208 | conc:26 | delay:    3 ms (+0) | latency:  385 ms | size: 28543 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-subwoofer-attivi-per-auto/> (referer: https://latop10.it/auto/)
+INFO: slot: 104.21.69.208 | conc:26 | delay:    2 ms (+0) | latency:  343 ms | size: 28806 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-kit-casse-auto/> (referer: https://latop10.it/auto/)
+INFO: slot: 104.21.69.208 | conc:26 | delay:    3 ms (+0) | latency:  432 ms | size: 27385 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-giacche-da-moto-4-stagioni/> (referer: https://latop10.it/auto/)
+INFO: slot: 104.21.69.208 | conc:26 | delay:    3 ms (+0) | latency:  462 ms | size: 29315 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-kit-xenon-h7/> (referer: https://latop10.it/auto/)
+INFO: slot: 104.21.69.208 | conc:26 | delay:    3 ms (+0) | latency:  386 ms | size: 26768 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-interfono-per-moto-midland/> (referer: https://latop10.it/auto/)
+INFO: slot: 104.21.69.208 | conc:26 | delay:    3 ms (+0) | latency:  482 ms | size: 37971 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-caschi-per-moto/> (referer: https://latop10.it/auto/)
+INFO: slot: 104.21.69.208 | conc:26 | delay:    3 ms (+0) | latency:  493 ms | size: 28819 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-oli-per-moto-4-tempi/> (referer: https://latop10.it/auto/)
+INFO: slot: 104.21.69.208 | conc:25 | delay:    3 ms (+0) | latency:  425 ms | size: 29191 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-retrocamere-per-auto-wifi/> (referer: https://latop10.it/auto/)
+INFO: slot: 104.21.69.208 | conc:24 | delay:    3 ms (+0) | latency:  467 ms | size: 26764 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-oli-5w30-dexos2/> (referer: https://latop10.it/auto/)
+INFO: slot: 104.21.69.208 | conc:23 | delay:    3 ms (+0) | latency:  463 ms | size: 27202 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-telecamere-per-auto-anteriori-e-posteriori/> (referer: https://latop10.it/auto/)
+DEBUG: Scraped from <200 https://latop10.it/migliori-lucidatrici-per-auto/>
+{'Title': 'La Migliore Lucidatrice per Auto – Classifica 2022', 'URL': 'https://latop10.it/migliori-lucidatrici-per-auto/', 'Category 1': 'Auto', 'Category 2': 'Vernice & Lampade'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-autoradio-2-din-pioneer/>
+{'Title': 'La Migliore Autoradio Pioneer 2 DIN – Classifica 2022', 'URL': 'https://latop10.it/migliori-autoradio-2-din-pioneer/', 'Category 1': 'Auto', 'Category 2': 'Audio'}
+INFO: slot: 104.21.69.208 | conc:24 | delay:    4 ms (+0) | latency:  549 ms | size: 26981 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-avviatori-di-emergenza-auto-diesel/> (referer: https://latop10.it/auto/)
+INFO: slot: 104.21.69.208 | conc:23 | delay:    3 ms (+0) | latency:  446 ms | size: 28616 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-caschi-da-moto-da-donna/> (referer: https://latop10.it/auto/)
+INFO: slot: 104.21.69.208 | conc:22 | delay:    3 ms (+0) | latency:  448 ms | size: 26682 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-oli-5w30-diesel/> (referer: https://latop10.it/auto/)
+INFO: slot: 104.21.69.208 | conc:21 | delay:    4 ms (+0) | latency:  575 ms | size: 26999 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-oli-total-5w30/> (referer: https://latop10.it/auto/)
+INFO: slot: 104.21.69.208 | conc:20 | delay:    6 ms (+1) | latency:  795 ms | size: 26031 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/parrot-bebop-2-recensione/> (referer: https://latop10.it/auto/)
+DEBUG: Scraped from <200 https://latop10.it/migliori-autoradio-2-din-android/>
+{'Title': 'Il Miglior Autoradio 2 DIN Android – Opinioni, Recensioni 2022', 'URL': 'https://latop10.it/migliori-autoradio-2-din-android/', 'Category 1': 'Auto', 'Category 2': 'Audio'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-pneumatici-205-55-r16/>
+{'Title': 'I Migliori Pneumatici 205 55 r16 (anche Estivi) del 2022', 'URL': 'https://latop10.it/migliori-pneumatici-205-55-r16/', 'Category 1': 'Auto', 'Category 2': 'Pneumatici'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-subwoofer-attivi-per-auto/>
+{'Title': 'Il Miglior Subwoofer Attivo per Auto – Classifica 2022', 'URL': 'https://latop10.it/migliori-subwoofer-attivi-per-auto/', 'Category 1': 'Auto', 'Category 2': 'Audio'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-kit-casse-auto/>
+{'Title': 'Il Miglior Kit Casse Auto (Altoparlanti) – Classifica 2022', 'URL': 'https://latop10.it/migliori-kit-casse-auto/', 'Category 1': 'Auto', 'Category 2': 'Audio'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-giacche-da-moto-4-stagioni/>
+{'Title': 'Il Miglior Giacca da Moto 4 Stagioni – Classifica 2022', 'URL': 'https://latop10.it/migliori-giacche-da-moto-4-stagioni/', 'Category 1': 'Auto', 'Category 2': 'Moto'}
+INFO: slot: 104.21.69.208 | conc:20 | delay:    8 ms (+1) | latency: 1041 ms | size: 31641 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-caschi-moto-per-bambini/> (referer: https://latop10.it/auto/)
+INFO: slot: 104.21.69.208 | conc:19 | delay:    8 ms (+0) | latency: 1079 ms | size: 26914 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-autoradio-dab/> (referer: https://latop10.it/auto/)
+INFO: slot: 104.21.69.208 | conc:18 | delay:    7 ms (+0) | latency:  828 ms | size: 26825 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-navigatori-gps-tomtom/> (referer: https://latop10.it/auto/)
+INFO: slot: 104.21.69.208 | conc:17 | delay:    6 ms (+0) | latency:  826 ms | size: 31364 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-poggiatesta-dvd-per-auto/> (referer: https://latop10.it/auto/)
+INFO: slot: 104.21.69.208 | conc:16 | delay:    6 ms (+0) | latency:  820 ms | size: 28612 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-giacche-da-moto-estive/> (referer: https://latop10.it/auto/)
+INFO: slot: 104.21.69.208 | conc:15 | delay:    6 ms (+0) | latency:  794 ms | size: 26342 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-oli-motori-per-moto-15w50/> (referer: https://latop10.it/auto/)
+INFO: slot: 104.21.69.208 | conc:14 | delay:    6 ms (+0) | latency:  789 ms | size: 26720 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-avviatori-di-emergenza-per-auto-suaoki/> (referer: https://latop10.it/auto/)
+INFO: slot: 104.21.69.208 | conc:13 | delay:    5 ms (+0) | latency:  695 ms | size: 26227 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-oli-5w30-benzina/> (referer: https://latop10.it/auto/)
+INFO: slot: 104.21.69.208 | conc:12 | delay:    5 ms (+0) | latency:  731 ms | size: 26410 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-pneumatici-4-stagioni-michelin/> (referer: https://latop10.it/auto/)
+INFO: slot: 104.21.69.208 | conc:11 | delay:   10 ms (+4) | latency: 1325 ms | size: 26476 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-parasole-auto-per-bimbi/> (referer: https://latop10.it/auto/)
+DEBUG: Scraped from <200 https://latop10.it/migliori-kit-xenon-h7/>
+{'Title': 'Il Miglior Kit Xenon H7 – Guida all’Acquisto, Classifica 2022', 'URL': 'https://latop10.it/migliori-kit-xenon-h7/', 'Category 1': 'Auto', 'Category 2': 'Vernice & Lampade'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-interfono-per-moto-midland/>
+{'Title': 'Il Miglior Interfono per Moto Midland – Classifica 2022', 'URL': 'https://latop10.it/migliori-interfono-per-moto-midland/', 'Category 1': 'Auto', 'Category 2': 'Moto'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-caschi-per-moto/>
+{'Title': 'Il Miglior Casco per Moto (anche per Scooter, Marche Top) del 2022', 'URL': 'https://latop10.it/migliori-caschi-per-moto/', 'Category 1': 'Auto', 'Category 2': 'Moto'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-oli-per-moto-4-tempi/>
+{'Title': 'Il Miglior Olio per Moto 4 Tempi (4t) – Classifica 2022', 'URL': 'https://latop10.it/migliori-oli-per-moto-4-tempi/', 'Category 1': 'Auto', 'Category 2': 'Moto'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-retrocamere-per-auto-wifi/>
+{'Title': 'La Miglior Retrocamera per Auto WiFi – Classifica 2022', 'URL': 'https://latop10.it/migliori-retrocamere-per-auto-wifi/', 'Category 1': 'Auto', 'Category 2': 'Camera'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-oli-5w30-dexos2/>
+{'Title': 'Il Miglior Olio 5W30 DEXOS2 – Opinioni, Recensioni 2022', 'URL': 'https://latop10.it/migliori-oli-5w30-dexos2/', 'Category 1': 'Auto', 'Category 2': 'Olio & Pulitore'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-telecamere-per-auto-anteriori-e-posteriori/>
+{'Title': 'La Miglior Telecamera per Auto Anteriore e Posteriore del 2022', 'URL': 'https://latop10.it/migliori-telecamere-per-auto-anteriori-e-posteriori/', 'Category 1': 'Auto', 'Category 2': 'Camera'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-avviatori-di-emergenza-auto-diesel/>
+{'Title': 'Il Miglior Avviatore Emergenza Auto Diesel – Classifica 2022', 'URL': 'https://latop10.it/migliori-avviatori-di-emergenza-auto-diesel/', 'Category 1': 'Auto', 'Category 2': 'Batteria'}
+INFO: slot: 104.21.69.208 | conc:11 | delay:   15 ms (+5) | latency: 1989 ms | size: 32639 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-telecamere-per-auto/> (referer: https://latop10.it/auto/)
+INFO: slot: 104.21.69.208 | conc:10 | delay:   15 ms (+0) | latency: 2012 ms | size: 29729 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-autoradio-con-bluetooth/> (referer: https://latop10.it/auto/)
+INFO: slot: 104.21.69.208 | conc: 9 | delay:   16 ms (+0) | latency: 2058 ms | size: 31165 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-localizzatori-gps-tracker-per-auto/> (referer: https://latop10.it/auto/)
+INFO: slot: 104.21.69.208 | conc: 8 | delay:   16 ms (+0) | latency: 2104 ms | size: 26299 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-autoradio-2-din-per-golf-5/> (referer: https://latop10.it/auto/)
+INFO: slot: 104.21.69.208 | conc: 7 | delay:   13 ms (-3) | latency: 1257 ms | size: 29804 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-pneumatici-per-moto/> (referer: https://latop10.it/auto/)
+INFO: slot: 104.21.69.208 | conc: 6 | delay:   14 ms (+1) | latency: 1853 ms | size: 28421 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-portabici-thule/> (referer: https://latop10.it/auto/)
+DEBUG: Scraped from <200 https://latop10.it/migliori-caschi-da-moto-da-donna/>
+{'Title': 'Il Miglior Casco da Moto da Donna – Recensioni, Classifica 2022', 'URL': 'https://latop10.it/migliori-caschi-da-moto-da-donna/', 'Category 1': 'Auto', 'Category 2': 'Moto'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-oli-5w30-diesel/>
+{'Title': 'Il Miglior Olio 5w30 Diesel – Recensioni, Classifica 2022', 'URL': 'https://latop10.it/migliori-oli-5w30-diesel/', 'Category 1': 'Auto', 'Category 2': 'Olio & Pulitore'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-oli-total-5w30/>
+{'Title': 'Il Miglior Olio Total 5w30 – Guida all’Acquisto, Classifica 2022', 'URL': 'https://latop10.it/migliori-oli-total-5w30/', 'Category 1': 'Auto', 'Category 2': 'Olio & Pulitore'}
+DEBUG: Scraped from <200 https://latop10.it/parrot-bebop-2-recensione/>
+{'Title': 'Parrot Bebop 2 – Recensione, Opinioni, Prezzi del 2022', 'URL': 'https://latop10.it/parrot-bebop-2-recensione/', 'Category 1': 'Auto', 'Category 2': 'Audio'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-caschi-moto-per-bambini/>
+{'Title': 'Il Miglior Casco da Moto per Bambini – Classifica 2022', 'URL': 'https://latop10.it/migliori-caschi-moto-per-bambini/', 'Category 1': 'Auto', 'Category 2': 'Moto'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-autoradio-dab/>
+{'Title': 'La Migliore Autoradio DAB (anche con Bluetooth) – Classifica 2022', 'URL': 'https://latop10.it/migliori-autoradio-dab/', 'Category 1': 'Auto', 'Category 2': 'Audio'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-navigatori-gps-tomtom/>
+{'Title': 'Il Miglior Navigatore GPS TomTom – Recensioni, Opinioni 2021', 'URL': 'https://latop10.it/migliori-navigatori-gps-tomtom/', 'Category 1': 'Auto', 'Category 2': 'Navigatore'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-poggiatesta-dvd-per-auto/>
+{'Title': 'Il Miglior Poggiatesta DVD per Auto (Monitor) – Classifica 2022', 'URL': 'https://latop10.it/migliori-poggiatesta-dvd-per-auto/', 'Category 1': 'Auto', 'Category 2': 'Altro'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-giacche-da-moto-estive/>
+{'Title': 'La Miglior Giacca da Moto Estiva – Recensioni, Classifica 2022', 'URL': 'https://latop10.it/migliori-giacche-da-moto-estive/', 'Category 1': 'Auto', 'Category 2': 'Moto'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-oli-motori-per-moto-15w50/>
+{'Title': 'Il Miglior Olio Motore per Moto 15w50 – Recensioni, Classifica 2022', 'URL': 'https://latop10.it/migliori-oli-motori-per-moto-15w50/', 'Category 1': 'Auto', 'Category 2': 'Moto'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-avviatori-di-emergenza-per-auto-suaoki/>
+{'Title': 'Il Miglior Avviatore di Emergenza per Auto Suaoki – Recensioni 2022', 'URL': 'https://latop10.it/migliori-avviatori-di-emergenza-per-auto-suaoki/', 'Category 1': 'Auto', 'Category 2': 'Batteria'}
+INFO: slot: 104.21.69.208 | conc: 6 | delay:   21 ms (+7) | latency: 2801 ms | size: 26837 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-caricabatterie-per-auto-professionali/> (referer: https://latop10.it/auto/)
+INFO: slot: 104.21.69.208 | conc: 5 | delay:   22 ms (+0) | latency: 2834 ms | size: 27076 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-navigatori-per-camper/> (referer: https://latop10.it/auto/)
+INFO: slot: 104.21.69.208 | conc: 4 | delay:   22 ms (+0) | latency: 2827 ms | size: 30285 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-occhiali-da-moto/> (referer: https://latop10.it/auto/)
+INFO: slot: 104.21.69.208 | conc: 3 | delay:   22 ms (+0) | latency: 2836 ms | size: 28858 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-kit-di-riparazione-di-pneumatici-per-moto/> (referer: https://latop10.it/auto/)
+INFO: slot: 104.21.69.208 | conc: 2 | delay:   15 ms (-6) | latency: 1184 ms | size: 28093 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-telecamere-a-360-gradi-per-auto/> (referer: https://latop10.it/auto/)
+DEBUG: Scraped from <200 https://latop10.it/migliori-oli-5w30-benzina/>
+{'Title': 'Il Miglior Olio 5w30 Benzina – Recensioni, Classifica 2022', 'URL': 'https://latop10.it/migliori-oli-5w30-benzina/', 'Category 1': 'Auto', 'Category 2': 'Olio & Pulitore'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-pneumatici-4-stagioni-michelin/>
+{'Title': 'I Migliori Pneumatici 4 Stagioni Michelin – Opinioni, Recensioni 2022', 'URL': 'https://latop10.it/migliori-pneumatici-4-stagioni-michelin/', 'Category 1': 'Auto', 'Category 2': 'Pneumatici'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-parasole-auto-per-bimbi/>
+{'Title': 'Il Miglior Parasole Auto per Bimbi – Classifica 2022', 'URL': 'https://latop10.it/migliori-parasole-auto-per-bimbi/', 'Category 1': 'Auto', 'Category 2': 'Altro'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-telecamere-per-auto/>
+{'Title': 'La Miglior Telecamera per Auto (Antivandalismo, anche Professionale)', 'URL': 'https://latop10.it/migliori-telecamere-per-auto/', 'Category 1': 'Auto', 'Category 2': 'Camera'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-autoradio-con-bluetooth/>
+{'Title': 'La Migliore Autoradio con Bluetooth – Recensioni, Classifica 2022', 'URL': 'https://latop10.it/migliori-autoradio-con-bluetooth/', 'Category 1': 'Auto', 'Category 2': 'Audio'}
+INFO: slot: 104.21.69.208 | conc: 2 | delay:   10 ms (-4) | latency:  782 ms | size: 28892 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-autoradio-kenwood/> (referer: https://latop10.it/auto/)
+DEBUG: Scraped from <200 https://latop10.it/migliori-localizzatori-gps-tracker-per-auto/>
+{'Title': 'Il Miglior Localizzatore GPS per Auto – Recensioni, Classifica 2022', 'URL': 'https://latop10.it/migliori-localizzatori-gps-tracker-per-auto/', 'Category 1': 'Auto', 'Category 2': 'Sicurezza'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-autoradio-2-din-per-golf-5/>
+{'Title': 'La Migliore Autoradio 2 DIN per Golf 5 – Recensioni, Classifica 2022', 'URL': 'https://latop10.it/migliori-autoradio-2-din-per-golf-5/', 'Category 1': 'Auto', 'Category 2': 'Audio'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-pneumatici-per-moto/>
+{'Title': 'I Migliori Pneumatici per Moto (Gomme, anche Sportive) del 2022', 'URL': 'https://latop10.it/migliori-pneumatici-per-moto/', 'Category 1': 'Auto', 'Category 2': 'Pneumatici'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-portabici-thule/>
+{'Title': 'Il Miglior Portabici Thule – Recensioni, Opinioni 2021', 'URL': 'https://latop10.it/migliori-portabici-thule/', 'Category 1': 'Auto', 'Category 2': 'Altro'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-caricabatterie-per-auto-professionali/>
+{'Title': 'Il Miglior Caricabatteria per Auto Professionale – Classifica 2022', 'URL': 'https://latop10.it/migliori-caricabatterie-per-auto-professionali/', 'Category 1': 'Auto', 'Category 2': 'Batteria'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-navigatori-per-camper/>
+{'Title': 'Il Miglior Navigatore per Camper – Classifica 2022', 'URL': 'https://latop10.it/migliori-navigatori-per-camper/', 'Category 1': 'Auto', 'Category 2': 'Navigatore'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-occhiali-da-moto/>
+{'Title': 'I Migliori Occhiali da Moto (anche Vintage) – Recensioni, Classifica 2022', 'URL': 'https://latop10.it/migliori-occhiali-da-moto/', 'Category 1': 'Auto', 'Category 2': 'Moto'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-kit-di-riparazione-di-pneumatici-per-moto/>
+{'Title': 'Il Miglior Kit per la Riparazione di Pneumatici per Moto del 2022', 'URL': 'https://latop10.it/migliori-kit-di-riparazione-di-pneumatici-per-moto/', 'Category 1': 'Auto', 'Category 2': 'Pneumatici'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-telecamere-a-360-gradi-per-auto/>
+{'Title': 'La Miglior Telecamera a 360 Gradi per Auto – Classifica 2022', 'URL': 'https://latop10.it/migliori-telecamere-a-360-gradi-per-auto/', 'Category 1': 'Auto', 'Category 2': 'Camera'}
+INFO: slot: 104.21.69.208 | conc: 3 | delay:    7 ms (-3) | latency:  466 ms | size: 30535 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-lucidatrici-orbitali/> (referer: https://latop10.it/auto/)
+DEBUG: Scraped from <200 https://latop10.it/migliori-autoradio-kenwood/>
+{'Title': 'La Miglior Autoradio Kenwood (anche a 2 DIN) – Classifica 2022', 'URL': 'https://latop10.it/migliori-autoradio-kenwood/', 'Category 1': 'Auto', 'Category 2': 'Audio'}
+INFO: slot: 104.21.69.208 | conc:10 | delay:    4 ms (-2) | latency:  296 ms | size: 29248 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-retrocamere-per-camper/> (referer: https://latop10.it/auto/)
+DEBUG: Scraped from <200 https://latop10.it/migliori-lucidatrici-orbitali/>
+{'Title': 'La Miglior Lucidatrice Orbitale – Recensioni, Classifica 2022', 'URL': 'https://latop10.it/migliori-lucidatrici-orbitali/', 'Category 1': 'Auto', 'Category 2': 'Vernice & Lampade'}
+INFO: slot: 104.21.69.208 | conc:15 | delay:    3 ms (-1) | latency:  203 ms | size: 25289 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/auto/page/2/> (referer: https://latop10.it/auto/)
+INFO: slot: 104.21.69.208 | conc:14 | delay:    2 ms (+0) | latency:  279 ms | size: 27534 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-oli-5w30-mobil-1/> (referer: https://latop10.it/auto/)
+DEBUG: Scraped from <200 https://latop10.it/migliori-retrocamere-per-camper/>
+{'Title': 'La Miglior Retrocamera per Camper – Recensioni, Classifica 2022', 'URL': 'https://latop10.it/migliori-retrocamere-per-camper/', 'Category 1': 'Auto', 'Category 2': 'Camera'}
+INFO: slot: 104.21.69.208 | conc:13 | delay:    2 ms (+0) | latency:  341 ms | size: 32244 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-guanti-riscaldati-termici/> (referer: https://latop10.it/auto/)
+INFO: slot: 104.21.69.208 | conc:12 | delay:    2 ms (+0) | latency:  322 ms | size: 26230 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-pneumatici-bridgestone/> (referer: https://latop10.it/auto/)
+INFO: slot: 104.21.69.208 | conc:11 | delay:    2 ms (+0) | latency:  347 ms | size: 27464 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-autoradio-2-din-kenwood/> (referer: https://latop10.it/auto/)
+DEBUG: Scraped from <200 https://latop10.it/migliori-oli-5w30-mobil-1/>
+{'Title': 'Il Miglior Olio 5w30 Mobil 1 – Recensioni, Opinioni 2021', 'URL': 'https://latop10.it/migliori-oli-5w30-mobil-1/', 'Category 1': 'Auto', 'Category 2': 'Olio & Pulitore'}
+INFO: slot: 104.21.69.208 | conc:11 | delay:    2 ms (+0) | latency:  355 ms | size: 29131 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-casse-bluetooth-auto/> (referer: https://latop10.it/auto/)
+INFO: slot: 104.21.69.208 | conc:10 | delay:    2 ms (+0) | latency:  283 ms | size: 30859 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-guanti-da-motociclista/> (referer: https://latop10.it/auto/)
+INFO: slot: 104.21.69.208 | conc: 9 | delay:    2 ms (+0) | latency:  282 ms | size: 26138 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-oli-10w40-da-moto/> (referer: https://latop10.it/auto/)
+INFO: slot: 104.21.69.208 | conc:25 | delay:    3 ms (+1) | latency:  499 ms | size: 26382 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-copriauto-felpati/> (referer: https://latop10.it/auto/)
+INFO: slot: 104.21.69.208 | conc:24 | delay:    3 ms (+0) | latency:  413 ms | size: 26266 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-autoradio-pioneer/> (referer: https://latop10.it/auto/)
+INFO: slot: 104.21.69.208 | conc:23 | delay:    3 ms (+0) | latency:  419 ms | size: 31261 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-oli-10w40/> (referer: https://latop10.it/auto/)
+DEBUG: Scraped from <200 https://latop10.it/migliori-guanti-riscaldati-termici/>
+{'Title': 'I Migliori Guanti Riscaldati (per Moto) – Recensioni, Classifica 2022', 'URL': 'https://latop10.it/migliori-guanti-riscaldati-termici/', 'Category 1': 'Auto', 'Category 2': 'Moto'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-pneumatici-bridgestone/>
+{'Title': 'Il Miglior Pneumatico Bridgestone – Recensioni, Classifica 2022', 'URL': 'https://latop10.it/migliori-pneumatici-bridgestone/', 'Category 1': 'Auto', 'Category 2': 'Pneumatici'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-autoradio-2-din-kenwood/>
+{'Title': 'La Migliore Autoradio 2 DIN Kenwood – Recensioni, Classifica 2022', 'URL': 'https://latop10.it/migliori-autoradio-2-din-kenwood/', 'Category 1': 'Auto', 'Category 2': 'Audio'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-casse-bluetooth-auto/>
+{'Title': 'Le Migliori Casse Bluetooth per Auto – Recensioni, Classifica 2022', 'URL': 'https://latop10.it/migliori-casse-bluetooth-auto/', 'Category 1': 'Auto', 'Category 2': 'Audio'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-guanti-da-motociclista/>
+{'Title': 'I Migliori Guanti da Moto – Recensioni, Classifica 2022', 'URL': 'https://latop10.it/migliori-guanti-da-motociclista/', 'Category 1': 'Auto', 'Category 2': 'Moto'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-oli-10w40-da-moto/>
+{'Title': 'Il Miglior Olio 10w40 da Moto – Recensioni, Classifica 2022', 'URL': 'https://latop10.it/migliori-oli-10w40-da-moto/', 'Category 1': 'Auto', 'Category 2': 'Moto'}
+INFO: slot: 104.21.69.208 | conc:22 | delay:    3 ms (+0) | latency:  390 ms | size: 28149 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-autoradio-sony/> (referer: https://latop10.it/auto/page/2/)
+INFO: slot: 104.21.69.208 | conc:21 | delay:    5 ms (+2) | latency:  743 ms | size: 26044 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-interfoni-per-moto-sena/> (referer: https://latop10.it/auto/)
+INFO: slot: 104.21.69.208 | conc:20 | delay:    5 ms (+0) | latency:  756 ms | size: 26109 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-diffusori-di-aromi-per-auto/> (referer: https://latop10.it/auto/)
+INFO: slot: 104.21.69.208 | conc:19 | delay:    6 ms (+0) | latency:  770 ms | size: 31814 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-box-da-tetto-auto/> (referer: https://latop10.it/auto/)
+INFO: slot: 104.21.69.208 | conc:18 | delay:    4 ms (-1) | latency:  457 ms | size: 29214 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-oli-motore-per-moto/> (referer: https://latop10.it/auto/page/2/)
+INFO: slot: 104.21.69.208 | conc:17 | delay:    4 ms (+0) | latency:  503 ms | size: 30055 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-lampade-per-bambini/> (referer: https://latop10.it/auto/page/2/)
+INFO: slot: 104.21.69.208 | conc:16 | delay:    6 ms (+2) | latency:  827 ms | size: 26924 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-lucidatrici-per-auto-bosch/> (referer: https://latop10.it/auto/)
+DEBUG: Scraped from <200 https://latop10.it/migliori-copriauto-felpati/>
+{'Title': 'Il Miglior Copriauto Felpato – Recensioni, Classifica 2022', 'URL': 'https://latop10.it/migliori-copriauto-felpati/', 'Category 1': 'Auto', 'Category 2': 'Sicurezza'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-autoradio-pioneer/>
+{'Title': 'La Migliore Autoradio Pioneer – Recensioni, Opinioni 2021', 'URL': 'https://latop10.it/migliori-autoradio-pioneer/', 'Category 1': 'Auto', 'Category 2': 'Audio'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-oli-10w40/>
+{'Title': 'Il Miglior Olio 10w40 (anche Sintetici) – Recensioni, Classifica 2022', 'URL': 'https://latop10.it/migliori-oli-10w40/', 'Category 1': 'Auto', 'Category 2': 'Olio & Pulitore'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-autoradio-sony/>
+{'Title': 'La Miglior Autoradio Sony – Recensioni, Opinioni 2020', 'URL': 'https://latop10.it/migliori-autoradio-sony/', 'Category 1': 'Auto', 'Category 2': 'Audio'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-interfoni-per-moto-sena/>
+{'Title': 'Il Miglior Interfono per Moto Sena – Opinioni, Recensioni 2022', 'URL': 'https://latop10.it/migliori-interfoni-per-moto-sena/', 'Category 1': 'Auto', 'Category 2': 'Moto'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-diffusori-di-aromi-per-auto/>
+{'Title': 'Il Miglior Diffusore di Aromi per Auto – Recensioni, Classifica 2022', 'URL': 'https://latop10.it/migliori-diffusori-di-aromi-per-auto/', 'Category 1': 'Auto', 'Category 2': 'Altro'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-box-da-tetto-auto/>
+{'Title': 'Il Miglior Box da Tetto per Auto – Recensioni, Classifica 2022', 'URL': 'https://latop10.it/migliori-box-da-tetto-auto/', 'Category 1': 'Auto', 'Category 2': 'Altro'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-oli-motore-per-moto/>
+{'Title': 'Il Miglior Olio Motore per Moto – Recensioni, Classifica 2022', 'URL': 'https://latop10.it/migliori-oli-motore-per-moto/', 'Category 1': 'Auto', 'Category 2': 'Olio & Pulitore'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-lampade-per-bambini/>
+{'Title': 'La Migliore Lampada per Bambini (Luci Notturne) – Classifica 2022', 'URL': 'https://latop10.it/migliori-lampade-per-bambini/', 'Category 1': 'Auto', 'Category 2': 'Vernice & Lampade'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-lucidatrici-per-auto-bosch/>
+{'Title': 'La Miglior Lucidatrice per Auto Bosch – Recensioni, Opinioni 2021', 'URL': 'https://latop10.it/migliori-lucidatrici-per-auto-bosch/', 'Category 1': 'Auto', 'Category 2': 'Vernice & Lampade'}
+INFO: slot: 104.21.69.208 | conc:15 | delay:    6 ms (+0) | latency:  803 ms | size: 29021 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-copertoni-per-bici-da-corsa/> (referer: https://latop10.it/auto/page/2/)
+INFO: slot: 104.21.69.208 | conc:14 | delay:    6 ms (+0) | latency:  842 ms | size: 27763 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-casse-auto-pioneer/> (referer: https://latop10.it/auto/page/2/)
+INFO: slot: 104.21.69.208 | conc:13 | delay:    6 ms (+0) | latency:  856 ms | size: 26116 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-giacche-da-moto-in-pelle/> (referer: https://latop10.it/auto/page/2/)
+INFO: slot: 104.21.69.208 | conc:12 | delay:    6 ms (+0) | latency:  860 ms | size: 26220 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-oli-motore-per-moto-10w60/> (referer: https://latop10.it/auto/page/2/)
+DEBUG: Scraped from <200 https://latop10.it/migliori-copertoni-per-bici-da-corsa/>
+{'Title': 'Il Miglior Copertone per Bici da Corsa – Recensioni, Classifica 2022', 'URL': 'https://latop10.it/migliori-copertoni-per-bici-da-corsa/', 'Category 1': 'Auto', 'Category 2': 'Pneumatici'}
+INFO: slot: 104.21.69.208 | conc:11 | delay:    7 ms (+0) | latency:  899 ms | size: 31624 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-mantenitori-di-carica/> (referer: https://latop10.it/auto/page/2/)
+INFO: slot: 104.21.69.208 | conc:10 | delay:    6 ms (+0) | latency:  835 ms | size: 29606 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-pettorine-da-motocross/> (referer: https://latop10.it/auto/page/2/)
+INFO: slot: 104.21.69.208 | conc: 9 | delay:    7 ms (+0) | latency:  926 ms | size: 26366 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-tendine-parasole-per-auto/> (referer: https://latop10.it/auto/page/2/)
+INFO: slot: 104.21.69.208 | conc: 8 | delay:    7 ms (+0) | latency:  991 ms | size: 26207 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-oli-10w40-diesel/> (referer: https://latop10.it/auto/page/2/)
+INFO: slot: 104.21.69.208 | conc: 7 | delay:    7 ms (+0) | latency:  997 ms | size: 28326 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-giacche-da-moto-dainese/> (referer: https://latop10.it/auto/page/2/)
+INFO: slot: 104.21.69.208 | conc: 6 | delay:    7 ms (+0) | latency: 1002 ms | size: 29224 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-cavalletti-alzamoto/> (referer: https://latop10.it/auto/page/2/)
+INFO: slot: 104.21.69.208 | conc: 5 | delay:    8 ms (+0) | latency: 1045 ms | size: 30768 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-occhiali-da-motocross/> (referer: https://latop10.it/auto/page/2/)
+INFO: slot: 104.21.69.208 | conc: 4 | delay:    8 ms (+0) | latency: 1041 ms | size: 26756 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-kit-di-telecamere-posteriori-per-auto/> (referer: https://latop10.it/auto/page/2/)
+INFO: slot: 104.21.69.208 | conc: 3 | delay:    8 ms (+0) | latency: 1081 ms | size: 26521 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-dash-cam-a-specchio/> (referer: https://latop10.it/auto/page/2/)
+DEBUG: Scraped from <200 https://latop10.it/migliori-casse-auto-pioneer/>
+{'Title': 'La Miglior Cassa Auto Pioneer – Recensioni, Opinioni 2021', 'URL': 'https://latop10.it/migliori-casse-auto-pioneer/', 'Category 1': 'Auto', 'Category 2': 'Audio'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-giacche-da-moto-in-pelle/>
+{'Title': 'La Miglior Giacca in Pelle – Recensioni, Classifica 2022', 'URL': 'https://latop10.it/migliori-giacche-da-moto-in-pelle/', 'Category 1': 'Auto', 'Category 2': 'Moto'}
+INFO: slot: 104.21.69.208 | conc: 2 | delay:   10 ms (+2) | latency: 1373 ms | size: 25289 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-pulitori-per-iniettori-bardahl/> (referer: https://latop10.it/auto/page/2/)
+INFO: slot: 104.21.69.208 | conc: 1 | delay:   10 ms (+0) | latency: 1358 ms | size: 30265 bytes
+DEBUG: Crawled (200) <GET https://latop10.it/migliori-cere-per-auto/> (referer: https://latop10.it/auto/page/2/)
+DEBUG: Scraped from <200 https://latop10.it/migliori-oli-motore-per-moto-10w60/>
+{'Title': 'Il Miglior Olio Motore per Moto 10W60 – Recensioni, Classifica 2022', 'URL': 'https://latop10.it/migliori-oli-motore-per-moto-10w60/', 'Category 1': 'Auto', 'Category 2': 'Moto'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-mantenitori-di-carica/>
+{'Title': 'Il Miglior Mantenitore di Carica – Recensioni, Classifica 2022', 'URL': 'https://latop10.it/migliori-mantenitori-di-carica/', 'Category 1': 'Auto', 'Category 2': 'Batteria'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-pettorine-da-motocross/>
+{'Title': 'La Migliore Pettorina da Motocross – Recensioni, Classifica 2022', 'URL': 'https://latop10.it/migliori-pettorine-da-motocross/', 'Category 1': 'Auto', 'Category 2': 'Moto'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-tendine-parasole-per-auto/>
+{'Title': 'La Miglior Tendina Parasole per Auto – Recensioni, Classifica 2022', 'URL': 'https://latop10.it/migliori-tendine-parasole-per-auto/', 'Category 1': 'Auto', 'Category 2': 'Altro'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-oli-10w40-diesel/>
+{'Title': 'Il Miglior Olio 10W40 Diesel – Recensioni, Classifica 2022', 'URL': 'https://latop10.it/migliori-oli-10w40-diesel/', 'Category 1': 'Auto', 'Category 2': 'Olio & Pulitore'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-giacche-da-moto-dainese/>
+{'Title': 'La Miglior Giacca da Moto Dainese – Recensioni, Classifica 2022', 'URL': 'https://latop10.it/migliori-giacche-da-moto-dainese/', 'Category 1': 'Auto', 'Category 2': 'Moto'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-cavalletti-alzamoto/>
+{'Title': 'Il Miglior Cavalletto Alzamoto – Recensioni, Classifica 2022', 'URL': 'https://latop10.it/migliori-cavalletti-alzamoto/', 'Category 1': 'Auto', 'Category 2': 'Moto'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-occhiali-da-motocross/>
+{'Title': 'Il Miglior Occhiale da Motocross – Recensioni, Classifica 2022', 'URL': 'https://latop10.it/migliori-occhiali-da-motocross/', 'Category 1': 'Auto', 'Category 2': 'Moto'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-kit-di-telecamere-posteriori-per-auto/>
+{'Title': 'Il Miglior Kit di Telecamere Posteriori per Auto – Classifica 2022', 'URL': 'https://latop10.it/migliori-kit-di-telecamere-posteriori-per-auto/', 'Category 1': 'Auto', 'Category 2': 'Camera'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-dash-cam-a-specchio/>
+{'Title': 'La Migliore Dash Cam a Specchio – Recensioni, Classifica 2022', 'URL': 'https://latop10.it/migliori-dash-cam-a-specchio/', 'Category 1': 'Auto', 'Category 2': 'Camera'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-pulitori-per-iniettori-bardahl/>
+{'Title': 'Il Miglior Pulitore per Iniettori Bardahl – Opinioni, Recensioni 2022', 'URL': 'https://latop10.it/migliori-pulitori-per-iniettori-bardahl/', 'Category 1': 'Auto', 'Category 2': 'Olio & Pulitore'}
+DEBUG: Scraped from <200 https://latop10.it/migliori-cere-per-auto/>
+{'Title': 'La Migliore Cera per Auto – Recensioni, Classifica 2022', 'URL': 'https://latop10.it/migliori-cere-per-auto/', 'Category 1': 'Auto', 'Category 2': 'Altro'}
+INFO: Closing spider (finished)
+INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 27387,
+ 'downloader/request_count': 120,
+ 'downloader/request_method_count/GET': 120,
+ 'downloader/response_bytes': 3645291,
+ 'downloader/response_count': 120,
+ 'downloader/response_status_count/200': 120,
+ 'elapsed_time_seconds': 14.408441,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2022, 12, 28, 5, 56, 20, 409808),
+ 'httpcompression/response_bytes': 18987990,
+ 'httpcompression/response_count': 120,
+ 'item_scraped_count': 118,
+ 'log_count/DEBUG': 238,
+ 'log_count/INFO': 131,
+ 'memusage/max': 77066240,
+ 'memusage/startup': 77066240,
+ 'request_depth_max': 2,
+ 'response_received_count': 120,
+ 'scheduler/dequeued': 120,
+ 'scheduler/dequeued/disk': 120,
+ 'scheduler/enqueued': 120,
+ 'scheduler/enqueued/disk': 120,
+ 'start_time': datetime.datetime(2022, 12, 28, 5, 56, 6, 1367)}
+INFO: Spider closed (finished)
