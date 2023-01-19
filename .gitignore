@@ -1,5 +1,5 @@
 #hide backend code
-*lazy_crawler
+*.lazy_crawler
 #remove files
 *.csv
 *.json
