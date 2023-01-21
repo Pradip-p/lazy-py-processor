@@ -3,7 +3,6 @@ import scrapy
 from scrapy.crawler import CrawlerProcess
 from scrapy.utils.project import get_project_settings
 from lazy_crawler.crawler.spiders.base_crawler import LazyBaseCrawler
-import ipdb
 
 
 class LazyCrawler(LazyBaseCrawler):
@@ -12,7 +11,7 @@ class LazyCrawler(LazyBaseCrawler):
 
     custom_settings = {
         'DOWNLOAD_DELAY': 2,'LOG_LEVEL': 'DEBUG',
-        'CONCURRENT_REQUESTS' : 120,'CONCURRENT_REQUESTS_PER_IP': 26,'CONCURRENT_REQUESTS_PER_DOMAIN': 26,
+        'CONCURRENT_REQUESTS' : 256,'CONCURRENT_REQUESTS_PER_IP': 26,'CONCURRENT_REQUESTS_PER_DOMAIN': 26,
         'JOBDIR': './crawls', 'RETRY_TIMES': 2, "COOKIES_ENABLED": True,
         'ITEM_PIPELINES' : {
             'lazy_crawler.crawler.pipelines.ExcelWriterPipeline': 300
@@ -20,14 +19,7 @@ class LazyCrawler(LazyBaseCrawler):
         }
     
     start_urls = ['https://freida-admin.ama-assn.org/api/node/program?page[offset]=0&page[limit]=50']
-    # count = 0
-
-    # def start_requests(self):
-    #     for i in range(24):
-    #         url = 'https://freida-admin.ama-assn.org/api/node/program?page[offset]='+str(self.count)+'&page[limit]=50'
-    #         self.count += 50
-    #         yield scrapy.Request(url, callback=self.parse, dont_filter=True)
-
+    
     def parse(self, response):
         res = response.json()
         for data in res['data']:
@@ -44,10 +36,16 @@ class LazyCrawler(LazyBaseCrawler):
     def parse_get_program_details(self, response):
         res = response.json()
         data = res['data']
+        field_specialty_url = data['relationships']['field_specialty']['links']['related']['href']
         title = data['attributes'].get('title')
-
+        path = data['attributes'].get('path')
+        program_url = 'https://freida.ama-assn.org'+path
         #for Program coordinator
         included = res['included']
+        program_director = ''
+        dr_field_email= ''
+        co_program_director = ''
+        co_field_email= ''
         for inc in included:
             #Program Director
             if inc['attributes'].get('parent_field_name') == 'field_program_director':
@@ -85,16 +83,26 @@ class LazyCrawler(LazyBaseCrawler):
                     field_degrees = ''
 
                 co_program_director = field_first_name + field_middle_name + field_last_name + field_degrees
-            program = inc['attributes'].get('title')
-
-        yield{
-            'Title':title,
-            'Program':program,
+        data = {
+            'Program':title,
             'Program Director':program_director,
             'Program Director Email':dr_field_email,
             'Other/Coordinator':co_program_director,
-            'Other/Coordinator Email': co_field_email
+            'Other/Coordinator Email': co_field_email,
+            'Program URL': program_url
         }
+
+        
+        yield scrapy.Request(field_specialty_url, callback=self.get_specialty, meta={'data':data}, dont_filter=True)
+
+
+    def get_specialty(self, response):
+        res = response.json()
+        data = response.meta['data']
+        specialty = res['data']['attributes'].get('title')
+        data['Specialty/Title'] = specialty
+        
+        yield data
 
 
 
