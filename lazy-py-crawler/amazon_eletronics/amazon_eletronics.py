@@ -49,6 +49,7 @@ class LazyCrawler(LazyBaseCrawler):
     def parse_get_product_urls(self, response):
         print(response.status)
         asins = response.xpath('//span[@class="a-declarative"]/@data-s-easy-mode-ingress-button').extract()
+        # print(asins)
         for asin in asins:
             asin = yaml.load(asin).get('asin')
             url = f"https://www.amazon.com/dp/{asin}/"
