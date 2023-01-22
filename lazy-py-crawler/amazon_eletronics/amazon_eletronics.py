@@ -4,11 +4,7 @@ import scrapy
 from scrapy.crawler import CrawlerProcess
 from scrapy.utils.project import get_project_settings
 from lazy_crawler.crawler.spiders.base_crawler import LazyBaseCrawler
-from lazy_crawler.lib.mylogger import Logger
-from lazy_crawler.lib.user_agent import get_user_agent
-from scrapy.exceptions import NotConfigured
 import logging
-from lazy_crawler.lib.html import to_browser
 import yaml
 
 # from lazy_crawler.puppeteer.puppeteer import browse
@@ -23,35 +19,30 @@ class LazyCrawler(LazyBaseCrawler):
     )
     
     custom_settings = {
-        'DOWNLOAD_DELAY': 0,'LOG_LEVEL': 'DEBUG','CHANGE_PROXY_AFTER':1,'USE_PROXY':True,
-        'CONCURRENT_REQUESTS' : 126,'CONCURRENT_REQUESTS_PER_IP': 26,'CONCURRENT_REQUESTS_PER_DOMAIN': 2,
-        'JOBDIR': './crawls', 'RETRY_TIMES': 2, "COOKIES_ENABLED": True,'DOWNLOAD_TIMEOUT': 500,
+        'DOWNLOAD_DELAY': 4,'RANDOMIZE_DOWNLOAD_DELAY':False,'LOG_LEVEL': 'DEBUG','CHANGE_PROXY_AFTER':1,'USE_PROXY':True,
+        'CONCURRENT_REQUESTS' : 1,'CONCURRENT_REQUESTS_PER_IP': 1,'CONCURRENT_REQUESTS_PER_DOMAIN': 1,
+        'JOBDIR': './crawls', 'RETRY_TIMES': 4, "COOKIES_ENABLED": True,'DOWNLOAD_TIMEOUT': 500,
     }
 
-    name = "laptop"
+    name = "amazon"
 
     settings = get_project_settings()
 
     settings.set('LOG_FILE','Log.log',priority='cmdline')
-    
-    
         
-    headers = get_user_agent('random')
-
     def start_requests(self): #project start from here.
         
         # for url in urls:
         url = 'https://www.amazon.com/s?k=Electronics'
-        yield scrapy.Request(url, self.parse_get_product_urls, dont_filter=True, )
+        yield scrapy.Request(url, self.parse_get_product_urls, dont_filter=True)
 
 
 
     def parse_get_product_urls(self, response):
-        print(response.status)
-        asins = response.xpath('//span[@class="a-declarative"]/@data-s-easy-mode-ingress-button').extract()
-        # print(asins)
+        # asins = response.xpath('//span[@class="a-declarative"]/@data-s-easy-mode-ingress-button').extract()
+        asins = response.xpath('//div[@data-component-type="s-search-result"]/@data-asin').extract()
         for asin in asins:
-            asin = yaml.load(asin).get('asin')
+            # asin = yaml.load(asin).get('asin')
             url = f"https://www.amazon.com/dp/{asin}/"
 
             yield scrapy.Request(url, self.get_product_details, dont_filter=True,)
@@ -59,8 +50,14 @@ class LazyCrawler(LazyBaseCrawler):
 
     def get_product_details(self, response):
         rating = response.xpath('//span[@id="acrCustomerReviewText"]/text()').extract_first()
-        
+        title = response.xpath('//span[@id="productTitle"]/text()').extract_first()
+        if title:
+            title = title.strip()
+        else:
+            title = ''
+
         yield{
+            'title':title,
             'Rating':rating,
         }
 
