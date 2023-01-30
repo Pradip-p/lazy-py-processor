@@ -6,6 +6,7 @@ from lazy_crawler.lib.user_agent import get_user_agent
 from lxml import html
 import scrapy
 from lazy_crawler.crawler.spiders.base_crawler import LazyBaseCrawler
+
 class AmazonScrapper(LazyBaseCrawler):
     start_urls = ['https://www.amazon.com/s?k=chocolate']
 
@@ -31,13 +32,13 @@ class AmazonScrapper(LazyBaseCrawler):
         tree = html.fromstring(content)
         title = tree.xpath('//span[@id="productTitle"]/text()')
         rating = tree.xpath('//span[@id="acrCustomerReviewText"]/text()')
-        product_desc = tree.xpath('//div[@id="productDescription"]//text()')
+        product_desc = ''.join(tree.xpath('//div[@id="productDescription"]//text()'))
         #product details
         product_details = tree.xpath('//div[@id="detailBullets_feature_div"]/ul')
         # print(product_details)
         product_detail['Title'] = title
         product_detail['Rating'] = rating
-
+        product_detail['product_desc'] = product_desc
         for product in product_details:
             key = ''.join(product.xpath('//li/span[@class="a-list-item"]/span[@class="a-text-bold"]/text()')).strip()
             value = ''.join(product.xpath('//li/span[@class="a-list-item"]/span/text()')).strip()

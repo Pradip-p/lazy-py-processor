@@ -44,9 +44,11 @@ def get_product_details(url):
 
 
 if __name__=='__main__':
-    asin_list = get_asin('https://www.amazon.com/s?k=chocolate')
-    for asin in asin_list:
-        url = 'https://www.amazon.com/dp/{}'.format(asin)
-        get_product_details(url)
+    data = browse('https://www.rent.com/', useragent=get_user_agent('random'))
+    print(data)
+    # asin_list = get_asin('https://www.amazon.com/s?k=chocolate')
+    # for asin in asin_list:
+    #     url = 'https://www.amazon.com/dp/{}'.format(asin)
+    #     get_product_details(url)
 
 
