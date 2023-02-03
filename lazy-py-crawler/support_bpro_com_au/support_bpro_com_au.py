@@ -37,10 +37,7 @@ class LazyCrawler(LazyBaseCrawler):
 
             for articles in res.get('articles'):
                 _id = articles.get('id')
-                # title = articles.get('title')
-                # slug = articles.get('slug')
-                # accountId = articles.get('accountId')
-                # print(_id)
+
                 url = 'https://support.bpro.com.au/api/article/{}'.format(_id)
                 yield scrapy.Request(url, callback=self.get_details, dont_filter=True)
 
@@ -62,7 +59,7 @@ class LazyCrawler(LazyBaseCrawler):
                 'categories':categories,
                 'title': title,
                 'text': strip_html(description),
-                'metaDescription':metaDescription,
+                # 'metaDescription':metaDescription,
             }
         else:
             print('*'*200)
