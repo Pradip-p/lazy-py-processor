@@ -1,7 +1,7 @@
 *.setup.py
 .setup.py   
 #hide backend code
-#*.lazy_crawler
+*.lazy_crawler
 /lazy_crawler
 ./lazy_crawler
 #remove files
