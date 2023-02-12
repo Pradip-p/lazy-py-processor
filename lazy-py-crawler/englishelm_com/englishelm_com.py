@@ -95,6 +95,9 @@ class LazyCrawler(LazyBaseCrawler):
                 'https://englishelm.com/collections/cutting-boards','https://englishelm.com/collections/measuring-scales','https://englishelm.com/collections/tongs-whisks',
                 'https://englishelm.com/collections/spatulas-turners','https://englishelm.com/collections/ladles-spoons'
             ]
+        },
+        {
+            
         }
     ]
 
