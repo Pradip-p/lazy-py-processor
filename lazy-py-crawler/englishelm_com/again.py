@@ -17,9 +17,6 @@ class LazyCrawler(LazyBaseCrawler):
         'CONCURRENT_REQUESTS' : 32,'CONCURRENT_REQUESTS_PER_IP': 32,
         'CONCURRENT_REQUESTS_PER_DOMAIN': 32,'RETRY_TIMES': 200,
         "COOKIES_ENABLED": True,'DOWNLOAD_TIMEOUT': 180,
-        'ITEM_PIPELINES' :  {
-        'lazy_crawler.crawler.pipelines.ExcelWriterPipeline': 300
-        }
     }
     
 
@@ -28,8 +25,6 @@ class LazyCrawler(LazyBaseCrawler):
     page_number = 1
     def start_requests(self): #project start from here.
 
-        # urls = ['https://englishelm.com/collections/all']
-        # for url in urls:
         url = 'https://englishelm.com/collections/all?page={}'.format(self.page_number)
         yield scrapy.Request(url, self.parse, dont_filter=True,
             meta={'proxy': 'http://' + self.proxy},
